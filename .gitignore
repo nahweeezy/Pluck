@@ -1,0 +1,17 @@
+# Local environment
+.env
+.env.local
+.DS_Store
+*.log
+
+# Build artifacts & caches (in case anyone runs the old Vite project here)
+node_modules/
+dist/
+.vite/
+
+# Editor / per-machine tool configs (kept local, not in repo)
+.vscode/
+.idea/
+
+# Design references / prototype source (kept locally, not in repo)
+new content/

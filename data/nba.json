@@ -1,0 +1,26 @@
+[
+  {
+    "id": "golden-state-2016-17",
+    "sport": "nba",
+    "league": "nba",
+    "team": "Golden State Warriors",
+    "team_short": "GSW",
+    "season": "2016-17",
+    "accent": "#1d428a",
+    "notes": "NBA Finals champions — Durant joins, 16-1 playoff run.",
+    "starters": [
+      { "name": "Stephen Curry", "position": "PG", "number": 30 },
+      { "name": "Klay Thompson", "position": "SG", "number": 11 },
+      { "name": "Kevin Durant", "position": "SF", "number": 35 },
+      { "name": "Draymond Green", "position": "PF", "number": 23 },
+      { "name": "Zaza Pachulia", "position": "C", "number": 27 }
+    ],
+    "bench": [
+      { "name": "Andre Iguodala", "position": "SF", "number": 9 },
+      { "name": "Shaun Livingston", "position": "PG", "number": 34 },
+      { "name": "David West", "position": "C", "number": 3 },
+      { "name": "JaVale McGee", "position": "C", "number": 1 },
+      { "name": "Ian Clark", "position": "SG", "number": 21 }
+    ]
+  }
+]

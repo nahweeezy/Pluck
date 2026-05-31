@@ -1,0 +1,163 @@
+# Nahweeezy Squads — player roster for SofaScore ID lookup
+#
+# Format:  Player Name  [TEAM SEASON(S)]  |  <paste sofascore URL or just the ID here>
+#
+# When you return this file I'll diff it and bulk-write `sofascore_id` into soccer.json
+# for every line that has a URL or numeric ID.
+#
+# Already done — verified working:
+Christian Eriksen     [TOT 2018]                          | https://www.sofascore.com/football/player/christian-eriksen/105734
+Cristiano Ronaldo     [MUN 2007, RMA 2015/2016/2017]      | https://www.sofascore.com/football/player/cristiano-ronaldo/750
+
+# ── To fill in (150 players, sorted by last name) ──
+
+Eric Abidal           [BAR 2010]                          | https://www.sofascore.com/football/player/eric-abidal/3289
+Manuel Akanji         [MCI 2022]                          | https://www.sofascore.com/football/player/manuel-akanji/383560
+Nathan Aké            [MCI 2022]                          | https://www.sofascore.com/football/player/nathan-ake/149663
+David Alaba           [BAY 2012, BAY 2019, RMA 2021]      | https://www.sofascore.com/football/player/david-alaba/66492
+Jordi Alba            [BAR 2014]                          | https://www.sofascore.com/football/player/jordi-alba/35199
+Thiago Alcântara      [BAY 2019]                          | https://www.sofascore.com/football/player/thiago-alcantara/53825
+Toby Alderweireld     [TOT 2018]                          | https://www.sofascore.com/football/player/toby-alderweireld/44575
+Trent Alexander-Arnold [LIV 2018]                         | https://www.sofascore.com/football/player/trent-alexander-arnold/795064
+Alisson               [LIV 2018]                          | https://www.sofascore.com/football/player/alisson/243609
+Dele Alli             [TOT 2018]                          | https://www.sofascore.com/football/player/dele-alli/198028
+Xabi Alonso           [LIV 2004]                          | https://www.sofascore.com/football/player/xabi-alonso/708
+Dani Alves            [BAR 2010, BAR 2014]                | https://www.sofascore.com/football/player/dani-alves/4419
+Massimo Ambrosini     [MIL 2006]                          | https://www.sofascore.com/football/player/massimo-ambrosini/1761
+Gareth Bale           [RMA 2015]                          | https://www.sofascore.com/football/player/gareth-bale/15354
+Milan Baroš           [LIV 2004]                          | https://www.sofascore.com/football/player/milan-baros/699
+Sven Bender           [BVB 2012]                          | https://www.sofascore.com/football/player/sven-bender/15802
+Karim Benzema         [RMA 2015/2016/2017/2021]           | https://www.sofascore.com/football/player/karim-benzema/3306
+Ryan Bertrand         [CHE 2011]                          | https://www.sofascore.com/football/player/ryan-bertrand/20756
+Jakub Błaszczykowski  [BVB 2012]                          | https://www.sofascore.com/football/player/jakub-blaszczykowski/18379
+Jérôme Boateng        [BAY 2012, BAY 2019]                | https://www.sofascore.com/football/player/jerome-boateng/19382
+José Bosingwa         [CHE 2011]                          | https://www.sofascore.com/football/player/jose-bosingwa/6255
+Wes Brown             [MUN 2007]                          | https://www.sofascore.com/football/player/wes-brown/749
+Kevin De Bruyne       [MCI 2022]                          | https://www.sofascore.com/football/player/kevin-de-bruyne/70996
+Sergio Busquets       [BAR 2008, BAR 2010, BAR 2014]      | https://www.sofascore.com/football/player/sergio-busquets/39433
+Gary Cahill           [CHE 2011]                          | https://www.sofascore.com/football/player/gary-cahill/9628
+Esteban Cambiasso     [INT 2009]                          | https://www.sofascore.com/football/player/esteban-cambiasso/2052
+Jamie Carragher       [LIV 2004]                          | https://www.sofascore.com/football/player/jamie-carragher/723
+Michael Carrick       [MUN 2007]                          | https://www.sofascore.com/football/player/michael-carrick/938
+Dani Carvajal         [RMA 2015/2016/2017/2021]           | https://www.sofascore.com/football/player/dani-carvajal/138572
+Casemiro              [RMA 2015/2016/2017/2021]           |
+Petr Čech             [CHE 2011]                          | https://www.sofascore.com/football/player/petr-cech/1185
+Júlio César           [INT 2009]                          | https://www.sofascore.com/football/player/julio-cesar-santos/2123332
+Cristian Chivu        [INT 2009]                          | https://www.sofascore.com/football/player/cristian-chivu/1790
+Ashley Cole           [CHE 2011]                          | https://www.sofascore.com/football/player/ashley-cole/2
+Kingsley Coman        [BAY 2019]                          | https://www.sofascore.com/football/player/kingsley-coman/280441
+Thibaut Courtois      [RMA 2021]                          | https://www.sofascore.com/football/player/thibaut-courtois/70988
+Dante                 [BAY 2012]                          | https://www.sofascore.com/football/player/daniel-jurado/2038893
+Alphonso Davies       [BAY 2019]                          | https://www.sofascore.com/football/player/alphonso-davies/843665
+Rúben Dias            [MCI 2022]                          | https://www.sofascore.com/football/player/ruben-dias/318941
+Dida                  [MIL 2006]                          | https://www.sofascore.com/football/player/dilane-bakwa/963298
+Virgil van Dijk       [LIV 2018]                          | https://www.sofascore.com/football/player/virgil-van-dijk/151545
+Didier Drogba         [CHE 2011]                          | https://www.sofascore.com/football/player/didier-drogba/1222
+Jerzy Dudek           [LIV 2004]                          | https://www.sofascore.com/football/player/jerzy-dudek/696
+Ederson               [MCI 2022]                          |
+Samuel Eto'o          [BAR 2008, INT 2009]                | https://www.sofascore.com/football/player/samuel-etoo/11688
+Patrice Evra          [MUN 2007]                          | https://www.sofascore.com/football/player/patrice-evra/3063
+Fabinho               [LIV 2018]                          |
+Rio Ferdinand         [MUN 2007]                          | https://www.sofascore.com/football/player/rio-ferdinand/748
+Steve Finnan          [LIV 2004]                          | https://www.sofascore.com/football/player/steve-finnan/697
+Roberto Firmino       [LIV 2018]                          | https://www.sofascore.com/football/player/roberto-firmino/143697
+Luis García           [LIV 2004]                          | https://www.sofascore.com/football/player/garcia-luis/977385
+Gennaro Gattuso       [MIL 2006]                          | https://www.sofascore.com/football/player/gennaro-gattuso/1764
+Steven Gerrard        [LIV 2004]                          | https://www.sofascore.com/football/player/steven-gerrard/701
+Serge Gnabry          [BAY 2019]                          | https://www.sofascore.com/football/player/serge-gnabry/187433
+Leon Goretzka         [BAY 2019]                          | https://www.sofascore.com/football/player/leon-goretzka/184661
+Jack Grealish         [MCI 2022]                          | https://www.sofascore.com/football/player/jack-grealish/189061
+Kevin Großkreutz      [BVB 2012]                          | https://www.sofascore.com/football/player/kevin-grosskreutz/18680
+İlkay Gündoğan        [BVB 2012, MCI 2022]                | https://www.sofascore.com/football/player/ilkay-gundogan/45853
+Erling Haaland        [MCI 2022]                          | https://www.sofascore.com/football/player/erling-haaland/839956
+Owen Hargreaves       [MUN 2007]                          | https://www.sofascore.com/football/player/owen-hargreaves/1422211
+Jordan Henderson      [LIV 2018]                          | https://www.sofascore.com/football/player/jordan-henderson/42694
+Thierry Henry         [BAR 2008]                          | https://www.sofascore.com/football/player/thierry-henry/11
+Mats Hummels          [BVB 2012]                          | https://www.sofascore.com/football/player/mats-hummels/16632
+Sami Hyypiä           [LIV 2004]                          | https://www.sofascore.com/football/player/sami-hyypia/698
+Andrés Iniesta        [BAR 2008, BAR 2010, BAR 2014]      | https://www.sofascore.com/football/player/andres-iniesta/3595
+Filippo Inzaghi       [MIL 2006]                          | https://www.sofascore.com/football/player/filippo-inzaghi/1769
+Isco                  [RMA 2016, RMA 2017]                |
+Branislav Ivanović    [CHE 2011]                          | https://www.sofascore.com/football/player/branislav-ivanovic/25233
+Marek Jankulovski     [MIL 2006]                          | https://www.sofascore.com/football/player/marek-jankulovski/2961
+Vinícius Júnior       [RMA 2021]                          | https://www.sofascore.com/football/player/vinicius-junior/868812
+Kaká                  [MIL 2006]                          |
+Salomon Kalou         [CHE 2011]                          | https://www.sofascore.com/football/player/salomon-kalou/10086
+Harry Kane            [TOT 2018]                          | https://www.sofascore.com/football/player/harry-kane/108579
+Harry Kewell          [LIV 2004]                          | https://www.sofascore.com/football/player/harry-kewell/700
+Joshua Kimmich        [BAY 2019]                          | https://www.sofascore.com/football/player/joshua-kimmich/259117
+Toni Kroos            [RMA 2015/2016/2017/2021]           | https://www.sofascore.com/football/player/toni-kroos/26502
+Philipp Lahm          [BAY 2012]                          | https://www.sofascore.com/football/player/philipp-lahm/14920
+Frank Lampard         [CHE 2011]                          | https://www.sofascore.com/football/player/frank-lampard/1216
+Robert Lewandowski    [BVB 2012, BAY 2019]                | https://www.sofascore.com/football/player/robert-lewandowski/41789
+Hugo Lloris           [TOT 2018]                          | https://www.sofascore.com/football/player/hugo-lloris/9048
+Lúcio                 [INT 2009]                          | https://www.sofascore.com/football/player/luciano-pena/2407375
+Maicon                [INT 2009]                          | https://www.sofascore.com/football/player/maicol-david-molano-castillo/2061626
+Paolo Maldini         [MIL 2006]                          | https://www.sofascore.com/football/player/paolo-maldini/1756
+Mario Mandžukić       [BAY 2012]                          | https://www.sofascore.com/football/player/mario-mandzukic/18886
+Sadio Mané            [LIV 2018]                          | https://www.sofascore.com/football/player/sadio-mane/217704
+Marcelo               [RMA 2015/2016/2017]                | https://www.sofascore.com/football/player/marcelo-vieira-coutinho-junior/1640979
+Javi Martínez         [BAY 2012]                          | https://www.sofascore.com/football/player/javi-martinez/17100
+Javier Mascherano     [BAR 2010, BAR 2014]                | https://www.sofascore.com/football/player/javier-mascherano/11378
+Juan Mata             [CHE 2011]                          | https://www.sofascore.com/football/player/juan-mata/28367
+Joël Matip            [LIV 2018]                          | https://www.sofascore.com/football/player/joel-matip/51501
+Ferland Mendy         [RMA 2021]                          | https://www.sofascore.com/football/player/ferland-mendy/792073
+Lionel Messi          [BAR 2008, BAR 2010, BAR 2014]      | https://www.sofascore.com/football/player/lionel-messi/12994
+John Obi Mikel        [CHE 2011]                          | https://www.sofascore.com/football/player/john-obi-mikel/7311
+Éder Militão          [RMA 2021]                          | https://www.sofascore.com/football/player/eder-militao/822519
+Diego Milito          [INT 2009]                          | https://www.sofascore.com/football/player/diego-milito/1422749
+Luka Modrić           [RMA 2015/2016/2017/2021]           | https://www.sofascore.com/football/player/luka-modric/15466
+Thomas Müller         [BAY 2012, BAY 2019]                | https://www.sofascore.com/football/player/thomas-muller/35166
+Keylor Navas          [RMA 2015/2016/2017]                | https://www.sofascore.com/football/player/keylor-navas/56113
+Alessandro Nesta      [MIL 2006]                          | https://www.sofascore.com/football/player/alessandro-nesta/1757
+Manuel Neuer          [BAY 2012, BAY 2019]                | https://www.sofascore.com/football/player/manuel-neuer/8959
+Neymar                [BAR 2014]                          | https://www.sofascore.com/football/player/neymar-slin-leon-jaramillo/2130429
+Massimo Oddo          [MIL 2006]                          | https://www.sofascore.com/football/player/massimo-oddo/2676
+Goran Pandev          [INT 2009]                          | https://www.sofascore.com/football/player/goran-pandev/2695
+Pedro                 [BAR 2010]                          | https://www.sofascore.com/football/player/pedro-rodriguez/1649171
+Pepe                  [RMA 2015]                          | https://www.sofascore.com/football/player/adrian-perez/1926114
+Gerard Piqué          [BAR 2008, BAR 2010, BAR 2014]      | https://www.sofascore.com/football/player/gerard-pique/770
+Andrea Pirlo          [MIL 2006]                          | https://www.sofascore.com/football/player/andrea-pirlo/1765
+Łukasz Piszczek       [BVB 2012]                          | https://www.sofascore.com/football/player/lukasz-piszczek/24829
+Carles Puyol          [BAR 2008]                          | https://www.sofascore.com/football/player/carles-puyol/3565
+Ivan Rakitić          [BAR 2014]                          | https://www.sofascore.com/football/player/ivan-rakitic/7635
+Sergio Ramos          [RMA 2015/2016/2017]                | https://www.sofascore.com/football/player/sergio-ramos/10710
+Marco Reus            [BVB 2012]                          | https://www.sofascore.com/football/player/marco-reus/37092
+Franck Ribéry         [BAY 2012]                          | https://www.sofascore.com/football/player/franck-ribery/5712
+John Arne Riise       [LIV 2004]                          | https://www.sofascore.com/football/player/john-arne-riise/514
+Arjen Robben          [BAY 2012]                          | https://www.sofascore.com/football/player/arjen-robben/30037
+Andrew Robertson      [LIV 2018]                          | https://www.sofascore.com/football/player/andrew-robertson/1393342
+Rodri                 [MCI 2022]                          | https://www.sofascore.com/football/player/hernandez-rodrigo/1802020
+Wayne Rooney          [MUN 2007]                          | https://www.sofascore.com/football/player/wayne-rooney/751
+Danny Rose            [TOT 2018]                          | https://www.sofascore.com/football/player/danny-rose/16586
+Mohamed Salah         [LIV 2018]                          | https://www.sofascore.com/football/player/mohamed-salah/159665
+Walter Samuel         [INT 2009]                          | https://www.sofascore.com/football/player/walter-samuel/4715
+Edwin van der Sar     [MUN 2007]                          | https://www.sofascore.com/football/player/edwin-van-der-sar/661
+Marcel Schmelzer      [BVB 2012]                          | https://www.sofascore.com/football/player/marcel-schmelzer/26760
+Paul Scholes          [MUN 2007]                          | https://www.sofascore.com/football/player/paul-scholes/761
+Bastian Schweinsteiger [BAY 2012]                         | https://www.sofascore.com/football/player/bastian-schweinsteiger/326
+Clarence Seedorf      [MIL 2006]                          | https://www.sofascore.com/football/player/clarence-seedorf/1767
+Bernardo Silva        [MCI 2022]                          | https://www.sofascore.com/football/player/bernardo-silva/331209
+Moussa Sissoko        [TOT 2018]                          | https://www.sofascore.com/football/player/moussa-sissoko/27014
+Wesley Sneijder       [INT 2009]                          | https://www.sofascore.com/football/player/wesley-sneijder/1934
+Heung-min Son         [TOT 2018]                          | https://www.sofascore.com/football/player/son-heung-min/111505
+Marc-André ter Stegen [BAR 2014]                          | https://www.sofascore.com/football/player/marc-andre-ter-stegen/88625
+John Stones           [MCI 2022]                          | https://www.sofascore.com/football/player/john-stones/152077
+Luis Suárez           [BAR 2014]                          | https://www.sofascore.com/football/player/luis-suarez/16943
+Neven Subotić         [BVB 2012]                          | https://www.sofascore.com/football/player/neven-subotic/16180
+Sylvinho              [BAR 2008]                          |
+Carlos Tevez          [MUN 2007]                          | https://www.sofascore.com/football/player/carlos-tevez/11384
+Yaya Touré            [BAR 2008]                          | https://www.sofascore.com/football/player/yaya-toure/14468
+Djimi Traoré          [LIV 2004]                          | https://www.sofascore.com/football/player/djimi-traore/719
+Kieran Trippier       [TOT 2018]                          | https://www.sofascore.com/football/player/kieran-trippier/69256
+Víctor Valdés         [BAR 2008, BAR 2010]                | https://www.sofascore.com/football/player/victor-valdes/11684
+Federico Valverde     [RMA 2021]                          | https://www.sofascore.com/football/player/federico-valverde/831808
+Raphaël Varane        [RMA 2016, RMA 2017]                | https://www.sofascore.com/football/player/raphael-varane/138310
+Jan Vertonghen        [TOT 2018]                          | https://www.sofascore.com/football/player/jan-vertonghen/16921
+Nemanja Vidić         [MUN 2007]                          | https://www.sofascore.com/football/player/nemanja-vidic/11184
+David Villa           [BAR 2010]                          | https://www.sofascore.com/football/player/david-villa/5121
+Roman Weidenfeller    [BVB 2012]                          | https://www.sofascore.com/football/player/roman-weidenfeller/88
+Georginio Wijnaldum   [LIV 2018]                          | https://www.sofascore.com/football/player/georginio-wijnaldum/22126
+Harry Winks           [TOT 2018]                          | https://www.sofascore.com/football/player/harry-winks/545780
+Xavi                  [BAR 2008, BAR 2010]                | https://www.sofascore.com/football/player/hernandez-xavier/1859255
+Javier Zanetti        [INT 2009]                          | https://www.sofascore.com/football/player/javier-zanetti/2049

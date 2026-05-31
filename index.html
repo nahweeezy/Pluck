@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluck — The Daily XI · Nahweeezy Squads</title>
+    <meta name="description" content="A daily squad-builder almanac. Each round a real starting XI walks out of history — pluck one name, build the eleven only you would pick.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="squads.css?v=8">
+    <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js"></script>
+</head>
+<body>
+
+<!-- ════════════════════════ COVER ════════════════════════ -->
+<div class="screen" id="screenCover">
+    <div class="paper-bg">
+        <div class="stage">
+            <div class="cover screen-enter">
+                <div class="masthead">
+                    <div class="masthead-left">
+                        <h1 class="wordmark">PLUCK<span class="dot">.</span></h1>
+                    </div>
+                    <div class="masthead-meta">
+                        <div class="eyebrow">The Daily XI</div>
+                        <div class="num" style="font-size:20px;font-weight:600;margin-top:4px">NO. <span id="coverEdition">—</span></div>
+                        <div class="mono" style="font-size:12px;color:var(--ink-2);margin-top:2px" id="coverDate">—</div>
+                        <div class="reset" id="coverReset">RESETS IN --:--:--</div>
+                    </div>
+                </div>
+                <div class="rule-ink" style="margin-top:14px"></div>
+
+                <div class="cover-hero">
+                    <div class="eyebrow"><span class="tick" style="margin-right:10px;vertical-align:middle"></span>EST. 2026 · A BALL-KNOWLEDGE TEST IN GAME FORM</div>
+                    <h2 class="cover-statement">
+                        Eighteen legends.<br>One squad.<br><em>Every day a new XI.</em>
+                    </h2>
+                    <p class="serif-i" style="font-size:clamp(16px,1.9vw,22px);color:var(--ink-2);max-width:44ch;line-height:1.45">
+                        Each round, a real starting eleven walks out of history — date, opponent, the result.
+                        You pluck a single name. Round by round, you build the squad only you would pick.
+                    </p>
+
+                    <div class="brief">
+                        <div class="brief-cell">
+                            <div class="eyebrow">Squads in database</div>
+                            <div class="v" id="coverSquadCount">—</div>
+                        </div>
+                        <div class="brief-cell">
+                            <div class="eyebrow">Players</div>
+                            <div class="v" id="coverPlayerCount">—</div>
+                        </div>
+                        <div class="brief-cell">
+                            <div class="eyebrow">Leagues</div>
+                            <div class="v" id="coverLeagueCount">—</div>
+                        </div>
+                        <div class="brief-cell">
+                            <div class="eyebrow">Your Streak</div>
+                            <div class="v" id="coverStreak">0 Days</div>
+                        </div>
+                    </div>
+
+                    <div class="mode-row" role="tablist" aria-label="Game mode">
+                        <button class="mode-btn active" data-mode="daily" role="tab" aria-selected="true">Daily</button>
+                        <button class="mode-btn" data-mode="unlimited" role="tab" aria-selected="false">Unlimited</button>
+                    </div>
+                </div>
+
+                <div class="cover-foot">
+                    <button class="btn btn-play" id="playBtn">
+                        Play Today's XI
+                        <span style="font-size:0.7em">→</span>
+                    </button>
+                    <div class="sports">
+                        <div class="sport-chip active">Soccer</div>
+                        <div class="sport-chip" data-soon="true">NFL <span class="soon">SOON</span></div>
+                        <div class="sport-chip" data-soon="true">NBA <span class="soon">SOON</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ════════════════════════ FORMATION SELECT ════════════════════════ -->
+<div class="screen" id="screenFormation" hidden>
+    <div class="paper-bg">
+        <div class="stage">
+            <div class="topbar">
+                <div class="topbar-seg clickable" id="formationBack">
+                    <span class="big">←</span>
+                    <span class="lbl">Cover</span>
+                </div>
+                <div class="topbar-seg spacer" style="justify-content:center">
+                    <span class="big">PLUCK<span class="red">.</span></span>
+                </div>
+                <div class="topbar-seg">
+                    <span class="lbl">Step 1 / 2</span>
+                </div>
+            </div>
+
+            <div class="section-pad screen-enter">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow" style="margin-bottom:10px"><span class="tick" style="margin-right:10px;vertical-align:middle"></span>Pre-match</div>
+                        <h2 class="section-title">Choose<br>your shape.</h2>
+                    </div>
+                    <p class="section-sub">Lock a formation before the draft. It decides the eleven slots your plucked legends drop into — pick the canvas for your masterpiece.</p>
+                </div>
+
+                <div class="formation-grid" id="formationGrid"></div>
+
+                <div class="row gap16" style="margin-top:28px;justify-content:flex-end">
+                    <button class="btn btn-play" id="formationBegin" disabled>
+                        <span id="formationBeginLabel">Select a shape</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ════════════════════════ ROUND / DRAFT ════════════════════════ -->
+<div class="screen" id="screenGame" hidden>
+    <div class="paper-bg">
+        <div class="stage">
+            <div class="topbar">
+                <div class="topbar-seg clickable" id="gameBack">
+                    <span class="big">←</span>
+                </div>
+                <div class="topbar-seg">
+                    <span class="lbl">Round</span>
+                    <span class="big"><span class="red" id="roundNum">01</span><span style="opacity:.4"> / <span id="roundTotal">18</span></span></span>
+                </div>
+                <div class="progress-track" id="progressPips"></div>
+                <div class="topbar-seg hide-mobile">
+                    <span class="lbl">Formation</span>
+                    <span class="big" id="gameFormation">4-3-3</span>
+                </div>
+            </div>
+
+            <div class="round-wrap screen-enter" id="roundWrap">
+                <!-- teamsheet -->
+                <div class="teamsheet">
+                    <div class="ts-head">
+                        <div class="ts-comp">
+                            <span class="swatch" id="tsSwatch"></span>
+                            <span class="eyebrow" id="tsComp">UCL Final · —</span>
+                        </div>
+                        <div class="ts-teams">
+                            <span class="ts-team" id="tsTeam">—</span>
+                            <span class="ts-vs">vs</span>
+                            <span class="ts-opp" id="tsOpp">—</span>
+                        </div>
+                        <div class="ts-meta">
+                            <span class="m"><b id="tsSeason">—</b> SEASON</span>
+                            <span class="m" id="tsVenue">—</span>
+                            <span class="ts-result" id="tsResult">—</span>
+                        </div>
+                    </div>
+                    <div class="ts-hint" id="tsHint"><span class="tick"></span> Pluck one name for your squad</div>
+                    <div id="tsList"></div>
+                </div>
+
+                <!-- your squad pitch -->
+                <div class="squad-panel">
+                    <div class="squad-head">
+                        <span class="t">Your Squad</span>
+                        <span class="c mono" id="squadCount">0/18 plucked</span>
+                    </div>
+                    <div id="placeHintWrap"></div>
+                    <div id="squadPitchWrap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ════════════════════════ FINALIZE / REARRANGE ════════════════════════ -->
+<div class="screen" id="screenFinalize" hidden>
+    <div class="paper-bg">
+        <div class="stage">
+            <div class="topbar">
+                <div class="topbar-seg clickable" id="finalizeBack">
+                    <span class="big">←</span>
+                    <span class="lbl">Cover</span>
+                </div>
+                <div class="topbar-seg spacer" style="justify-content:center">
+                    <span class="big">PLUCK<span class="red">.</span></span>
+                </div>
+                <div class="topbar-seg">
+                    <span class="lbl">Step 2 / 2 · Rearrange</span>
+                </div>
+            </div>
+
+            <div class="finalize-wrap screen-enter">
+                <div class="finalize-col">
+                    <div class="section-head" style="margin-bottom:6px">
+                        <div>
+                            <div class="eyebrow" style="margin-bottom:10px"><span class="tick" style="margin-right:10px;vertical-align:middle"></span>Full squad · 18 / 18</div>
+                            <h2 class="section-title" style="font-size:clamp(26px,4vw,44px)">Set your<br>final XI.</h2>
+                        </div>
+                    </div>
+                    <p class="section-sub" id="finalizeHint">Tap a player, then tap any other slot or bench cell to swap them. Promote a sub into the eleven, switch positions — arrange it exactly how you'd line them up.</p>
+
+                    <div id="finalizePitchWrap"></div>
+
+                    <div class="finalize-actions">
+                        <button class="btn btn-play" id="revealBtn">Reveal my XI <span style="font-size:0.7em">→</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ════════════════════════ FINAL REVEAL ════════════════════════ -->
+<div class="screen" id="screenResult" hidden>
+    <div class="paper-bg">
+        <div class="stage">
+            <div class="topbar">
+                <div class="topbar-seg clickable" id="resultBack">
+                    <span class="lbl">Full time</span>
+                    <span class="big">← Menu</span>
+                </div>
+                <div class="topbar-seg spacer" style="justify-content:center">
+                    <span class="big">PLUCK<span class="red">.</span></span>
+                </div>
+                <div class="topbar-seg">
+                    <span class="lbl">No. <span id="revealEdition">—</span></span>
+                </div>
+            </div>
+
+            <div class="final-doc">
+                <div class="final-cover screen-enter">
+                    <div class="final-left">
+                        <div class="final-masthead">
+                            <div class="eyebrow" style="margin-bottom:12px"><span class="tick" style="margin-right:10px;vertical-align:middle"></span>The squad you built</div>
+                            <div class="wm">A SIDE<br>FOR THE<br>AGES<span class="dot">.</span></div>
+                        </div>
+                        <p class="final-statement" id="revealStatement">
+                            Spanning <em><span id="statEraInline">—</span> years</em> of finals, drawn from <em><span id="statClubsInline">—</span> clubs</em> — this is the eleven only you would name.
+                        </p>
+
+                        <div class="stat-strip">
+                            <div class="stat-cell">
+                                <div class="k">Eras Spanned</div>
+                                <div class="v"><span id="statEra">0</span> <small>yrs</small></div>
+                            </div>
+                            <div class="stat-cell">
+                                <div class="k">Clubs Represented</div>
+                                <div class="v" id="statClubs">0</div>
+                            </div>
+                            <div class="stat-cell">
+                                <div class="k">Squad Fit</div>
+                                <div class="v" style="color:var(--red)"><span id="statChem">0</span><small>/100</small></div>
+                            </div>
+                            <div class="stat-cell">
+                                <div class="k">Day Streak</div>
+                                <div class="v"><span id="statStreak">0</span> <small id="statStreakUnit">days</small></div>
+                            </div>
+                        </div>
+
+                        <div class="share-row">
+                            <button class="btn btn-ink" id="shareImageBtn">↓ Save Image</button>
+                            <button class="btn btn-ghost" id="shareTwitterBtn">Share to X</button>
+                            <button class="btn btn-ghost" id="shareCopyBtn"><span id="copyLabel">Copy Summary</span></button>
+                        </div>
+                        <button class="btn btn-ghost" id="replayBtn" style="margin-top:14px;align-self:flex-start">↺ Play Unlimited</button>
+                    </div>
+
+                    <div class="final-pitch-wrap">
+                        <div id="shareCard" style="position:relative;background:var(--paper);padding:14px 14px 6px">
+                            <div class="reveal-tag" id="revealTag">The Final XI · 4-3-3</div>
+                            <div id="revealPitchWrap"></div>
+                            <div style="text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:0.18em;color:var(--ink-3);text-transform:uppercase;padding:10px 0 4px">
+                                PLUCK · THE DAILY XI · <span id="revealCaptionDate">—</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="squads.js?v=8"></script>
+</body>
+</html>

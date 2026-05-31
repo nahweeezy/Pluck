@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kansas-city-2022",
+    "sport": "nfl",
+    "league": "nfl",
+    "team": "Kansas City Chiefs",
+    "team_short": "KC",
+    "season": "2022",
+    "accent": "#e31837",
+    "notes": "Super Bowl LVII champions — Mahomes' second ring, Reid's third.",
+    "offense": [
+      { "name": "Patrick Mahomes", "position": "QB", "number": 15 },
+      { "name": "Isiah Pacheco", "position": "RB", "number": 10 },
+      { "name": "Jerick McKinnon", "position": "RB", "number": 1 },
+      { "name": "JuJu Smith-Schuster", "position": "WR", "number": 9 },
+      { "name": "Marquez Valdes-Scantling", "position": "WR", "number": 11 },
+      { "name": "Kadarius Toney", "position": "WR", "number": 19 },
+      { "name": "Travis Kelce", "position": "TE", "number": 87 },
+      { "name": "Harrison Butker", "position": "K", "number": 7 }
+    ],
+    "defense": [
+      { "name": "George Karlaftis", "position": "Edge", "number": 56 },
+      { "name": "Frank Clark", "position": "Edge", "number": 55 },
+      { "name": "Nick Bolton", "position": "LB", "number": 32 },
+      { "name": "Willie Gay", "position": "LB", "number": 50 },
+      { "name": "L'Jarius Sneed", "position": "CB", "number": 38 },
+      { "name": "Trent McDuffie", "position": "CB", "number": 22 },
+      { "name": "Justin Reid", "position": "S", "number": 20 },
+      { "name": "Juan Thornhill", "position": "S", "number": 22 }
+    ]
+  }
+]

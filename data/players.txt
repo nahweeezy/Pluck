@@ -1,0 +1,165 @@
+# Nahweeezy Squads — player roster for SofaScore ID lookup
+#
+# Format:  Player Name  [TEAM SEASON(S)]  |  <paste sofascore URL or just the ID here>
+#
+# When you return this file I'll diff it and bulk-write `sofascore_id` into soccer.json
+# for every line that has a URL or numeric ID.
+#
+# NOTE: soccer.json already contains most of these IDs (bulk-applied from players_filled.txt).
+# The lines below are the deduped roster; a handful still have no SofaScore URL/ID and fall
+# back to initials in-game. Two worked examples:
+Christian Eriksen     [TOT 2018]                          | https://www.sofascore.com/football/player/christian-eriksen/105734
+Cristiano Ronaldo     [MUN 2007, RMA 2015/2016/2017]      | https://www.sofascore.com/football/player/cristiano-ronaldo/750
+
+# ── To fill in (150 players, sorted by last name) ──
+
+Eric Abidal           [BAR 2010]                          |
+Manuel Akanji         [MCI 2022]                          |
+Nathan Aké            [MCI 2022]                          |
+David Alaba           [BAY 2012, BAY 2019, RMA 2021]      |
+Jordi Alba            [BAR 2014]                          |
+Thiago Alcântara      [BAY 2019]                          |
+Toby Alderweireld     [TOT 2018]                          |
+Trent Alexander-Arnold [LIV 2018]                         |
+Alisson               [LIV 2018]                          |
+Dele Alli             [TOT 2018]                          |
+Xabi Alonso           [LIV 2004]                          |
+Dani Alves            [BAR 2010, BAR 2014]                |
+Massimo Ambrosini     [MIL 2006]                          |
+Gareth Bale           [RMA 2015]                          |
+Milan Baroš           [LIV 2004]                          |
+Sven Bender           [BVB 2012]                          |
+Karim Benzema         [RMA 2015/2016/2017/2021]           |
+Ryan Bertrand         [CHE 2011]                          |
+Jakub Błaszczykowski  [BVB 2012]                          |
+Jérôme Boateng        [BAY 2012, BAY 2019]                |
+José Bosingwa         [CHE 2011]                          |
+Wes Brown             [MUN 2007]                          |
+Kevin De Bruyne       [MCI 2022]                          |
+Sergio Busquets       [BAR 2008, BAR 2010, BAR 2014]      |
+Gary Cahill           [CHE 2011]                          |
+Esteban Cambiasso     [INT 2009]                          |
+Jamie Carragher       [LIV 2004]                          |
+Michael Carrick       [MUN 2007]                          |
+Dani Carvajal         [RMA 2015/2016/2017/2021]           |
+Casemiro              [RMA 2015/2016/2017/2021]           |
+Petr Čech             [CHE 2011]                          |
+Júlio César           [INT 2009]                          |
+Cristian Chivu        [INT 2009]                          |
+Ashley Cole           [CHE 2011]                          |
+Kingsley Coman        [BAY 2019]                          |
+Thibaut Courtois      [RMA 2021]                          |
+Dante                 [BAY 2012]                          |
+Alphonso Davies       [BAY 2019]                          |
+Rúben Dias            [MCI 2022]                          |
+Dida                  [MIL 2006]                          |
+Virgil van Dijk       [LIV 2018]                          |
+Didier Drogba         [CHE 2011]                          |
+Jerzy Dudek           [LIV 2004]                          |
+Ederson               [MCI 2022]                          |
+Samuel Eto'o          [BAR 2008, INT 2009]                |
+Patrice Evra          [MUN 2007]                          |
+Fabinho               [LIV 2018]                          |
+Rio Ferdinand         [MUN 2007]                          |
+Steve Finnan          [LIV 2004]                          |
+Roberto Firmino       [LIV 2018]                          |
+Luis García           [LIV 2004]                          |
+Gennaro Gattuso       [MIL 2006]                          |
+Steven Gerrard        [LIV 2004]                          |
+Serge Gnabry          [BAY 2019]                          |
+Leon Goretzka         [BAY 2019]                          |
+Jack Grealish         [MCI 2022]                          |
+Kevin Großkreutz      [BVB 2012]                          |
+İlkay Gündoğan        [BVB 2012, MCI 2022]                |
+Erling Haaland        [MCI 2022]                          |
+Owen Hargreaves       [MUN 2007]                          |
+Jordan Henderson      [LIV 2018]                          |
+Thierry Henry         [BAR 2008]                          |
+Mats Hummels          [BVB 2012]                          |
+Sami Hyypiä           [LIV 2004]                          |
+Andrés Iniesta        [BAR 2008, BAR 2010, BAR 2014]      |
+Filippo Inzaghi       [MIL 2006]                          |
+Isco                  [RMA 2016, RMA 2017]                |
+Branislav Ivanović    [CHE 2011]                          |
+Marek Jankulovski     [MIL 2006]                          |
+Vinícius Júnior       [RMA 2021]                          |
+Kaká                  [MIL 2006]                          |
+Salomon Kalou         [CHE 2011]                          |
+Harry Kane            [TOT 2018]                          |
+Harry Kewell          [LIV 2004]                          |
+Joshua Kimmich        [BAY 2019]                          |
+Toni Kroos            [RMA 2015/2016/2017/2021]           |
+Philipp Lahm          [BAY 2012]                          |
+Frank Lampard         [CHE 2011]                          |
+Robert Lewandowski    [BVB 2012, BAY 2019]                |
+Hugo Lloris           [TOT 2018]                          |
+Lúcio                 [INT 2009]                          |
+Maicon                [INT 2009]                          |
+Paolo Maldini         [MIL 2006]                          |
+Mario Mandžukić       [BAY 2012]                          |
+Sadio Mané            [LIV 2018]                          |
+Marcelo               [RMA 2015/2016/2017]                |
+Javi Martínez         [BAY 2012]                          |
+Javier Mascherano     [BAR 2010, BAR 2014]                |
+Juan Mata             [CHE 2011]                          |
+Joël Matip            [LIV 2018]                          |
+Ferland Mendy         [RMA 2021]                          |
+Lionel Messi          [BAR 2008, BAR 2010, BAR 2014]      |
+John Obi Mikel        [CHE 2011]                          |
+Éder Militão          [RMA 2021]                          |
+Diego Milito          [INT 2009]                          |
+Luka Modrić           [RMA 2015/2016/2017/2021]           |
+Thomas Müller         [BAY 2012, BAY 2019]                |
+Keylor Navas          [RMA 2015/2016/2017]                |
+Alessandro Nesta      [MIL 2006]                          |
+Manuel Neuer          [BAY 2012, BAY 2019]                |
+Neymar                [BAR 2014]                          |
+Massimo Oddo          [MIL 2006]                          |
+Goran Pandev          [INT 2009]                          |
+Pedro                 [BAR 2010]                          |
+Pepe                  [RMA 2015]                          |
+Gerard Piqué          [BAR 2008, BAR 2010, BAR 2014]      |
+Andrea Pirlo          [MIL 2006]                          |
+Łukasz Piszczek       [BVB 2012]                          |
+Carles Puyol          [BAR 2008]                          |
+Ivan Rakitić          [BAR 2014]                          |
+Sergio Ramos          [RMA 2015/2016/2017]                |
+Marco Reus            [BVB 2012]                          |
+Franck Ribéry         [BAY 2012]                          |
+John Arne Riise       [LIV 2004]                          |
+Arjen Robben          [BAY 2012]                          |
+Andrew Robertson      [LIV 2018]                          |
+Rodri                 [MCI 2022]                          |
+Wayne Rooney          [MUN 2007]                          |
+Danny Rose            [TOT 2018]                          |
+Mohamed Salah         [LIV 2018]                          |
+Walter Samuel         [INT 2009]                          |
+Edwin van der Sar     [MUN 2007]                          |
+Marcel Schmelzer      [BVB 2012]                          |
+Paul Scholes          [MUN 2007]                          |
+Bastian Schweinsteiger [BAY 2012]                         |
+Clarence Seedorf      [MIL 2006]                          |
+Bernardo Silva        [MCI 2022]                          |
+Moussa Sissoko        [TOT 2018]                          |
+Wesley Sneijder       [INT 2009]                          |
+Heung-min Son         [TOT 2018]                          |
+Marc-André ter Stegen [BAR 2014]                          |
+John Stones           [MCI 2022]                          |
+Luis Suárez           [BAR 2014]                          |
+Neven Subotić         [BVB 2012]                          |
+Sylvinho              [BAR 2008]                          |
+Carlos Tevez          [MUN 2007]                          |
+Yaya Touré            [BAR 2008]                          |
+Djimi Traoré          [LIV 2004]                          |
+Kieran Trippier       [TOT 2018]                          |
+Víctor Valdés         [BAR 2008, BAR 2010]                |
+Federico Valverde     [RMA 2021]                          |
+Raphaël Varane        [RMA 2016, RMA 2017]                |
+Jan Vertonghen        [TOT 2018]                          |
+Nemanja Vidić         [MUN 2007]                          |
+David Villa           [BAR 2010]                          |
+Roman Weidenfeller    [BVB 2012]                          |
+Georginio Wijnaldum   [LIV 2018]                          |
+Harry Winks           [TOT 2018]                          |
+Xavi                  [BAR 2008, BAR 2010]                |
+Javier Zanetti        [INT 2009]                          |

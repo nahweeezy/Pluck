@@ -625,5 +625,38 @@
       { "name": "Gabriel Jesus", "position": "ST", "number": 9, "sofascore_id": 794839 },
       { "name": "Raheem Sterling", "position": "LW", "number": 7, "sofascore_id": 138534 }
     ]
+  },
+  {
+    "id": "2021-serie-a-milan-atalanta",
+    "sport": "soccer",
+    "league": "serie_a",
+    "team": "AC Milan",
+    "team_short": "MIL",
+    "season": "2020-21",
+    "formation": "4-2-3-1",
+    "accent": "#fb090b",
+    "verified": false,
+    "match": {
+      "date": "2021-05-23",
+      "competition": "Serie A",
+      "opponent": "Atalanta",
+      "opponent_short": "ATA",
+      "venue": "Gewiss Stadium, Bergamo",
+      "result": "W 2-0"
+    },
+    "notes": "Final-day win that sealed Milan's return to the Champions League after a seven-season absence. Kessié scored both goals from the penalty spot (43', 90'+3').",
+    "lineup": [
+      { "name": "Gianluigi Donnarumma", "position": "GK", "number": 99, "sofascore_id": 824509 },
+      { "name": "Davide Calabria", "position": "RB", "number": 2, "sofascore_id": 318607 },
+      { "name": "Simon Kjær", "position": "CB", "number": 24, "sofascore_id": 21535 },
+      { "name": "Fikayo Tomori", "position": "CB", "number": 23, "sofascore_id": 788255 },
+      { "name": "Theo Hernández", "position": "LB", "number": 19, "sofascore_id": 788027 },
+      { "name": "Franck Kessié", "position": "CM", "number": 79, "sofascore_id": 359226 },
+      { "name": "Ismaël Bennacer", "position": "CM", "number": 4, "sofascore_id": 823733 },
+      { "name": "Alexis Saelemaekers", "position": "RW", "number": 56, "sofascore_id": 901891 },
+      { "name": "Hakan Çalhanoğlu", "position": "CAM", "number": 10, "sofascore_id": 135700 },
+      { "name": "Brahim Díaz", "position": "LW", "number": 21, "sofascore_id": 835485 },
+      { "name": "Rafael Leão", "position": "ST", "number": 17, "sofascore_id": 851284 }
+    ]
   }
 ]

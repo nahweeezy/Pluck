@@ -24,6 +24,7 @@
                 bundesliga:     'Bundesliga',
                 serie_a:        'Serie A',
                 ligue_1:        'Ligue 1',
+                world_cup:      'World Cup',
             },
         },
     };

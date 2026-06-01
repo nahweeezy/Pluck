@@ -658,5 +658,38 @@
       { "name": "Brahim Díaz", "position": "LW", "number": 21, "sofascore_id": 835485 },
       { "name": "Rafael Leão", "position": "ST", "number": 17, "sofascore_id": 851284 }
     ]
+  },
+  {
+    "id": "2010-world-cup-netherlands-uruguay",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Netherlands",
+    "team_short": "NED",
+    "season": "2010",
+    "formation": "4-2-3-1",
+    "accent": "#ff6600",
+    "verified": false,
+    "match": {
+      "date": "2010-07-06",
+      "competition": "FIFA World Cup",
+      "opponent": "Uruguay",
+      "opponent_short": "URU",
+      "venue": "Cape Town Stadium, Cape Town",
+      "result": "W 3-2"
+    },
+    "notes": "2010 World Cup semifinal. Van Bronckhorst opened the scoring with one of the greatest World Cup goals ever. Netherlands advanced to the final to face Spain.",
+    "lineup": [
+      { "name": "Maarten Stekelenburg", "position": "GK", "number": 1, "sofascore_id": 1941 },
+      { "name": "Khalid Boulahrouz", "position": "RB", "number": 12, "sofascore_id": 238 },
+      { "name": "Johnny Heitinga", "position": "CB", "number": 3, "sofascore_id": 1890 },
+      { "name": "Joris Mathijsen", "position": "CB", "number": 4, "sofascore_id": 1422536 },
+      { "name": "Giovanni van Bronckhorst", "position": "LB", "number": 5, "sofascore_id": 12800 },
+      { "name": "Mark van Bommel", "position": "DM", "number": 6, "sofascore_id": 2495 },
+      { "name": "Demy de Zeeuw", "position": "DM", "number": 14, "sofascore_id": 10172 },
+      { "name": "Arjen Robben", "position": "RW", "number": 11, "sofascore_id": 30037 },
+      { "name": "Wesley Sneijder", "position": "CAM", "number": 10, "sofascore_id": 1934 },
+      { "name": "Dirk Kuyt", "position": "LW", "number": 7, "sofascore_id": 2221 },
+      { "name": "Robin van Persie", "position": "ST", "number": 9, "sofascore_id": 1 }
+    ]
   }
 ]

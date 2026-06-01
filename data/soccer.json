@@ -757,5 +757,38 @@
       { "name": "Youssef En-Nesyri", "position": "ST", "number": 19, "sofascore_id": 846470 },
       { "name": "Hakim Ziyech", "position": "LW", "number": 7, "sofascore_id": 249437 }
     ]
+  },
+  {
+    "id": "2017-premier-league-burnley-chelsea",
+    "sport": "soccer",
+    "league": "premier_league",
+    "team": "Burnley",
+    "team_short": "BUR",
+    "season": "2017-18",
+    "formation": "4-4-1-1",
+    "accent": "#6c1d45",
+    "verified": false,
+    "match": {
+      "date": "2017-08-12",
+      "competition": "Premier League",
+      "opponent": "Chelsea",
+      "opponent_short": "CHE",
+      "venue": "Stamford Bridge, London",
+      "result": "W 3-2"
+    },
+    "notes": "Opening weekend of 2017-18. A stunning away win at Stamford Bridge — Vokes scored twice and Ward added a third. One of the biggest upsets of that Premier League season.",
+    "lineup": [
+      { "name": "Tom Heaton", "position": "GK", "number": 1, "sofascore_id": 18122 },
+      { "name": "Matthew Lowton", "position": "RB", "number": 2, "sofascore_id": 67507 },
+      { "name": "James Tarkowski", "position": "CB", "number": 5, "sofascore_id": 145188 },
+      { "name": "Ben Mee", "position": "CB", "number": 6, "sofascore_id": 137774 },
+      { "name": "Stephen Ward", "position": "LB", "number": 23, "sofascore_id": 20752 },
+      { "name": "Johann Berg Guðmundsson", "position": "RM", "number": 17, "sofascore_id": 49805 },
+      { "name": "Steven Defour", "position": "CM", "number": 16, "sofascore_id": 5942 },
+      { "name": "Jack Cork", "position": "CM", "number": 4, "sofascore_id": 20993 },
+      { "name": "Robbie Brady", "position": "LM", "number": 12, "sofascore_id": 267621 },
+      { "name": "Jeff Hendrick", "position": "SS", "number": 13, "sofascore_id": 115441 },
+      { "name": "Sam Vokes", "position": "ST", "number": 9, "sofascore_id": 19633 }
+    ]
   }
 ]

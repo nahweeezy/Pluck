@@ -287,21 +287,25 @@
         const sec = String(s % 60).padStart(2, '0');
         return `${h}:${m}:${sec}`;
     }
+    // All three formatters build the Date from Date.UTC() so we treat the
+    // YYYY-MM-DD as a pure calendar date (no time-of-day). We MUST also pin
+    // toLocaleDateString to UTC, otherwise a viewer in a negative offset
+    // (the Americas) sees the date shift back a day.
     function formatHumanDate(key) {
         const [y, m, d] = key.split('-').map(Number);
         const date = new Date(Date.UTC(y, m - 1, d));
-        return date.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+        return date.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
     }
     function formatCoverDate(key) {
         const [y, m, d] = key.split('-').map(Number);
         const date = new Date(Date.UTC(y, m - 1, d));
-        return date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).toUpperCase();
+        return date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).toUpperCase();
     }
     function formatMatchDate(iso) {
         if (!iso) return '';
         const [y, m, d] = iso.split('-').map(Number);
         const date = new Date(Date.UTC(y, m - 1, d));
-        return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
+        return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).toUpperCase();
     }
     function editionNumber(key) {
         const [y, m, d] = key.split('-').map(Number);

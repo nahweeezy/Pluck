@@ -592,5 +592,38 @@
       { "name": "Erling Haaland", "position": "ST", "number": 9, "sofascore_id": 839956 },
       { "name": "Jack Grealish", "position": "LW", "number": 10, "sofascore_id": 189061 }
     ]
+  },
+  {
+    "id": "2020-premier-league-man-city-arsenal",
+    "sport": "soccer",
+    "league": "premier_league",
+    "team": "Manchester City",
+    "team_short": "MCI",
+    "season": "2019-20",
+    "formation": "4-3-3",
+    "accent": "#6cabdd",
+    "verified": true,
+    "match": {
+      "date": "2020-06-17",
+      "competition": "Premier League",
+      "opponent": "Arsenal",
+      "opponent_short": "ARS",
+      "venue": "Etihad Stadium, Manchester",
+      "result": "W 3-0"
+    },
+    "notes": "Iconic Premier League restart after the COVID-19 shutdown.",
+    "lineup": [
+      { "name": "Ederson", "position": "GK", "number": 31, "sofascore_id": 254491 },
+      { "name": "Kyle Walker", "position": "RB", "number": 2, "sofascore_id": 44614 },
+      { "name": "Eric García", "position": "CB", "number": 50, "sofascore_id": 876214 },
+      { "name": "Aymeric Laporte", "position": "CB", "number": 14, "sofascore_id": 149734 },
+      { "name": "Benjamin Mendy", "position": "LB", "number": 22, "sofascore_id": 139225 },
+      { "name": "İlkay Gündoğan", "position": "CM", "number": 8, "sofascore_id": 45853 },
+      { "name": "David Silva", "position": "CM", "number": 21, "sofascore_id": 11781 },
+      { "name": "Kevin De Bruyne", "position": "CM", "number": 17, "sofascore_id": 70996 },
+      { "name": "Riyad Mahrez", "position": "RW", "number": 26, "sofascore_id": 158213 },
+      { "name": "Gabriel Jesus", "position": "ST", "number": 9, "sofascore_id": 794839 },
+      { "name": "Raheem Sterling", "position": "LW", "number": 7, "sofascore_id": 138534 }
+    ]
   }
 ]

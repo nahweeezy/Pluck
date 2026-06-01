@@ -691,5 +691,38 @@
       { "name": "Dirk Kuyt", "position": "LW", "number": 7, "sofascore_id": 2221 },
       { "name": "Robin van Persie", "position": "ST", "number": 9, "sofascore_id": 1 }
     ]
+  },
+  {
+    "id": "2015-premier-league-southampton-man-utd",
+    "sport": "soccer",
+    "league": "premier_league",
+    "team": "Southampton",
+    "team_short": "SOU",
+    "season": "2014-15",
+    "formation": "4-3-3",
+    "accent": "#d71920",
+    "verified": false,
+    "match": {
+      "date": "2015-01-11",
+      "competition": "Premier League",
+      "opponent": "Manchester United",
+      "opponent_short": "MUN",
+      "venue": "Old Trafford, Manchester",
+      "result": "W 1-0"
+    },
+    "notes": "Tadić's 69th-minute goal won it at Old Trafford. Part of Southampton's brilliant 2014-15 season under Ronald Koeman.",
+    "lineup": [
+      { "name": "Fraser Forster", "position": "GK", "number": 23, "sofascore_id": 19314 },
+      { "name": "Nathaniel Clyne", "position": "RB", "number": 2, "sofascore_id": 43215 },
+      { "name": "Toby Alderweireld", "position": "CB", "number": 17, "sofascore_id": 44575 },
+      { "name": "José Fonte", "position": "CB", "number": 6, "sofascore_id": 27622 },
+      { "name": "Ryan Bertrand", "position": "LB", "number": 21, "sofascore_id": 20756 },
+      { "name": "Steven Davis", "position": "CM", "number": 8, "sofascore_id": 559 },
+      { "name": "Victor Wanyama", "position": "CM", "number": 12, "sofascore_id": 45956 },
+      { "name": "Morgan Schneiderlin", "position": "CM", "number": 4, "sofascore_id": 27009 },
+      { "name": "James Ward-Prowse", "position": "RW", "number": 16, "sofascore_id": 161717 },
+      { "name": "Graziano Pellè", "position": "ST", "number": 19, "sofascore_id": 11601 },
+      { "name": "Eljero Elia", "position": "LW", "number": 22, "sofascore_id": 10668 }
+    ]
   }
 ]

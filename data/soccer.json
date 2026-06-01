@@ -724,5 +724,38 @@
       { "name": "Graziano Pellè", "position": "ST", "number": 19, "sofascore_id": 11601 },
       { "name": "Eljero Elia", "position": "LW", "number": 22, "sofascore_id": 10668 }
     ]
+  },
+  {
+    "id": "2022-world-cup-morocco-spain",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Morocco",
+    "team_short": "MAR",
+    "season": "2022",
+    "formation": "4-3-3",
+    "accent": "#006233",
+    "verified": false,
+    "match": {
+      "date": "2022-12-06",
+      "competition": "FIFA World Cup",
+      "opponent": "Spain",
+      "opponent_short": "ESP",
+      "venue": "Education City Stadium, Al Rayyan",
+      "result": "W 0-0 (PEN 3-0)"
+    },
+    "notes": "2022 World Cup Round of 16. Morocco became the first African nation to reach the quarterfinals since Ghana 2010. Spain missed all three penalties — Sarabia, Soler, and Busquets.",
+    "lineup": [
+      { "name": "Yassine Bounou", "position": "GK", "number": 1, "sofascore_id": 360938 },
+      { "name": "Noussair Mazraoui", "position": "RB", "number": 3, "sofascore_id": 847030 },
+      { "name": "Nayef Aguerd", "position": "CB", "number": 5, "sofascore_id": 877102 },
+      { "name": "Romain Saiss", "position": "CB", "number": 6, "sofascore_id": 187729 },
+      { "name": "Achraf Hakimi", "position": "LB", "number": 2, "sofascore_id": 814594 },
+      { "name": "Sofyan Amrabat", "position": "DM", "number": 4, "sofascore_id": 359272 },
+      { "name": "Azzedine Ounahi", "position": "CM", "number": 8, "sofascore_id": 991421 },
+      { "name": "Selim Amallah", "position": "CM", "number": 15, "sofascore_id": 801211 },
+      { "name": "Sofiane Boufal", "position": "RW", "number": 17, "sofascore_id": 257205 },
+      { "name": "Youssef En-Nesyri", "position": "ST", "number": 19, "sofascore_id": 846470 },
+      { "name": "Hakim Ziyech", "position": "LW", "number": 7, "sofascore_id": 249437 }
+    ]
   }
 ]

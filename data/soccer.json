@@ -790,5 +790,38 @@
       { "name": "Jeff Hendrick", "position": "SS", "number": 13, "sofascore_id": 115441 },
       { "name": "Sam Vokes", "position": "ST", "number": 9, "sofascore_id": 19633 }
     ]
+  },
+  {
+    "id": "2016-championship-aston-villa-cardiff",
+    "sport": "soccer",
+    "league": "championship",
+    "team": "Aston Villa",
+    "team_short": "AVL",
+    "season": "2016-17",
+    "formation": "4-2-3-1",
+    "accent": "#95bfe5",
+    "verified": false,
+    "match": {
+      "date": "2016-11-26",
+      "competition": "EFL Championship",
+      "opponent": "Cardiff City",
+      "opponent_short": "CAR",
+      "venue": "Villa Park, Birmingham",
+      "result": "W 3-1"
+    },
+    "notes": "Championship fixture during Villa's relegation-era rebuild. Adomah, Kodjia, and Gestede (pen, 90') scored. Grealish was Player of the Match — an early glimpse of what was to come.",
+    "lineup": [
+      { "name": "Pierluigi Gollini", "position": "GK", "number": 1, "sofascore_id": 329175 },
+      { "name": "Jordan Amavi", "position": "RB", "number": 23, "sofascore_id": 342915 },
+      { "name": "Nathan Baker", "position": "CB", "number": 2, "sofascore_id": 40699 },
+      { "name": "James Chester", "position": "CB", "number": 12, "sofascore_id": 46347 },
+      { "name": "Alan Hutton", "position": "LB", "number": 21, "sofascore_id": 9329 },
+      { "name": "Mile Jedinak", "position": "DM", "number": 25, "sofascore_id": 24685 },
+      { "name": "Ashley Westwood", "position": "DM", "number": 15, "sofascore_id": 49647 },
+      { "name": "Albert Adomah", "position": "RW", "number": 37, "sofascore_id": 33102 },
+      { "name": "Jack Grealish", "position": "CAM", "number": 40, "sofascore_id": 189061 },
+      { "name": "Jordan Ayew", "position": "LW", "number": 10, "sofascore_id": 103045 },
+      { "name": "Jonathan Kodjia", "position": "ST", "number": 26, "sofascore_id": 123399 }
+    ]
   }
 ]

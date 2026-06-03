@@ -856,5 +856,38 @@
       { "name": "Shinji Okazaki", "position": "ST", "number": 20, "sofascore_id": 19303 },
       { "name": "Jamie Vardy", "position": "ST", "number": 9, "sofascore_id": 173827 }
     ]
+  },
+  {
+    "id": "2018-world-cup-russia-saudi-arabia",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Russia",
+    "team_short": "RUS",
+    "season": "2018",
+    "formation": "4-4-2",
+    "accent": "#d52b1e",
+    "verified": true,
+    "match": {
+      "date": "2018-06-14",
+      "competition": "FIFA World Cup",
+      "opponent": "Saudi Arabia",
+      "opponent_short": "KSA",
+      "venue": "Luzhniki Stadium, Moscow",
+      "result": "W 5-0"
+    },
+    "notes": "2018 World Cup opening match on home soil. Cheryshev came off the bench and scored twice. Golovin (9.4 rating, POTM) capped the rout in stoppage time with a free kick — one of the tournament's breakout performances.",
+    "lineup": [
+      { "name": "Igor Akinfeev", "position": "GK", "number": 1, "sofascore_id": 13274 },
+      { "name": "Mário Fernandes", "position": "RB", "number": 2, "sofascore_id": 146393 },
+      { "name": "Ilya Kutepov", "position": "CB", "number": 3, "sofascore_id": 782502 },
+      { "name": "Sergei Ignashevich", "position": "CB", "number": 4, "sofascore_id": 13303 },
+      { "name": "Alexander Samedov", "position": "LB", "number": 19, "sofascore_id": 13321 },
+      { "name": "Aleksandr Golovin", "position": "RM", "number": 17, "sofascore_id": 318963 },
+      { "name": "Roman Zobnin", "position": "CM", "number": 11, "sofascore_id": 138452 },
+      { "name": "Yury Gazinskiy", "position": "CM", "number": 8, "sofascore_id": 128033 },
+      { "name": "Yury Zhirkov", "position": "LM", "number": 18, "sofascore_id": 13309 },
+      { "name": "Fyodor Smolov", "position": "ST", "number": 10, "sofascore_id": 24601 },
+      { "name": "Alan Dzagoev", "position": "ST", "number": 9, "sofascore_id": 42208 }
+    ]
   }
 ]

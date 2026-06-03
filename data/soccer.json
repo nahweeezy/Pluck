@@ -823,5 +823,38 @@
       { "name": "Jordan Ayew", "position": "LW", "number": 10, "sofascore_id": 103045 },
       { "name": "Jonathan Kodjia", "position": "ST", "number": 26, "sofascore_id": 123399 }
     ]
+  },
+  {
+    "id": "2016-premier-league-leicester-man-city",
+    "sport": "soccer",
+    "league": "premier_league",
+    "team": "Leicester City",
+    "team_short": "LEI",
+    "season": "2015-16",
+    "formation": "4-4-2",
+    "accent": "#003090",
+    "verified": false,
+    "match": {
+      "date": "2016-02-06",
+      "competition": "Premier League",
+      "opponent": "Manchester City",
+      "opponent_short": "MCI",
+      "venue": "Etihad Stadium, Manchester",
+      "result": "W 3-1"
+    },
+    "notes": "A statement win during Leicester's historic title-winning season. Mahrez, Huth (x2) scored. Vardy and Kanté were unplayable. Huth scored twice from set pieces — classic Ranieri Leicester.",
+    "lineup": [
+      { "name": "Kasper Schmeichel", "position": "GK", "number": 1, "sofascore_id": 1076 },
+      { "name": "Danny Simpson", "position": "RB", "number": 17, "sofascore_id": 30502 },
+      { "name": "Wes Morgan", "position": "CB", "number": 5, "sofascore_id": 20375 },
+      { "name": "Robert Huth", "position": "CB", "number": 6, "sofascore_id": 1203 },
+      { "name": "Christian Fuchs", "position": "LB", "number": 28, "sofascore_id": 1262 },
+      { "name": "Riyad Mahrez", "position": "RM", "number": 26, "sofascore_id": 158213 },
+      { "name": "Danny Drinkwater", "position": "CM", "number": 4, "sofascore_id": 54330 },
+      { "name": "N'Golo Kanté", "position": "CM", "number": 14, "sofascore_id": 234148 },
+      { "name": "Marc Albrighton", "position": "LM", "number": 11, "sofascore_id": 47737 },
+      { "name": "Shinji Okazaki", "position": "ST", "number": 20, "sofascore_id": 19303 },
+      { "name": "Jamie Vardy", "position": "ST", "number": 9, "sofascore_id": 173827 }
+    ]
   }
 ]

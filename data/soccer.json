@@ -889,5 +889,38 @@
       { "name": "Fyodor Smolov", "position": "ST", "number": 10, "sofascore_id": 24601 },
       { "name": "Alan Dzagoev", "position": "ST", "number": 9, "sofascore_id": 42208 }
     ]
+  },
+  {
+    "id": "2018-la-liga-sevilla-real-madrid",
+    "sport": "soccer",
+    "league": "la_liga",
+    "team": "Sevilla",
+    "team_short": "SEV",
+    "season": "2017-18",
+    "formation": "4-2-3-1",
+    "accent": "#d71a21",
+    "verified": true,
+    "match": {
+      "date": "2018-05-09",
+      "competition": "La Liga",
+      "opponent": "Real Madrid",
+      "opponent_short": "RMA",
+      "venue": "Ramón Sánchez Pizjuán, Seville",
+      "result": "W 3-2"
+    },
+    "notes": "Sergio Ramos scored an OG and then equalised with a 90'+5 pen to make it 3-2 — but Sevilla held on. Ben Yedder and Layún also scored. Asensio was POTM despite being on the losing side.",
+    "lineup": [
+      { "name": "David Soria", "position": "GK", "number": 13, "sofascore_id": 604258 },
+      { "name": "Gabriel Mercado", "position": "RB", "number": 25, "sofascore_id": 128376 },
+      { "name": "Clément Lenglet", "position": "CB", "number": 5, "sofascore_id": 580550 },
+      { "name": "Nicolás Pareja", "position": "CB", "number": 21, "sofascore_id": 17803 },
+      { "name": "Miguel Layún", "position": "LB", "number": 3, "sofascore_id": 80008 },
+      { "name": "Steven N'Zonzi", "position": "DM", "number": 15, "sofascore_id": 51652 },
+      { "name": "Franco Vázquez", "position": "DM", "number": 22, "sofascore_id": 215246 },
+      { "name": "Luis Muriel", "position": "RW", "number": 20, "sofascore_id": 119242 },
+      { "name": "Guido Pizarro", "position": "CAM", "number": 14, "sofascore_id": 107398 },
+      { "name": "Sergio Escudero", "position": "LW", "number": 18, "sofascore_id": 88859 },
+      { "name": "Wissam Ben Yedder", "position": "ST", "number": 9, "sofascore_id": 119192 }
+    ]
   }
 ]

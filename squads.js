@@ -27,6 +27,7 @@
                 world_cup:       'World Cup',
                 championship:    'Championship',
                 coupe_de_france: 'Coupe de France',
+                champions_league:'Champions League',
             },
         },
     };
@@ -471,8 +472,21 @@
             { top: 30, left: 50, pos: ['CAM','SS'] },
             { top: 14, left: 50, pos: ['ST','CF'] },
         ],
+        '4-1-4-1': [
+            { top: 92, left: 50, pos: ['GK'] },
+            { top: 75, left: 12, pos: ['LB','LWB'] },
+            { top: 75, left: 36, pos: ['CB'] },
+            { top: 75, left: 64, pos: ['CB'] },
+            { top: 75, left: 88, pos: ['RB','RWB'] },
+            { top: 56, left: 50, pos: ['DM','CM'] },
+            { top: 36, left: 12, pos: ['LM','LW'] },
+            { top: 36, left: 38, pos: ['CM','CAM'] },
+            { top: 36, left: 62, pos: ['CM','CAM'] },
+            { top: 36, left: 88, pos: ['RM','RW'] },
+            { top: 16, left: 50, pos: ['ST','CF'] },
+        ],
     };
-    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','3-5-2','3-4-3','3-4-2-1','4-4-1-1'];
+    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','4-1-4-1','4-4-1-1','3-5-2','3-4-3','3-4-2-1'];
     const FALLBACK_FORMATION = '4-3-3';
     const layoutForFormation = (f) => FORMATIONS[f] || FORMATIONS[FALLBACK_FORMATION];
     const slotFits = (playerPos, slotPosArr) => !!playerPos && slotPosArr.includes(playerPos);

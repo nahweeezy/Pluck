@@ -955,5 +955,38 @@
       { "name": "Kevin Volland", "position": "ST", "number": 31, "sofascore_id": 117373 },
       { "name": "Wissam Ben Yedder", "position": "ST", "number": 9, "sofascore_id": 119192 }
     ]
+  },
+  {
+    "id": "2010-ucl-arsenal-porto",
+    "sport": "soccer",
+    "league": "champions_league",
+    "team": "Arsenal",
+    "team_short": "ARS",
+    "season": "2009-10",
+    "formation": "4-1-4-1",
+    "accent": "#ef0107",
+    "verified": true,
+    "match": {
+      "date": "2010-03-09",
+      "competition": "UEFA Champions League",
+      "opponent": "Porto",
+      "opponent_short": "POR",
+      "venue": "Emirates Stadium, London",
+      "result": "W 5-0 (Agg. 6-2)"
+    },
+    "notes": "UCL Round of 16 second leg. Arsenal overturned a 2-1 first leg deficit with a stunning 5-0. Bendtner hat-trick (9', 25', 90'+1 pen) — one of the great individual UCL performances of the era. Nasri and Eboué also scored.",
+    "lineup": [
+      { "name": "Manuel Almunia", "position": "GK", "number": 1, "sofascore_id": 521 },
+      { "name": "Bacary Sagna", "position": "RB", "number": 3, "sofascore_id": 1053 },
+      { "name": "Thomas Vermaelen", "position": "CB", "number": 5, "sofascore_id": 1954 },
+      { "name": "Sol Campbell", "position": "CB", "number": 31, "sofascore_id": 520 },
+      { "name": "Gaël Clichy", "position": "LB", "number": 22, "sofascore_id": 532 },
+      { "name": "Alex Song", "position": "CDM", "number": 17, "sofascore_id": 12987 },
+      { "name": "Andrey Arshavin", "position": "RM", "number": 23, "sofascore_id": 10906 },
+      { "name": "Samir Nasri", "position": "CM", "number": 8, "sofascore_id": 3544 },
+      { "name": "Abou Diaby", "position": "CM", "number": 2, "sofascore_id": 1006 },
+      { "name": "Tomáš Rosický", "position": "LM", "number": 7, "sofascore_id": 108 },
+      { "name": "Nicklas Bendtner", "position": "ST", "number": 52, "sofascore_id": 14049 }
+    ]
   }
 ]

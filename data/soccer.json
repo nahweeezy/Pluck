@@ -922,5 +922,38 @@
       { "name": "Sergio Escudero", "position": "LW", "number": 18, "sofascore_id": 88859 },
       { "name": "Wissam Ben Yedder", "position": "ST", "number": 9, "sofascore_id": 119192 }
     ]
+  },
+  {
+    "id": "2021-coupe-de-france-monaco-lyon",
+    "sport": "soccer",
+    "league": "coupe_de_france",
+    "team": "AS Monaco",
+    "team_short": "MON",
+    "season": "2020-21",
+    "formation": "4-4-2",
+    "accent": "#e8152b",
+    "verified": true,
+    "match": {
+      "date": "2021-04-21",
+      "competition": "Coupe de France",
+      "opponent": "Lyon",
+      "opponent_short": "LYO",
+      "venue": "Groupama Stadium, Lyon",
+      "result": "W 2-0"
+    },
+    "notes": "Coupe de France semifinal. Ben Yedder opened from the spot (54') and Volland sealed it (61'). Tchouaméni and Fofana in the same midfield — both would go on to Real Madrid within two years.",
+    "lineup": [
+      { "name": "Radosław Majecki", "position": "GK", "number": 1, "sofascore_id": 849114 },
+      { "name": "Ruben Aguilar", "position": "RB", "number": 26, "sofascore_id": 579576 },
+      { "name": "Axel Disasi", "position": "CB", "number": 20, "sofascore_id": 827243 },
+      { "name": "Benoît Badiashile", "position": "CB", "number": 32, "sofascore_id": 904827 },
+      { "name": "Caio Henrique", "position": "LB", "number": 12, "sofascore_id": 845170 },
+      { "name": "Sofiane Diop", "position": "RM", "number": 37, "sofascore_id": 944164 },
+      { "name": "Youssouf Fofana", "position": "CM", "number": 22, "sofascore_id": 945062 },
+      { "name": "Aurélien Tchouaméni", "position": "CM", "number": 8, "sofascore_id": 859025 },
+      { "name": "Fodé Ballo-Touré", "position": "LM", "number": 2, "sofascore_id": 788170 },
+      { "name": "Kevin Volland", "position": "ST", "number": 31, "sofascore_id": 117373 },
+      { "name": "Wissam Ben Yedder", "position": "ST", "number": 9, "sofascore_id": 119192 }
+    ]
   }
 ]

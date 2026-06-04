@@ -988,5 +988,38 @@
       { "name": "Tomáš Rosický", "position": "LM", "number": 7, "sofascore_id": 108 },
       { "name": "Nicklas Bendtner", "position": "ST", "number": 52, "sofascore_id": 14049 }
     ]
+  },
+  {
+    "id": "2017-premier-league-west-ham-burnley",
+    "sport": "soccer",
+    "league": "premier_league",
+    "team": "West Ham United",
+    "team_short": "WHU",
+    "season": "2016-17",
+    "formation": "3-4-3",
+    "accent": "#7a263a",
+    "verified": true,
+    "match": {
+      "date": "2017-05-21",
+      "competition": "Premier League",
+      "opponent": "Burnley",
+      "opponent_short": "BUR",
+      "venue": "Turf Moor, Burnley",
+      "result": "W 2-1"
+    },
+    "notes": "Final day of the 2016-17 season. Feghouli (27') and Ayew (72') won it for West Ham. Slaven Bilić's side finishing a turbulent first season at the London Stadium.",
+    "lineup": [
+      { "name": "Adrián", "position": "GK", "number": 13, "sofascore_id": 50539 },
+      { "name": "Sam Byram", "position": "RWB", "number": 22, "sofascore_id": 254713 },
+      { "name": "José Fonte", "position": "CB", "number": 23, "sofascore_id": 27622 },
+      { "name": "James Collins", "position": "CB", "number": 19, "sofascore_id": 9729 },
+      { "name": "Angelo Ogbonna", "position": "CB", "number": 21, "sofascore_id": 21164 },
+      { "name": "Aaron Cresswell", "position": "LWB", "number": 3, "sofascore_id": 43443 },
+      { "name": "Robert Snodgrass", "position": "RM", "number": 11, "sofascore_id": 9127 },
+      { "name": "Edimilson Fernandes", "position": "CM", "number": 31, "sofascore_id": 330099 },
+      { "name": "Manuel Lanzini", "position": "CM", "number": 10, "sofascore_id": 220315 },
+      { "name": "Sofiane Feghouli", "position": "LM", "number": 7, "sofascore_id": 37240 },
+      { "name": "André Ayew", "position": "ST", "number": 20, "sofascore_id": 27035 }
+    ]
   }
 ]

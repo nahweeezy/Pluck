@@ -388,12 +388,13 @@ button.pcard { cursor: pointer; font: inherit; }
 .pcard .pc-top { display: flex; align-items: stretch; justify-content: space-between; border-bottom: 1px solid var(--line); position: relative; z-index: 2; }
 .pcard .pc-num { font-family: var(--display); font-weight: 700; font-size: 15px; padding: 1px 5px; line-height: 1.3; }
 .pcard .pc-pos { font-family: var(--mono); font-size: 7.5px; letter-spacing: 0.06em; color: var(--paper); background: var(--ink); padding: 3px 4px; align-self: stretch; display: flex; align-items: center; }
-/* Source-match context (team_short + season) — small stack in the middle of pc-top. */
+/* Source-match context (team_short + season) — small stack in the middle of pc-top.
+   Top padding clears the 4px accent strip so the club name doesn't kiss the colour. */
 .pcard .pc-meta {
   display: flex; flex-direction: column;
   justify-content: center; align-items: flex-start;
   flex: 1; min-width: 0;
-  padding: 1px 4px;
+  padding: 6px 4px 1px 4px;
   line-height: 1;
   gap: 1px;
   overflow: hidden;

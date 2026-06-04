@@ -204,6 +204,17 @@
 
         const top = el('div', 'pc-top');
         top.appendChild(el('span', 'pc-num num', player.number != null ? String(player.number) : '–'));
+
+        // Source-match context: which team this card "is" + its season.
+        // Stacked compact in the middle of the top bar so the user can tell
+        // their City Mahrez (2019-20) from their Leicester Mahrez (2015-16).
+        if (team && (team.team_short || team.season)) {
+            const meta = el('div', 'pc-meta');
+            if (team.team_short) meta.appendChild(el('span', 'pc-team', team.team_short));
+            if (team.season)     meta.appendChild(el('span', 'pc-year', team.season));
+            top.appendChild(meta);
+        }
+
         top.appendChild(el('span', 'pc-pos', player.position || ''));
         card.appendChild(top);
 

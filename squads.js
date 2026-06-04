@@ -63,6 +63,17 @@
             .trim();
     }
 
+    // Position synonyms — common alternate codes that resolve to the engine's
+    // canonical position for matching, display, and scoring. Add aliases here
+    // as data conventions grow (e.g. CF -> ST if you ever use CF in source data).
+    const POS_ALIASES = {
+        CDM: 'DM',
+    };
+    function normalizePos(pos) {
+        if (!pos) return pos;
+        return POS_ALIASES[pos] || pos;
+    }
+
     // ── Background removal for SofaScore headshots ───────────────
     // Flood-fill from the four edges, knocking near-white pixels to alpha 0.
     // Interior whites (teeth, shirts) survive because they aren't connected
@@ -510,7 +521,16 @@
         if (!cfg) throw new Error(`Unknown sport: ${sport}`);
         const res = await fetch(cfg.file, { cache: 'no-cache' });
         if (!res.ok) throw new Error(`Failed to load ${cfg.file}`);
-        return res.json();
+        const data = await res.json();
+        // Resolve position synonyms once at the boundary so the rest of the
+        // engine (slot fit, source XI assignment, scoring, display) sees only
+        // canonical codes. CDM -> DM today; more aliases can be added above.
+        (data || []).forEach(team => {
+            (team.lineup || []).forEach(p => {
+                if (p && p.position) p.position = normalizePos(p.position);
+            });
+        });
+        return data;
     }
 
     function buildSequence(teams, sport, mode, totalRounds) {

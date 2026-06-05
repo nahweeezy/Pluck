@@ -61,7 +61,17 @@ It ships **18 verified UCL Final starting XIs from 2005–2023**, including both
 
 ### Player faces
 
-When a player has an optional `sofascore_id` field, the game pulls that player's portrait from SofaScore, runs it through a **canvas flood-fill** from the corners to knock the white background out to alpha 0, and renders the silhouette inside a round FIFA-card frame. Interior whites (teeth, eye whites, white shirts) are preserved because the flood only spreads through pixels connected to the corners. No `sofascore_id` → the card falls back to a stylized initials watermark.
+When a player has an optional `sofascore_id` field, the game shows that player's portrait inside the card, run through a **canvas flood-fill** from the corners that knocks the white background out to alpha 0 (interior whites — teeth, eye whites, shirts — survive because the flood only spreads through pixels connected to the edges). No `sofascore_id`, or no cached image → the card falls back to a stylized ink monogram of the player's initials.
+
+**Portraits are served locally from [`faces/`](faces/), not hotlinked.** SofaScore's image API now returns `403 Forbidden` to hotlinked/runtime requests (and to datacenter IPs in general), so the game no longer calls it live. Instead you cache the images once:
+
+```
+node scripts/fetch_faces.mjs
+```
+
+[`scripts/fetch_faces.mjs`](scripts/fetch_faces.mjs) reads every `sofascore_id` in `soccer.json`, downloads each portrait one-at-a-time with a polite delay (so it doesn't trip the rate-limiter), and saves them to `faces/{id}.png`. Run it on a **normal/residential connection** — cloud/datacenter IPs are the ones SofaScore blocks. It's resumable (existing files are skipped) and tunable (`DELAY_MS=900 node scripts/fetch_faces.mjs`). Then commit the `faces/` folder so the deployed site serves them as static files. The game loads `faces/{id}.png` same-origin, so there's no CORS taint and the background-removal works on them directly.
+
+> Note: this caches copyrighted SofaScore portraits into the repo. That's a deliberate choice for this project; if you'd rather not redistribute them, keep `faces/` out of version control and the game will simply show monograms.
 
 To find a player's SofaScore ID, open their page on <https://www.sofascore.com> — the URL ends with the numeric ID, e.g. `/football/player/cristiano-ronaldo/750` → `750`.
 

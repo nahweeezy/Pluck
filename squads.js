@@ -237,7 +237,10 @@
         const ini = el('span', 'mono-initials', initialsOf(player.name));
         crest.appendChild(ini);
         if (player.sofascore_id) {
-            const url = `https://api.sofascore.com/api/v1/player/${player.sofascore_id}/image`;
+            // Portraits are cached locally in /faces/{id}.png (run
+            // scripts/fetch_faces.mjs to populate). Same-origin → no CORS taint,
+            // no live SofaScore 403s. Missing file → onerror → monogram fallback.
+            const url = `faces/${player.sofascore_id}.png`;
             const img = document.createElement('img');
             img.className = 'pc-face';
             img.alt = player.name;
@@ -825,8 +828,8 @@
             row.type = 'button';
             row.appendChild(el('span', 'ts-num num', p.number != null ? String(p.number) : '–'));
 
-            // Circular face avatar — same flood-fill SofaScore portrait as the
-            // pitch cards (warm-cached); monogram fallback for unmapped players.
+            // Circular face avatar — same locally-cached portrait as the pitch
+            // cards (faces/{id}.png, warm-cached); monogram fallback otherwise.
             const face = el('div', 'ts-face');
             if (p.sofascore_id) {
                 const img = document.createElement('img');
@@ -840,7 +843,7 @@
                 };
                 img.addEventListener('error', setMono);
                 face.appendChild(img);
-                prepareTransparentFace(`https://api.sofascore.com/api/v1/player/${p.sofascore_id}/image`)
+                prepareTransparentFace(`faces/${p.sofascore_id}.png`)
                     .then(processed => { if (processed) img.src = processed; else setMono(); })
                     .catch(setMono);
             } else {

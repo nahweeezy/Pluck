@@ -421,6 +421,7 @@ button.pcard { cursor: pointer; font: inherit; }
   flex: 1; display: flex; align-items: center; justify-content: center;
   font-family: var(--display); font-weight: 700;
   color: var(--ink); position: relative; overflow: hidden;
+  z-index: 2;   /* sits above the iridescent foil (z1) so the face is never tinted */
 }
 .pcard .pc-crest .mono-initials { font-size: clamp(14px, 3vw, 30px); letter-spacing: -0.02em; }
 /* SofaScore face cutout (transparent PNG produced by the canvas flood-fill).
@@ -445,9 +446,11 @@ button.pcard { cursor: pointer; font: inherit; }
 /* ── Foil laminate layers (sit above the content like a glossy overlay) ── */
 /* Iridescent rainbow sheen. color-dodge means it only brightens the LIGHT
    parts of the monochrome card → "bright areas are iridescent". Position is
-   driven by the cursor via --mx/--my. Invisible until hover. */
+   driven by the cursor via --mx/--my. Invisible until hover. Sits at z1 —
+   BELOW the crest/face/chrome — so it shimmers in the background around the
+   player silhouette but never tints the face itself. */
 .pcard::before {
-  content: ""; position: absolute; inset: 0; z-index: 4; pointer-events: none;
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
   background:
     repeating-linear-gradient(
       115deg,
@@ -746,11 +749,11 @@ button.pcard { cursor: pointer; font: inherit; }
 .bench-cell:hover .pcard {
   transform: perspective(620px)
              rotateX(var(--tx, 0deg)) rotateY(var(--ty, 0deg))
-             scale(1.14);
+             translateZ(34px) scale(1.2);
   box-shadow:
-    0 16px 34px -8px color-mix(in srgb, var(--club) 55%, transparent),
-    0 0 0 1px color-mix(in srgb, var(--club) 45%, transparent),
-    0 6px 14px rgba(24, 20, 16, 0.28);
+    0 26px 46px -10px color-mix(in srgb, var(--club) 60%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--club) 50%, transparent),
+    0 12px 22px rgba(24, 20, 16, 0.34);
 }
 .slot:hover .pcard::before, .bench-cell:hover .pcard::before { opacity: 0.5; }
 .slot:hover .pcard::after,  .bench-cell:hover .pcard::after  { opacity: 0.85; }

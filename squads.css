@@ -376,11 +376,16 @@ body {
    PLAYER CARD (editorial monogram + optional face cutout)
    ============================================================ */
 .pcard {
+  --club: #6b6256;               /* per-card team colour (set in JS); neutral fallback */
   width: 100%; height: 100%;
-  background: var(--paper);
+  background-color: var(--paper);
+  /* subtle paper-grain noise baked into the base so the foil has texture to catch */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.4'/%3E%3C/svg%3E");
+  background-blend-mode: multiply;
   border: 1.5px solid var(--ink);
   display: flex; flex-direction: column;
   position: relative; overflow: hidden;
+  isolation: isolate;            /* keep the foil/specular blends local to the card */
   box-shadow: 2px 2px 0 rgba(24,20,16,0.35);
   text-align: left;
 }
@@ -423,7 +428,8 @@ button.pcard { cursor: pointer; font: inherit; }
 .pcard .pc-face {
   position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
   width: 116%; height: 116%; object-fit: contain; object-position: bottom center;
-  filter: saturate(.82) contrast(1.04);
+  /* monochrome ink-print look; the foil + specular layers supply all colour */
+  filter: grayscale(1) contrast(1.08) brightness(1.02);
   pointer-events: none;
 }
 .pcard .pc-crest.has-face .mono-initials { display: none; }
@@ -435,6 +441,39 @@ button.pcard { cursor: pointer; font: inherit; }
   background: var(--paper-2); position: relative; z-index: 2;
 }
 .pcard .pc-accent { position: absolute; top: 0; left: 0; right: 0; height: 4px; z-index: 3; }
+
+/* ── Foil laminate layers (sit above the content like a glossy overlay) ── */
+/* Iridescent rainbow sheen. color-dodge means it only brightens the LIGHT
+   parts of the monochrome card → "bright areas are iridescent". Position is
+   driven by the cursor via --mx/--my. Invisible until hover. */
+.pcard::before {
+  content: ""; position: absolute; inset: 0; z-index: 4; pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      115deg,
+      rgba(255,0,128,0.45) 0%, rgba(255,196,0,0.45) 10%, rgba(58,255,162,0.45) 20%,
+      rgba(0,178,255,0.45) 30%, rgba(168,74,255,0.45) 40%, rgba(255,0,128,0.45) 50%
+    );
+  background-size: 280% 280%;
+  background-position: var(--mx, 50%) var(--my, 50%);
+  mix-blend-mode: color-dodge;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* Club-coloured specular hotspot that follows the cursor (screen blend so it
+   reads as light, not paint). Bright club-tinted core → club colour → fade. */
+.pcard::after {
+  content: ""; position: absolute; inset: 0; z-index: 5; pointer-events: none;
+  background: radial-gradient(
+    circle at var(--mx, 50%) var(--my, 50%),
+    color-mix(in srgb, var(--club) 70%, #ffffff) 0%,
+    color-mix(in srgb, var(--club) 60%, transparent) 16%,
+    transparent 42%
+  );
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
 /* card drop-in animation */
 @keyframes cardDrop {
@@ -693,20 +732,30 @@ button.pcard { cursor: pointer; font: inherit; }
    whole column at wide viewports and eat vertical space). */
 .bench { gap: 5px; max-width: 460px; margin: 0 auto; width: 100%; }
 
-/* --- Player-card hover: gentle zoom + lift (works on all screens) --- */
+/* --- Player-card hover: 3D perspective tilt + club glow + foil reveal --- */
 .pcard {
   transition:
-    transform 0.22s var(--ease-out),
-    box-shadow 0.22s var(--ease-out);
+    transform 0.12s ease-out,
+    box-shadow 0.3s var(--ease-out);
   transform-origin: center center;
 }
 .slot:hover, .bench-cell:hover { z-index: 12; }
+/* The tilt follows the cursor: --tx / --ty are written by attachCardFx in JS.
+   perspective() first in the list so the rotation reads as real depth. */
 .slot:hover .pcard,
 .bench-cell:hover .pcard {
-  transform: scale(1.18);
-  box-shadow: 4px 4px 0 var(--ink), 0 10px 26px rgba(24, 20, 16, 0.30);
+  transform: perspective(620px)
+             rotateX(var(--tx, 0deg)) rotateY(var(--ty, 0deg))
+             scale(1.14);
+  box-shadow:
+    0 16px 34px -8px color-mix(in srgb, var(--club) 55%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--club) 45%, transparent),
+    0 6px 14px rgba(24, 20, 16, 0.28);
 }
-/* keep finalize/edit-mode red outline visible even when scaled */
+.slot:hover .pcard::before, .bench-cell:hover .pcard::before { opacity: 0.5; }
+.slot:hover .pcard::after,  .bench-cell:hover .pcard::after  { opacity: 0.85; }
+
+/* keep finalize/edit-mode red outline visible even when scaled/tilted */
 .slot.move-src .pcard, .bench-cell.move-src .pcard {
   outline: 3px solid var(--red); outline-offset: 1px;
 }

@@ -210,6 +210,8 @@
     function buildPlayerCard(player, team) {
         const card = el('div', 'pcard');
         card.title = player.name;
+        // Club colour drives the cursor-tracking specular spotlight + hover glow.
+        if (team && team.accent) card.style.setProperty('--club', team.accent);
 
         const accent = el('div', 'pc-accent');
         accent.style.background = (team && team.accent) || 'var(--ink)';
@@ -252,7 +254,41 @@
         card.appendChild(crest);
 
         card.appendChild(el('div', 'pc-name', lastNameOf(player.name)));
+        attachCardFx(card);
         return card;
+    }
+
+    // Cursor-reactive foil: writes --mx/--my (specular + sheen position) and
+    // --tx/--ty (3D tilt) as the pointer moves over a card. rAF-throttled so
+    // pointermove never thrashes layout. Consumed by the .pcard hover CSS.
+    function attachCardFx(card) {
+        const MAX_TILT = 11; // degrees
+        let raf = 0, mx = 50, my = 50, tx = 0, ty = 0;
+        const apply = () => {
+            raf = 0;
+            card.style.setProperty('--mx', mx.toFixed(1) + '%');
+            card.style.setProperty('--my', my.toFixed(1) + '%');
+            card.style.setProperty('--tx', tx.toFixed(2) + 'deg');
+            card.style.setProperty('--ty', ty.toFixed(2) + 'deg');
+        };
+        card.addEventListener('pointermove', (e) => {
+            const r = card.getBoundingClientRect();
+            if (!r.width || !r.height) return;
+            const px = (e.clientX - r.left) / r.width;   // 0..1 across
+            const py = (e.clientY - r.top) / r.height;   // 0..1 down
+            mx = Math.max(0, Math.min(100, px * 100));
+            my = Math.max(0, Math.min(100, py * 100));
+            ty = (px - 0.5) * 2 * MAX_TILT;   // cursor right → tilt right
+            tx = (0.5 - py) * 2 * MAX_TILT;   // cursor up → tilt back
+            if (!raf) raf = requestAnimationFrame(apply);
+        });
+        card.addEventListener('pointerleave', () => {
+            if (raf) { cancelAnimationFrame(raf); raf = 0; }
+            card.style.setProperty('--mx', '50%');
+            card.style.setProperty('--my', '50%');
+            card.style.setProperty('--tx', '0deg');
+            card.style.setProperty('--ty', '0deg');
+        });
     }
 
     // ── Deterministic RNG (mulberry32) seeded by daily key ───────

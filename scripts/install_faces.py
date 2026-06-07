@@ -42,6 +42,25 @@ KEEP_EXT  = {".png", ".webp"}  # native formats the engine probes directly
 db = json.load(open(DATA_FILE, encoding="utf-8"))
 known_squad_ids = {s["id"] for s in db}
 
+# ──────────────────────────────────────────────────────────────────────
+# 0. Ensure every squad in soccer.json has a folder in faces/.
+#    Self-healing: any new squad you add to the dataset gets its empty
+#    folder + .gitkeep auto-created the next time this script runs, so
+#    you never have to remember to mkdir it by hand.
+# ──────────────────────────────────────────────────────────────────────
+created_folders = 0
+for sq_id in known_squad_ids:
+    folder = os.path.join(FACES_DIR, sq_id)
+    keep   = os.path.join(folder, ".gitkeep")
+    if not os.path.isdir(folder):
+        os.makedirs(folder)
+        created_folders += 1
+    if not os.path.exists(keep):
+        with open(keep, "w", encoding="utf-8") as f:
+            f.write("# Per-squad portrait folder. Drop FM facepack files here.\n")
+if created_folders:
+    print(f"created {created_folders} new squad folder(s) in faces/\n")
+
 
 def install_one(src_path, rel_path):
     """Move a single file from rename/ to faces/, preserving subfolder.

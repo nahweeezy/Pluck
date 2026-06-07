@@ -1,2 +1,0 @@
-# Player portraits are cached here by scripts/fetch_faces.mjs as {sofascore_id}.png
-# Run:  node scripts/fetch_faces.mjs   (on a normal/residential connection)

@@ -63,15 +63,22 @@ It ships **18 verified UCL Final starting XIs from 2005–2023**, including both
 
 When a player has an optional `sofascore_id` field, the game shows that player's portrait inside the card, run through a **canvas flood-fill** from the corners that knocks the white background out to alpha 0 (interior whites — teeth, eye whites, shirts — survive because the flood only spreads through pixels connected to the edges). No `sofascore_id`, or no cached image → the card falls back to a stylized ink monogram of the player's initials.
 
-**Portraits are served locally from [`faces/`](faces/), not hotlinked.** SofaScore's image API now returns `403 Forbidden` to hotlinked/runtime requests (and to datacenter IPs in general), so the game no longer calls it live. Instead you cache the images once:
+**Portraits are served locally from [`faces/`](faces/), not hotlinked.** SofaScore's image API now returns `403 Forbidden` to hotlinked/runtime/scripted requests (it bot-blocks non-browser clients and datacenter IPs), so the game no longer calls it live. Instead you cache the images once and serve them as static files.
+
+Two ways to populate `faces/` — both download to `faces/{id}.png`, both resumable, both must run from a **normal/residential connection** (cloud/datacenter IPs are blocked):
 
 ```
-node scripts/fetch_faces.mjs
+# A) CLI (slow + polite; works if your IP isn't bot-blocked for scripts)
+python scripts/fetch_faces.py            # DELAY=2.5 python scripts/fetch_faces.py to go slower
+
+# B) Browser (highest success rate — runs in your real SofaScore session)
+#    Open https://www.sofascore.com, DevTools → Console, paste scripts/fetch_faces_browser.js.
+#    It zips every portrait → pluck-faces.zip → unzip its contents into faces/.
 ```
 
-[`scripts/fetch_faces.mjs`](scripts/fetch_faces.mjs) reads every `sofascore_id` in `soccer.json`, downloads each portrait one-at-a-time with a polite delay (so it doesn't trip the rate-limiter), and saves them to `faces/{id}.png`. Run it on a **normal/residential connection** — cloud/datacenter IPs are the ones SofaScore blocks. It's resumable (existing files are skipped) and tunable (`DELAY_MS=900 node scripts/fetch_faces.mjs`). Then commit the `faces/` folder so the deployed site serves them as static files. The game loads `faces/{id}.png` same-origin, so there's no CORS taint and the background-removal works on them directly.
+Both read every `sofascore_id` in `soccer.json`. SofaScore aggressively bot-blocks scripted clients, so if the CLI returns a wall of 403s, use route (B) (a real browser session passes their check). Then commit the `faces/` folder. The game loads `faces/{id}.png` same-origin, so there's no CORS taint and the background-removal works on them directly. Missing file → ink-monogram fallback.
 
-> Note: this caches copyrighted SofaScore portraits into the repo. That's a deliberate choice for this project; if you'd rather not redistribute them, keep `faces/` out of version control and the game will simply show monograms.
+> Note: this caches copyrighted SofaScore portraits into the repo — a deliberate choice for this project. If you'd rather not redistribute them, keep `faces/` out of version control and the game simply shows monograms.
 
 To find a player's SofaScore ID, open their page on <https://www.sofascore.com> — the URL ends with the numeric ID, e.g. `/football/player/cristiano-ronaldo/750` → `750`.
 

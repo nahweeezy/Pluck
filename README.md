@@ -63,22 +63,22 @@ It ships **18 verified UCL Final starting XIs from 2005–2023**, including both
 
 When a player has an optional `sofascore_id` field, the game shows that player's portrait inside the card, run through a **canvas flood-fill** from the corners that knocks the white background out to alpha 0 (interior whites — teeth, eye whites, shirts — survive because the flood only spreads through pixels connected to the edges). No `sofascore_id`, or no cached image → the card falls back to a stylized ink monogram of the player's initials.
 
-**Portraits are served locally from [`faces/`](faces/), not hotlinked.** SofaScore's image API now returns `403 Forbidden` to hotlinked/runtime/scripted requests (it bot-blocks non-browser clients and datacenter IPs), so the game no longer calls it live. Instead you cache the images once and serve them as static files.
+**Portraits are served locally from [`faces/`](faces/) as static files** — no live API calls (SofaScore's image API now 403s every hotlinked request, including from a real browser on their own site, so it's not usable anymore).
 
-Two ways to populate `faces/` — both download to `faces/{id}.png`, both resumable, both must run from a **normal/residential connection** (cloud/datacenter IPs are blocked):
+The current pipeline uses **Football Manager facepacks** as the portrait source. Workflow per squad you want to populate:
 
-```
-# A) CLI (slow + polite; works if your IP isn't bot-blocked for scripts)
-python scripts/fetch_faces.py            # DELAY=2.5 python scripts/fetch_faces.py to go slower
+1. In [`data/soccer.json`](data/soccer.json), each player's lineup entry has either an `id` (FM facepack UID) or the legacy `sofascore_id`. The engine reads `id` first, falls back to `sofascore_id`. Set `"id": <FM UID>` for the players you're adding portraits for.
+2. Drop the matching portraits into `faces/rename/` — any mix of `.png` / `.webp` is fine.
+3. Run:
+   ```
+   python scripts/install_faces.py
+   ```
+   It moves the files into `faces/`, normalizes extensions where needed, and **prints a checklist of every player still missing a portrait** (squad-by-squad), so you always know what's left.
+4. Commit `faces/` so the deployed site serves the images as static files.
 
-# B) Browser (highest success rate — runs in your real SofaScore session)
-#    Open https://www.sofascore.com, DevTools → Console, paste scripts/fetch_faces_browser.js.
-#    It zips every portrait → pluck-faces.zip → unzip its contents into faces/.
-```
+The game loads `faces/{id}.png` first, falls back to `faces/{id}.webp` (FM facepacks come in both flavours). Missing file → ink-monogram fallback — the game never breaks for absent portraits.
 
-Both read every `sofascore_id` in `soccer.json`. SofaScore aggressively bot-blocks scripted clients, so if the CLI returns a wall of 403s, use route (B) (a real browser session passes their check). Then commit the `faces/` folder. The game loads `faces/{id}.png` same-origin, so there's no CORS taint and the background-removal works on them directly. Missing file → ink-monogram fallback.
-
-> Note: this caches copyrighted SofaScore portraits into the repo — a deliberate choice for this project. If you'd rather not redistribute them, keep `faces/` out of version control and the game simply shows monograms.
+> Note: FM facepack images are user-redistributable but copyrighted. If you'd rather not commit them, gitignore `faces/` and the game cleanly shows monograms for those players.
 
 To find a player's SofaScore ID, open their page on <https://www.sofascore.com> — the URL ends with the numeric ID, e.g. `/football/player/cristiano-ronaldo/750` → `750`.
 

@@ -19,17 +19,17 @@
     },
     "notes": "The Miracle of Istanbul — 3-0 down at half-time, six-minute comeback for the ages.",
     "lineup": [
-      { "name": "Jerzy Dudek", "position": "GK", "number": 1, "sofascore_id": 696 },
-      { "name": "Steve Finnan", "position": "RB", "number": 3, "sofascore_id": 697 },
-      { "name": "Jamie Carragher", "position": "CB", "number": 23, "sofascore_id": 723 },
-      { "name": "Sami Hyypiä", "position": "CB", "number": 4, "sofascore_id": 698 },
-      { "name": "Djimi Traoré", "position": "LB", "number": 18, "sofascore_id": 719 },
-      { "name": "Luis García", "position": "RM", "number": 10 },
-      { "name": "Xabi Alonso", "position": "CM", "number": 14, "sofascore_id": 708 },
-      { "name": "Steven Gerrard", "position": "CM", "number": 8, "sofascore_id": 701 },
-      { "name": "John Arne Riise", "position": "LM", "number": 6, "sofascore_id": 514 },
-      { "name": "Harry Kewell", "position": "CAM", "number": 7, "sofascore_id": 700 },
-      { "name": "Milan Baroš", "position": "ST", "number": 5, "sofascore_id": 699 }
+      { "name": "Jerzy Dudek", "position": "GK", "number": 1, "id": 44897 },
+      { "name": "Steve Finnan", "position": "RB", "number": 3, "id": 2014394 },
+      { "name": "Jamie Carragher", "position": "CB", "number": 23, "id": 2003693 },
+      { "name": "Sami Hyypiä", "position": "CB", "number": 4, "id": 600430 },
+      { "name": "Djimi Traoré", "position": "LB", "number": 18, "id": 3502324 },
+      { "name": "Luis García", "position": "RM", "number": 10, "id": 2000242170 },
+      { "name": "Xabi Alonso", "position": "CM", "number": 14, "id": 811316 },
+      { "name": "Steven Gerrard", "position": "CM", "number": 8, "id": 108658 },
+      { "name": "John Arne Riise", "position": "LM", "number": 6, "id": 3500697 },
+      { "name": "Harry Kewell", "position": "CAM", "number": 7, "id": 2000280 },
+      { "name": "Milan Baroš", "position": "ST", "number": 5, "id": 132922 }
     ]
   },
   {

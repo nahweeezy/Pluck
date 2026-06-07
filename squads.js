@@ -152,12 +152,30 @@
         }
     }
 
-    async function prepareTransparentFace(url) {
-        if (FACE_CACHE.has(url)) return FACE_CACHE.get(url);
+    // Probe a list of candidate URLs for an image; first one that loads wins.
+    // Returns the loaded HTMLImageElement, or null if none did.
+    async function loadFirstAvailable(urls) {
+        for (const u of urls) {
+            try {
+                const img = await loadImageCors(u);
+                if (img && img.naturalWidth) return img;
+            } catch (_) { /* try next */ }
+        }
+        return null;
+    }
+
+    // Take a player ID (or a literal URL — legacy callers pass URLs).
+    // For an ID, probes faces/{id}.png first, then faces/{id}.webp, so the
+    // FM facepack files keep their native extensions.
+    async function prepareTransparentFace(idOrUrl) {
+        const key = String(idOrUrl);
+        if (FACE_CACHE.has(key)) return FACE_CACHE.get(key);
+        const candidates = /^\d+$/.test(key)
+            ? [`faces/${key}.png`, `faces/${key}.webp`]
+            : [key];
         const promise = (async () => {
-            let img;
-            try { img = await loadImageCors(url); }
-            catch (e) { return null; }
+            const img = await loadFirstAvailable(candidates);
+            if (!img) return null;
             const w = img.naturalWidth, h = img.naturalHeight;
             if (!w || !h) return null;
             const canvas = document.createElement('canvas');
@@ -171,7 +189,7 @@
             ctx.putImageData(pixels, 0, 0);
             return canvas.toDataURL('image/png');
         })();
-        FACE_CACHE.set(url, promise);
+        FACE_CACHE.set(key, promise);
         return promise;
     }
 
@@ -236,11 +254,12 @@
         const crest = el('div', 'pc-crest');
         const ini = el('span', 'mono-initials', initialsOf(player.name));
         crest.appendChild(ini);
-        if (player.sofascore_id) {
-            // Portraits are cached locally in /faces/{id}.png (run
-            // scripts/fetch_faces.mjs to populate). Same-origin → no CORS taint,
-            // no live SofaScore 403s. Missing file → onerror → monogram fallback.
-            const url = `faces/${player.sofascore_id}.png`;
+        // Portraits live in faces/{id}.{png|webp} as same-origin static files
+        // (no live API calls). Engine looks at player.id (FM facepack UID) and
+        // falls back to player.sofascore_id for not-yet-migrated entries.
+        // Missing file → monogram stays visible.
+        const faceId = player.id || player.sofascore_id;
+        if (faceId) {
             const img = document.createElement('img');
             img.className = 'pc-face';
             img.alt = player.name;
@@ -249,7 +268,7 @@
             img.addEventListener('load', () => crest.classList.add('has-face'));
             img.addEventListener('error', () => img.remove());
             crest.appendChild(img);
-            prepareTransparentFace(url).then((processed) => {
+            prepareTransparentFace(faceId).then((processed) => {
                 if (processed) img.src = processed;
                 else           img.remove();
             }).catch(() => img.remove());
@@ -829,9 +848,10 @@
             row.appendChild(el('span', 'ts-num num', p.number != null ? String(p.number) : '–'));
 
             // Circular face avatar — same locally-cached portrait as the pitch
-            // cards (faces/{id}.png, warm-cached); monogram fallback otherwise.
+            // cards (faces/{id}.{png|webp}, warm-cached); monogram fallback otherwise.
             const face = el('div', 'ts-face');
-            if (p.sofascore_id) {
+            const tsFaceId = p.id || p.sofascore_id;
+            if (tsFaceId) {
                 const img = document.createElement('img');
                 img.alt = '';
                 img.decoding = 'async';
@@ -843,7 +863,7 @@
                 };
                 img.addEventListener('error', setMono);
                 face.appendChild(img);
-                prepareTransparentFace(`faces/${p.sofascore_id}.png`)
+                prepareTransparentFace(tsFaceId)
                     .then(processed => { if (processed) img.src = processed; else setMono(); })
                     .catch(setMono);
             } else {

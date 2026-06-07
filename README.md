@@ -65,20 +65,48 @@ When a player has an optional `sofascore_id` field, the game shows that player's
 
 **Portraits are served locally from [`faces/`](faces/) as static files** — no live API calls (SofaScore's image API now 403s every hotlinked request, including from a real browser on their own site, so it's not usable anymore).
 
-The current pipeline uses **Football Manager facepacks** as the portrait source. Workflow per squad you want to populate:
+The current pipeline uses **Football Manager facepacks** as the portrait source, organized so that a player who appears in multiple squads can have a **different portrait per match** (a 2005 Riise card and a hypothetical 2017 Riise card can show his face from each era).
 
-1. In [`data/soccer.json`](data/soccer.json), each player's lineup entry has either an `id` (FM facepack UID) or the legacy `sofascore_id`. The engine reads `id` first, falls back to `sofascore_id`. Set `"id": <FM UID>` for the players you're adding portraits for.
-2. Drop the matching portraits into `faces/rename/` — any mix of `.png` / `.webp` is fine.
+### Layout
+
+```
+faces/
+├── 2005-ucl-final-liverpool/    ← squad-specific portraits for this match
+│   ├── 44897.webp               ← Dudek as he was in 2005
+│   ├── 108658.png               ← Gerrard 2005
+│   └── …
+├── 2019-ucl-final-liverpool/
+│   └── …                        ← e.g. Henderson, Salah — distinct from any defaults
+├── 108658.png                   ← shared default for Gerrard (any squad without an override)
+└── …
+```
+
+### Engine lookup order, per (squad, player)
+
+1. `faces/{squad-id}/{player-id}.png`  ← squad-specific portrait (preferred)
+2. `faces/{squad-id}/{player-id}.webp`
+3. `faces/{player-id}.png`             ← shared default (any squad)
+4. `faces/{player-id}.webp`
+5. Ink monogram
+
+**You only duplicate when you actually have era-specific photos.** If you only ever source one Gerrard photo, drop it at `faces/108658.png` and it'll serve every Gerrard card. The day you find a different photo for a specific season, drop it at `faces/{squad-id}/108658.png` and just that squad uses it.
+
+### Workflow per squad you want to populate
+
+1. In [`data/soccer.json`](data/soccer.json), the lineup entry has either an `id` (FM facepack UID) or the legacy `sofascore_id`. The engine reads `id` first, falls back to `sofascore_id`. Set `"id": <FM UID>` for the players you're populating.
+2. Drop the FM-facepack files into either:
+   - **`faces/rename/<squad-id>/<player-id>.png`** for squad-specific portraits, *or*
+   - **`faces/rename/<player-id>.png`** (no subfolder) for shared defaults.
 3. Run:
    ```
    python scripts/install_faces.py
    ```
-   It moves the files into `faces/`, normalizes extensions where needed, and **prints a checklist of every player still missing a portrait** (squad-by-squad), so you always know what's left.
-4. Commit `faces/` so the deployed site serves the images as static files.
+   It moves files into `faces/` (mirroring whichever subfolder you used) and prints a per-squad checklist of every player still missing a portrait.
+4. Commit `faces/` so the deployed site serves them as static files.
 
-The game loads `faces/{id}.png` first, falls back to `faces/{id}.webp` (FM facepacks come in both flavours). Missing file → ink-monogram fallback — the game never breaks for absent portraits.
+The engine probes `.png` then `.webp` at each level — FM facepacks ship both formats, both work, no conversion needed. Missing file → ink-monogram fallback. The game never breaks for absent portraits.
 
-> Note: FM facepack images are user-redistributable but copyrighted. If you'd rather not commit them, gitignore `faces/` and the game cleanly shows monograms for those players.
+> Note: FM facepack images are user-redistributable but copyrighted. If you'd rather not commit them, gitignore `faces/` and the game cleanly shows monograms.
 
 To find a player's SofaScore ID, open their page on <https://www.sofascore.com> — the URL ends with the numeric ID, e.g. `/football/player/cristiano-ronaldo/750` → `750`.
 

@@ -164,15 +164,28 @@
         return null;
     }
 
-    // Take a player ID (or a literal URL — legacy callers pass URLs).
-    // For an ID, probes faces/{id}.png first, then faces/{id}.webp, so the
-    // FM facepack files keep their native extensions.
-    async function prepareTransparentFace(idOrUrl) {
-        const key = String(idOrUrl);
+    // Look up a player's portrait, optionally squad-specific.
+    //
+    // Probes (in order):
+    //   1. faces/{squadId}/{playerId}.png    — squad-specific override
+    //   2. faces/{squadId}/{playerId}.webp
+    //   3. faces/{playerId}.png              — shared default
+    //   4. faces/{playerId}.webp
+    //
+    // Cache key includes squadId so the same playerId rendered for two
+    // different squads gets two distinct cached portraits — no accidental
+    // cross-pollination when a player appears in multiple matches.
+    async function prepareTransparentFace(playerId, squadId) {
+        const key = `${squadId || ''}|${playerId}`;
         if (FACE_CACHE.has(key)) return FACE_CACHE.get(key);
-        const candidates = /^\d+$/.test(key)
-            ? [`faces/${key}.png`, `faces/${key}.webp`]
-            : [key];
+        const id = String(playerId);
+        const candidates = [];
+        if (squadId) {
+            candidates.push(`faces/${squadId}/${id}.png`);
+            candidates.push(`faces/${squadId}/${id}.webp`);
+        }
+        candidates.push(`faces/${id}.png`);
+        candidates.push(`faces/${id}.webp`);
         const promise = (async () => {
             const img = await loadFirstAvailable(candidates);
             if (!img) return null;
@@ -254,10 +267,13 @@
         const crest = el('div', 'pc-crest');
         const ini = el('span', 'mono-initials', initialsOf(player.name));
         crest.appendChild(ini);
-        // Portraits live in faces/{id}.{png|webp} as same-origin static files
-        // (no live API calls). Engine looks at player.id (FM facepack UID) and
-        // falls back to player.sofascore_id for not-yet-migrated entries.
-        // Missing file → monogram stays visible.
+        // Portraits live in faces/[{squad-id}/]{id}.{png|webp} as same-origin
+        // static files. Engine looks at player.id (FM facepack UID), tries the
+        // squad-specific portrait first (faces/{squad-id}/{id}.{ext}) so a
+        // player who shows up in multiple matches can have a different face
+        // per-era, and falls back to the shared default (faces/{id}.{ext}) or
+        // ink monogram. player.sofascore_id is the legacy field for entries
+        // not yet migrated.
         const faceId = player.id || player.sofascore_id;
         if (faceId) {
             const img = document.createElement('img');
@@ -268,7 +284,7 @@
             img.addEventListener('load', () => crest.classList.add('has-face'));
             img.addEventListener('error', () => img.remove());
             crest.appendChild(img);
-            prepareTransparentFace(faceId).then((processed) => {
+            prepareTransparentFace(faceId, team && team.id).then((processed) => {
                 if (processed) img.src = processed;
                 else           img.remove();
             }).catch(() => img.remove());
@@ -863,7 +879,7 @@
                 };
                 img.addEventListener('error', setMono);
                 face.appendChild(img);
-                prepareTransparentFace(tsFaceId)
+                prepareTransparentFace(tsFaceId, team && team.id)
                     .then(processed => { if (processed) img.src = processed; else setMono(); })
                     .catch(setMono);
             } else {

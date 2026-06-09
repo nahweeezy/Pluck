@@ -33,6 +33,15 @@
     };
 
     const STORAGE_KEY = 'nahweeezy-squads-v2';
+    const FACES_PREF_KEY = 'pluck-faces-enabled';   // 'true' | 'false'
+
+    // Default OFF — the game ships with portraits hidden, so cards look
+    // consistent regardless of which squads' images are populated. Users can
+    // flip it on from the cover toggle once the dataset has full coverage.
+    let facesEnabled = (() => {
+        try { return localStorage.getItem(FACES_PREF_KEY) === 'true'; }
+        catch (e) { return false; }
+    })();
     const RESET_TZ = 'America/New_York';
 
     // ── DOM helpers ──────────────────────────────────────────────
@@ -275,7 +284,7 @@
         // ink monogram. player.sofascore_id is the legacy field for entries
         // not yet migrated.
         const faceId = player.id || player.sofascore_id;
-        if (faceId) {
+        if (faceId && facesEnabled) {
             const img = document.createElement('img');
             img.className = 'pc-face';
             img.alt = player.name;
@@ -867,7 +876,7 @@
             // cards (faces/{id}.{png|webp}, warm-cached); monogram fallback otherwise.
             const face = el('div', 'ts-face');
             const tsFaceId = p.id || p.sofascore_id;
-            if (tsFaceId) {
+            if (tsFaceId && facesEnabled) {
                 const img = document.createElement('img');
                 img.alt = '';
                 img.decoding = 'async';
@@ -1166,14 +1175,36 @@
     // ── Bindings ─────────────────────────────────────────────────
 
     function bindAll() {
-        document.querySelectorAll('.mode-btn').forEach(btn => {
+        // Daily / Unlimited mode toggle — scope to the buttons in THIS row only.
+        document.querySelectorAll('.mode-btn[data-mode]').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.mode-btn').forEach(b => {
+                document.querySelectorAll('.mode-btn[data-mode]').forEach(b => {
                     b.classList.remove('active'); b.setAttribute('aria-selected', 'false');
                 });
                 btn.classList.add('active'); btn.setAttribute('aria-selected', 'true');
                 game.mode = btn.dataset.mode;
                 renderCover();
+            });
+        });
+
+        // Portraits On / Off toggle. Flipping it busts the face cache (cached
+        // entries are the previously-processed PNGs from when faces were on)
+        // and re-renders whatever screen is active so cards refresh in place.
+        document.querySelectorAll('.mode-btn[data-faces]').forEach(btn => {
+            // Initial visual state from the persisted preference.
+            const matchesPref = (btn.dataset.faces === 'on') === facesEnabled;
+            btn.classList.toggle('active', matchesPref);
+            btn.addEventListener('click', () => {
+                facesEnabled = (btn.dataset.faces === 'on');
+                try { localStorage.setItem(FACES_PREF_KEY, String(facesEnabled)); } catch (e) {}
+                document.querySelectorAll('.mode-btn[data-faces]').forEach(b => {
+                    b.classList.toggle('active', b === btn);
+                });
+                FACE_CACHE.clear();
+                // Re-render whichever screen has cards on it right now.
+                if (!$('screenGame').hidden)      renderRound();
+                if (!$('screenFinalize').hidden)  renderFinalize();
+                if (!$('screenResult').hidden)    renderReveal();
             });
         });
 

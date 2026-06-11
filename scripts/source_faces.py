@@ -169,15 +169,15 @@ def copy_to_clipboard(text):
 
 def open_search(name):
     """Open the sortitoutsi search URL in the default browser AND copy
-       the player name to the clipboard. The URL has a ?name= param so
-       sortitoutsi *may* pre-fill the search box; if it doesn't, you can
-       just click the 'Search by name' input and Ctrl+V."""
+       the player name to the clipboard. The page doesn't pre-fill from
+       the URL parameter (verified), so the user clicks the 'Search by
+       name' box and Ctrl+V's the name, hits Enter."""
     url = SEARCH_URL.format(quote_plus(name))
     try: webbrowser.open(url, new=2)
     except Exception as e: print(f"  (couldn't open browser: {e})")
     copied = copy_to_clipboard(name)
     if copied:
-        print(f"  name copied to clipboard — Ctrl+V into 'Search by name' if it isn't pre-filled")
+        print(f"  name copied — click 'Search by name', Ctrl+V, Enter")
     return url
 
 

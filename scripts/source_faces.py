@@ -46,7 +46,7 @@ ROOT       = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE  = os.path.join(ROOT, "data", "soccer.json")
 FACES_DIR  = os.path.join(ROOT, "faces")
 DOWNLOADS  = os.environ.get("DOWNLOADS") or os.path.join(os.path.expanduser("~"), "Downloads")
-SEARCH_URL = "https://sortitoutsi.net/graphics/?q={}"
+SEARCH_URL = "https://sortitoutsi.net/graphics/submissions/1/search?name={}"
 IMAGE_EXTS = {".png", ".webp", ".jpg", ".jpeg"}
 
 
@@ -139,11 +139,45 @@ def patch_json(squad_id, player_name, face_id):
     return True
 
 
+def copy_to_clipboard(text):
+    """Best-effort copy `text` to the OS clipboard. Stdlib only — no
+       dependencies. Returns True on success. Used so the user can just
+       Ctrl+V into sortitoutsi's 'Search by name' box if the URL-param
+       version of the search doesn't pre-fill it on its own."""
+    try:
+        if sys.platform == "win32":
+            # clip.exe ships with Windows; expects UTF-16 LE on stdin.
+            proc = subprocess.Popen(["clip"], stdin=subprocess.PIPE)
+            proc.communicate(text.encode("utf-16-le"))
+            return proc.returncode == 0
+        elif sys.platform == "darwin":
+            proc = subprocess.Popen(["pbcopy"], stdin=subprocess.PIPE)
+            proc.communicate(text.encode("utf-8"))
+            return proc.returncode == 0
+        else:
+            # Linux: try xclip, then xsel. If neither's installed, just skip.
+            for cmd in (["xclip", "-selection", "clipboard"], ["xsel", "-bi"]):
+                try:
+                    proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+                    proc.communicate(text.encode("utf-8"))
+                    if proc.returncode == 0: return True
+                except FileNotFoundError: continue
+            return False
+    except Exception:
+        return False
+
+
 def open_search(name):
-    """Open the sortitoutsi search URL in the default browser."""
+    """Open the sortitoutsi search URL in the default browser AND copy
+       the player name to the clipboard. The URL has a ?name= param so
+       sortitoutsi *may* pre-fill the search box; if it doesn't, you can
+       just click the 'Search by name' input and Ctrl+V."""
     url = SEARCH_URL.format(quote_plus(name))
     try: webbrowser.open(url, new=2)
     except Exception as e: print(f"  (couldn't open browser: {e})")
+    copied = copy_to_clipboard(name)
+    if copied:
+        print(f"  name copied to clipboard — Ctrl+V into 'Search by name' if it isn't pre-filled")
     return url
 
 

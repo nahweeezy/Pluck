@@ -91,20 +91,39 @@ faces/
 
 **You only duplicate when you actually have era-specific photos.** If you only ever source one Gerrard photo, drop it at `faces/108658.png` and it'll serve every Gerrard card. The day you find a different photo for a specific season, drop it at `faces/{squad-id}/108658.png` and just that squad uses it.
 
-### Workflow per squad you want to populate
+### Fast workflow: `scripts/source_faces.py`  (recommended)
 
-1. In [`data/soccer.json`](data/soccer.json), the lineup entry has either an `id` (FM facepack UID) or the legacy `sofascore_id`. The engine reads `id` first, falls back to `sofascore_id`. Set `"id": <FM UID>` for the players you're populating.
-2. Drop the FM-facepack files into either:
+Picks the era-matching face on [sortitoutsi.net](https://sortitoutsi.net/graphics/) manually (irreducible — the year-correct choice needs human judgment) and lets the script handle everything else.
+
+```
+python scripts/source_faces.py                       # list squads (✓ = fully populated)
+python scripts/source_faces.py 2008-ucl-final-man-united
+```
+
+For each missing player in that squad, the script:
+
+1. Opens `sortitoutsi.net/graphics/?q=<name>` in your default browser.
+2. Watches your `~/Downloads` folder for a new PNG/webp.
+3. When you save a face from sortitoutsi (their filenames are already `{id}.png`), it parses the ID, asks for a one-key confirmation, then **moves the file into `faces/<squad-id>/<id>.{ext}` and patches `soccer.json` with `"id": <id>`** for that player.
+4. Continues to the next missing player.
+
+Per-player cost: ~25 seconds (your judgment on which face is era-correct + one Enter). Resumable, skippable (`s` to skip, `q` to quit), and never touches players who already have a portrait.
+
+The Downloads folder defaults to `~/Downloads` but you can override with `DOWNLOADS=/some/path python scripts/source_faces.py …`.
+
+### Manual workflow (also supported)
+
+If you already have a stash of files you'd rather drop in by hand:
+
+1. In [`data/soccer.json`](data/soccer.json), set `"id": <FM UID>` on each player you're populating.
+2. Drop the files into either:
    - **`faces/rename/<squad-id>/<player-id>.png`** for squad-specific portraits, *or*
    - **`faces/rename/<player-id>.png`** (no subfolder) for shared defaults.
-3. Run:
-   ```
-   python scripts/install_faces.py
-   ```
-   It moves files into `faces/` (mirroring whichever subfolder you used) and prints a per-squad checklist of every player still missing a portrait.
-4. Commit `faces/` so the deployed site serves them as static files.
+3. Run `python scripts/install_faces.py` — moves files into `faces/` and prints a per-squad checklist of who's still missing.
 
 The engine probes `.png` then `.webp` at each level — FM facepacks ship both formats, both work, no conversion needed. Missing file → ink-monogram fallback. The game never breaks for absent portraits.
+
+> Note: portraits are off by default. The cover has a `Portraits Off / On` toggle (the OFF default ships consistent monogram cards regardless of how populated `faces/` is); flip it on once the dataset has full coverage. The preference persists in `localStorage`.
 
 > Note: FM facepack images are user-redistributable but copyrighted. If you'd rather not commit them, gitignore `faces/` and the game cleanly shows monograms.
 

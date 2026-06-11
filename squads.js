@@ -28,6 +28,7 @@
                 championship:    'Championship',
                 coupe_de_france: 'Coupe de France',
                 champions_league:'Champions League',
+                fa_cup:          'FA Cup',
             },
         },
     };
@@ -79,6 +80,10 @@
     // as data conventions grow (e.g. CF -> ST if you ever use CF in source data).
     const POS_ALIASES = {
         CDM: 'DM',
+        RCB: 'CB',
+        LCB: 'CB',
+        RAM: 'CAM',
+        LAM: 'CAM',
     };
     function normalizePos(pos) {
         if (!pos) return pos;
@@ -535,7 +540,7 @@
             { top: 75, left: 50, pos: ['CB'] },
             { top: 75, left: 75, pos: ['CB'] },
             { top: 54, left: 10, pos: ['LWB','LB','LM'] },
-            { top: 54, left: 38, pos: ['CM'] },
+            { top: 54, left: 38, pos: ['CM','DM'] },
             { top: 54, left: 62, pos: ['CM','DM'] },
             { top: 54, left: 90, pos: ['RWB','RB','RM'] },
             { top: 30, left: 32, pos: ['CAM'] },
@@ -568,8 +573,21 @@
             { top: 36, left: 88, pos: ['RM','RW'] },
             { top: 16, left: 50, pos: ['ST','CF'] },
         ],
+        '5-4-1': [
+            { top: 92, left: 50, pos: ['GK'] },
+            { top: 70, left: 10, pos: ['LWB','LB'] },
+            { top: 75, left: 30, pos: ['CB'] },
+            { top: 75, left: 50, pos: ['CB'] },
+            { top: 75, left: 70, pos: ['CB'] },
+            { top: 70, left: 90, pos: ['RWB','RB'] },
+            { top: 42, left: 14, pos: ['LM','LW'] },
+            { top: 42, left: 38, pos: ['CM','DM'] },
+            { top: 42, left: 62, pos: ['CM','DM'] },
+            { top: 42, left: 86, pos: ['RM','RW'] },
+            { top: 16, left: 50, pos: ['ST','CF'] },
+        ],
     };
-    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','4-1-4-1','4-4-1-1','3-5-2','3-4-3','3-4-2-1'];
+    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','4-1-4-1','4-4-1-1','3-5-2','3-4-3','3-4-2-1','5-4-1'];
     const FALLBACK_FORMATION = '4-3-3';
     const layoutForFormation = (f) => FORMATIONS[f] || FORMATIONS[FALLBACK_FORMATION];
     const slotFits = (playerPos, slotPosArr) => !!playerPos && slotPosArr.includes(playerPos);

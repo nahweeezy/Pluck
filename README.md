@@ -1,6 +1,6 @@
 # Pluck · Nahweeezy Squads
 
-A daily squad-builder game. Each round you see a real starting XI from a real match — date, opponent, competition, result — and you pick **one player** to add to your squad. Round by round you fill an 11 + 7-bench formation and end up with a shareable lineup of legends from across two decades of football history.
+a daily squad-builder game. each round you see a real starting XI from a real match and you pick **one player** to add to your squad. Round by round you fill an 11 + 7-bench formation and end up with a shareable lineup of legends from across two decades of football history.
 
 It's a ball-knowledge test in game form.
 

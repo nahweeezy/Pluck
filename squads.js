@@ -34,15 +34,6 @@
     };
 
     const STORAGE_KEY = 'nahweeezy-squads-v2';
-    const FACES_PREF_KEY = 'pluck-faces-enabled';   // 'true' | 'false'
-
-    // Default OFF — the game ships with portraits hidden, so cards look
-    // consistent regardless of which squads' images are populated. Users can
-    // flip it on from the cover toggle once the dataset has full coverage.
-    let facesEnabled = (() => {
-        try { return localStorage.getItem(FACES_PREF_KEY) === 'true'; }
-        catch (e) { return false; }
-    })();
     const RESET_TZ = 'America/New_York';
 
     // ── DOM helpers ──────────────────────────────────────────────
@@ -289,7 +280,7 @@
         // ink monogram. player.sofascore_id is the legacy field for entries
         // not yet migrated.
         const faceId = player.id || player.sofascore_id;
-        if (faceId && facesEnabled) {
+        if (faceId) {
             const img = document.createElement('img');
             img.className = 'pc-face';
             img.alt = player.name;
@@ -586,8 +577,34 @@
             { top: 42, left: 86, pos: ['RM','RW'] },
             { top: 16, left: 50, pos: ['ST','CF'] },
         ],
+        '3-1-4-2': [
+            { top: 92, left: 50, pos: ['GK'] },
+            { top: 75, left: 25, pos: ['CB'] },
+            { top: 75, left: 50, pos: ['CB'] },
+            { top: 75, left: 75, pos: ['CB'] },
+            { top: 58, left: 50, pos: ['DM','CM'] },
+            { top: 38, left: 12, pos: ['LM','LW','LWB','LB'] },
+            { top: 38, left: 38, pos: ['CM','CAM'] },
+            { top: 38, left: 62, pos: ['CM','CAM'] },
+            { top: 38, left: 88, pos: ['RM','RW','RWB','RB'] },
+            { top: 16, left: 36, pos: ['ST','CF'] },
+            { top: 16, left: 64, pos: ['ST','CF'] },
+        ],
+        '4-2-2-2': [
+            { top: 92, left: 50, pos: ['GK'] },
+            { top: 75, left: 12, pos: ['LB','LWB'] },
+            { top: 75, left: 36, pos: ['CB'] },
+            { top: 75, left: 64, pos: ['CB'] },
+            { top: 75, left: 88, pos: ['RB','RWB'] },
+            { top: 54, left: 36, pos: ['DM','CM'] },
+            { top: 54, left: 64, pos: ['DM','CM'] },
+            { top: 34, left: 30, pos: ['CAM','LM','LW'] },
+            { top: 34, left: 70, pos: ['CAM','RM','RW'] },
+            { top: 16, left: 36, pos: ['ST','CF'] },
+            { top: 16, left: 64, pos: ['ST','CF'] },
+        ],
     };
-    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','4-1-4-1','4-4-1-1','3-5-2','3-4-3','3-4-2-1','5-4-1'];
+    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','4-1-4-1','4-4-1-1','4-2-2-2','3-5-2','3-4-3','3-4-2-1','3-1-4-2','5-4-1'];
     const FALLBACK_FORMATION = '4-3-3';
     const layoutForFormation = (f) => FORMATIONS[f] || FORMATIONS[FALLBACK_FORMATION];
     const slotFits = (playerPos, slotPosArr) => !!playerPos && slotPosArr.includes(playerPos);
@@ -894,7 +911,7 @@
             // cards (faces/{id}.{png|webp}, warm-cached); monogram fallback otherwise.
             const face = el('div', 'ts-face');
             const tsFaceId = p.id || p.sofascore_id;
-            if (tsFaceId && facesEnabled) {
+            if (tsFaceId) {
                 const img = document.createElement('img');
                 img.alt = '';
                 img.decoding = 'async';
@@ -1202,27 +1219,6 @@
                 btn.classList.add('active'); btn.setAttribute('aria-selected', 'true');
                 game.mode = btn.dataset.mode;
                 renderCover();
-            });
-        });
-
-        // Portraits On / Off toggle. Flipping it busts the face cache (cached
-        // entries are the previously-processed PNGs from when faces were on)
-        // and re-renders whatever screen is active so cards refresh in place.
-        document.querySelectorAll('.mode-btn[data-faces]').forEach(btn => {
-            // Initial visual state from the persisted preference.
-            const matchesPref = (btn.dataset.faces === 'on') === facesEnabled;
-            btn.classList.toggle('active', matchesPref);
-            btn.addEventListener('click', () => {
-                facesEnabled = (btn.dataset.faces === 'on');
-                try { localStorage.setItem(FACES_PREF_KEY, String(facesEnabled)); } catch (e) {}
-                document.querySelectorAll('.mode-btn[data-faces]').forEach(b => {
-                    b.classList.toggle('active', b === btn);
-                });
-                FACE_CACHE.clear();
-                // Re-render whichever screen has cards on it right now.
-                if (!$('screenGame').hidden)      renderRound();
-                if (!$('screenFinalize').hidden)  renderFinalize();
-                if (!$('screenResult').hidden)    renderReveal();
             });
         });
 

@@ -603,8 +603,34 @@
             { top: 16, left: 36, pos: ['ST','CF'] },
             { top: 16, left: 64, pos: ['ST','CF'] },
         ],
+        '4-5-1': [
+            { top: 92, left: 50, pos: ['GK'] },
+            { top: 75, left: 12, pos: ['LB','LWB'] },
+            { top: 75, left: 36, pos: ['CB'] },
+            { top: 75, left: 64, pos: ['CB'] },
+            { top: 75, left: 88, pos: ['RB','RWB'] },
+            { top: 50, left: 12, pos: ['LM','LW'] },
+            { top: 50, left: 33, pos: ['CM','DM'] },
+            { top: 42, left: 50, pos: ['CAM','SS','CM'] },
+            { top: 50, left: 67, pos: ['CM','CAM'] },
+            { top: 50, left: 88, pos: ['RM','RW'] },
+            { top: 18, left: 50, pos: ['ST','CF'] },
+        ],
+        '3-5-1-1': [
+            { top: 92, left: 50, pos: ['GK'] },
+            { top: 75, left: 25, pos: ['CB'] },
+            { top: 75, left: 50, pos: ['CB'] },
+            { top: 75, left: 75, pos: ['CB'] },
+            { top: 54, left: 10, pos: ['LWB','LB','LM'] },
+            { top: 54, left: 33, pos: ['CM','DM'] },
+            { top: 54, left: 50, pos: ['CM','DM','CAM'] },
+            { top: 54, left: 67, pos: ['CM','CAM'] },
+            { top: 54, left: 90, pos: ['RWB','RB','RM'] },
+            { top: 32, left: 50, pos: ['SS','CAM','CM'] },
+            { top: 14, left: 50, pos: ['ST','CF'] },
+        ],
     };
-    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','4-1-4-1','4-4-1-1','4-2-2-2','3-5-2','3-4-3','3-4-2-1','3-1-4-2','5-4-1'];
+    const FORMATION_ORDER = ['4-3-3','4-2-3-1','4-4-2','4-3-2-1','4-1-4-1','4-4-1-1','4-2-2-2','4-5-1','3-5-2','3-5-1-1','3-4-3','3-4-2-1','3-1-4-2','5-4-1'];
     const FALLBACK_FORMATION = '4-3-3';
     const layoutForFormation = (f) => FORMATIONS[f] || FORMATIONS[FALLBACK_FORMATION];
     const slotFits = (playerPos, slotPosArr) => !!playerPos && slotPosArr.includes(playerPos);

@@ -15,9 +15,9 @@
         soccer: {
             label: 'World Soccer',
             file: 'data/soccer.json',
-            totalRounds: 18,
+            totalRounds: 11,
             startersCount: 11,
-            benchCount: 7,
+            benchCount: 0,
             leagueLabels: {
                 premier_league:  'Premier League',
                 la_liga:         'La Liga',
@@ -833,6 +833,10 @@
             pitch.appendChild(cell);
         });
         col.appendChild(pitch);
+
+        // Bench is opt-out: when SPORT_CONFIG.benchCount is 0 we skip the
+        // whole substitutes section. The starters-only flow is just 11 picks.
+        if (!game.config.benchCount) { wrap.appendChild(col); return; }
 
         const benchCol = el('div', 'col gap8');
         const placed = game.squad.bench.filter(Boolean).length;

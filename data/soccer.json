@@ -2725,17 +2725,72 @@
     },
     "notes": "FA Cup fourth round upset at Anfield. Jay Rodriguez scored twice (11', 7') and Vokes added a third. Matip OG and Salah replied but wasn't enough.",
     "lineup": [
-      { "name": "Ben Foster", "position": "GK", "number": 1, "id": null },
-      { "name": "Allan Nyom", "position": "RB", "number": 2, "id": null },
-      { "name": "Craig Dawson", "position": "CB", "number": 25, "id": null },
-      { "name": "Jonny Evans", "position": "CB", "number": 6, "id": null },
-      { "name": "Kieran Gibbs", "position": "LB", "number": 3, "id": null },
-      { "name": "Jake Livermore", "position": "RM", "number": 8, "id": null },
-      { "name": "Gareth Barry", "position": "CM", "number": 18, "id": null },
-      { "name": "Grzegorz Krychowiak", "position": "CM", "number": 20, "id": null },
-      { "name": "Chris Brunt", "position": "LM", "number": 11, "id": null },
-      { "name": "Hal Robson-Kanu", "position": "ST", "number": 4, "id": null },
-      { "name": "Jay Rodriguez", "position": "ST", "number": 19, "id": null }
+      {
+        "name": "Ben Foster",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Allan Nyom",
+        "position": "RB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Craig Dawson",
+        "position": "CB",
+        "number": 25,
+        "id": null
+      },
+      {
+        "name": "Jonny Evans",
+        "position": "CB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Kieran Gibbs",
+        "position": "LB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Jake Livermore",
+        "position": "RM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Gareth Barry",
+        "position": "CM",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Grzegorz Krychowiak",
+        "position": "CM",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Chris Brunt",
+        "position": "LM",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Hal Robson-Kanu",
+        "position": "ST",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Jay Rodriguez",
+        "position": "ST",
+        "number": 19,
+        "id": null
+      }
     ]
   },
   {
@@ -2758,17 +2813,72 @@
     },
     "notes": "Firmino (9'), Mané (40'), Wijnaldum (90'+1) won it. Screenshot partially cut off on the left — Mané and Wijnaldum inferred from match records.",
     "lineup": [
-      { "name": "Simon Mignolet", "position": "GK", "number": 22, "id": null },
-      { "name": "Nathaniel Clyne", "position": "RB", "number": 2, "id": null },
-      { "name": "Joel Matip", "position": "CB", "number": 32, "id": null },
-      { "name": "Ragnar Klavan", "position": "CB", "number": 17, "id": null },
-      { "name": "James Milner", "position": "LB", "number": 7, "id": null },
-      { "name": "Adam Lallana", "position": "CM", "number": 20, "id": null },
-      { "name": "Emre Can", "position": "CM", "number": 23, "id": null },
-      { "name": "Georginio Wijnaldum", "position": "CM", "number": 5, "id": null },
-      { "name": "Philippe Coutinho", "position": "RW", "number": 10, "id": null },
-      { "name": "Roberto Firmino", "position": "ST", "number": 11, "id": null },
-      { "name": "Sadio Mané", "position": "LW", "number": 19, "id": null }
+      {
+        "name": "Simon Mignolet",
+        "position": "GK",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Nathaniel Clyne",
+        "position": "RB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Joel Matip",
+        "position": "CB",
+        "number": 32,
+        "id": null
+      },
+      {
+        "name": "Ragnar Klavan",
+        "position": "CB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "James Milner",
+        "position": "LB",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Adam Lallana",
+        "position": "CM",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Emre Can",
+        "position": "CM",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Georginio Wijnaldum",
+        "position": "CM",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Philippe Coutinho",
+        "position": "RW",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Roberto Firmino",
+        "position": "ST",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Sadio Mané",
+        "position": "LW",
+        "number": 19,
+        "id": null
+      }
     ]
   },
   {
@@ -2791,17 +2901,72 @@
     },
     "notes": "FA Cup third round north London derby. Cazorla (31') and Rosický (62') scored. A young Gnabry (#44) started on the left.",
     "lineup": [
-      { "name": "Łukasz Fabiański", "position": "GK", "number": 21, "id": null },
-      { "name": "Bacary Sagna", "position": "RB", "number": 3, "id": null },
-      { "name": "Thomas Vermaelen", "position": "CB", "number": 5, "id": null },
-      { "name": "Laurent Koscielny", "position": "CB", "number": 6, "id": null },
-      { "name": "Nacho Monreal", "position": "LB", "number": 17, "id": null },
-      { "name": "Mikel Arteta", "position": "CDM", "number": 8, "id": null },
-      { "name": "Jack Wilshere", "position": "CDM", "number": 10, "id": null },
-      { "name": "Tomáš Rosický", "position": "RW", "number": 7, "id": null },
-      { "name": "Santi Cazorla", "position": "CAM", "number": 19, "id": null },
-      { "name": "Serge Gnabry", "position": "LW", "number": 44, "id": null },
-      { "name": "Theo Walcott", "position": "ST", "number": 14, "id": null }
+      {
+        "name": "Łukasz Fabiański",
+        "position": "GK",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Bacary Sagna",
+        "position": "RB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Thomas Vermaelen",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Laurent Koscielny",
+        "position": "CB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Nacho Monreal",
+        "position": "LB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Mikel Arteta",
+        "position": "CDM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Jack Wilshere",
+        "position": "CDM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Tomáš Rosický",
+        "position": "RW",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Santi Cazorla",
+        "position": "CAM",
+        "number": 19,
+        "id": null
+      },
+      {
+        "name": "Serge Gnabry",
+        "position": "LW",
+        "number": 44,
+        "id": null
+      },
+      {
+        "name": "Theo Walcott",
+        "position": "ST",
+        "number": 14,
+        "id": null
+      }
     ]
   },
   {
@@ -2824,17 +2989,72 @@
     },
     "notes": "Richarlison brace (38', 60'), Udogie (26'), and Son pen (85'). Son rated 9.5 — POTM. Ange Postecoglou's Spurs in full flow.",
     "lineup": [
-      { "name": "Guglielmo Vicario", "position": "GK", "number": 13, "id": null },
-      { "name": "Pedro Porro", "position": "RB", "number": 23, "id": null },
-      { "name": "Cristian Romero", "position": "CB", "number": 17, "id": null },
-      { "name": "Ben Davies", "position": "CB", "number": 33, "id": null },
-      { "name": "Destiny Udogie", "position": "LB", "number": 38, "id": null },
-      { "name": "Yves Bissouma", "position": "CDM", "number": 8, "id": null },
-      { "name": "Pape Matar Sarr", "position": "CDM", "number": 29, "id": null },
-      { "name": "Son Heung-min", "position": "RW", "number": 7, "id": null },
-      { "name": "Dejan Kulusevski", "position": "CAM", "number": 21, "id": null },
-      { "name": "Brennan Johnson", "position": "LW", "number": 22, "id": null },
-      { "name": "Richarlison", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Guglielmo Vicario",
+        "position": "GK",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Pedro Porro",
+        "position": "RB",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Cristian Romero",
+        "position": "CB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Ben Davies",
+        "position": "CB",
+        "number": 33,
+        "id": null
+      },
+      {
+        "name": "Destiny Udogie",
+        "position": "LB",
+        "number": 38,
+        "id": null
+      },
+      {
+        "name": "Yves Bissouma",
+        "position": "CDM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Pape Matar Sarr",
+        "position": "CDM",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "Son Heung-min",
+        "position": "RW",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Dejan Kulusevski",
+        "position": "CAM",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Brennan Johnson",
+        "position": "LW",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Richarlison",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -2857,17 +3077,72 @@
     },
     "notes": "Isaac Hayden's 90'+4 winner. Classic Steve Bruce low-block. Saint-Maximin caused chaos from the right.",
     "lineup": [
-      { "name": "Martin Dúbravka", "position": "GK", "number": 1, "id": null },
-      { "name": "Javier Manquillo", "position": "RWB", "number": 15, "id": null },
-      { "name": "Ciaran Clark", "position": "CB", "number": 2, "id": null },
-      { "name": "Jamaal Lascelles", "position": "CB", "number": 6, "id": null },
-      { "name": "Fabian Schär", "position": "CB", "number": 18, "id": null },
-      { "name": "Emil Krafth", "position": "LWB", "number": 17, "id": null },
-      { "name": "Allan Saint-Maximin", "position": "RM", "number": 10, "id": null },
-      { "name": "Jonjo Shelvey", "position": "CM", "number": 8, "id": null },
-      { "name": "Isaac Hayden", "position": "CM", "number": 14, "id": null },
-      { "name": "Miguel Almirón", "position": "LM", "number": 24, "id": null },
-      { "name": "Joelinton", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Martin Dúbravka",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Javier Manquillo",
+        "position": "RWB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Ciaran Clark",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Jamaal Lascelles",
+        "position": "CB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Fabian Schär",
+        "position": "CB",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Emil Krafth",
+        "position": "LWB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Allan Saint-Maximin",
+        "position": "RM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Jonjo Shelvey",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Isaac Hayden",
+        "position": "CM",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Miguel Almirón",
+        "position": "LM",
+        "number": 24,
+        "id": null
+      },
+      {
+        "name": "Joelinton",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -2890,17 +3165,72 @@
     },
     "notes": "Jorginho (83') and Abraham (87') came from behind to win it after Aubameyang's opener. Lampard's Chelsea grinding out a result at the Emirates.",
     "lineup": [
-      { "name": "Kepa Arrizabalaga", "position": "GK", "number": 1, "id": null },
-      { "name": "Antonio Rüdiger", "position": "RCB", "number": 2, "id": null },
-      { "name": "Kurt Zouma", "position": "CB", "number": 15, "id": null },
-      { "name": "Fikayo Tomori", "position": "LCB", "number": 29, "id": null },
-      { "name": "César Azpilicueta", "position": "RWB", "number": 28, "id": null },
-      { "name": "N'Golo Kanté", "position": "CDM", "number": 7, "id": null },
-      { "name": "Mateo Kovačić", "position": "CDM", "number": 17, "id": null },
-      { "name": "Emerson", "position": "LWB", "number": 33, "id": null },
-      { "name": "Mason Mount", "position": "RAM", "number": 19, "id": null },
-      { "name": "Willian", "position": "LAM", "number": 10, "id": null },
-      { "name": "Tammy Abraham", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Kepa Arrizabalaga",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Antonio Rüdiger",
+        "position": "RCB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Kurt Zouma",
+        "position": "CB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Fikayo Tomori",
+        "position": "LCB",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "César Azpilicueta",
+        "position": "RWB",
+        "number": 28,
+        "id": null
+      },
+      {
+        "name": "N'Golo Kanté",
+        "position": "CDM",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Mateo Kovačić",
+        "position": "CDM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Emerson",
+        "position": "LWB",
+        "number": 33,
+        "id": null
+      },
+      {
+        "name": "Mason Mount",
+        "position": "RAM",
+        "number": 19,
+        "id": null
+      },
+      {
+        "name": "Willian",
+        "position": "LAM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Tammy Abraham",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -2923,17 +3253,72 @@
     },
     "notes": "Rooney hat-trick (18', 28', 66') plus Williams (78'). Rooney's return to Everton that season — this was his best performance.",
     "lineup": [
-      { "name": "Jordan Pickford", "position": "GK", "number": 1, "id": null },
-      { "name": "Cuco Martina", "position": "RB", "number": 15, "id": null },
-      { "name": "Ashley Williams", "position": "CB", "number": 5, "id": null },
-      { "name": "Mason Holgate", "position": "CB", "number": 30, "id": null },
-      { "name": "Jonjoe Kenny", "position": "LB", "number": 43, "id": null },
-      { "name": "Idrissa Gueye", "position": "CDM", "number": 17, "id": null },
-      { "name": "Gylfi Sigurdsson", "position": "RM", "number": 18, "id": null },
-      { "name": "Wayne Rooney", "position": "CM", "number": 10, "id": null },
-      { "name": "Tom Davies", "position": "CM", "number": 28, "id": null },
-      { "name": "Dominic Calvert-Lewin", "position": "LM", "number": 29, "id": null },
-      { "name": "Ademola Lookman", "position": "ST", "number": 20, "id": null }
+      {
+        "name": "Jordan Pickford",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Cuco Martina",
+        "position": "RB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Ashley Williams",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Mason Holgate",
+        "position": "CB",
+        "number": 30,
+        "id": null
+      },
+      {
+        "name": "Jonjoe Kenny",
+        "position": "LB",
+        "number": 43,
+        "id": null
+      },
+      {
+        "name": "Idrissa Gueye",
+        "position": "CDM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Gylfi Sigurdsson",
+        "position": "RM",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Wayne Rooney",
+        "position": "CM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Tom Davies",
+        "position": "CM",
+        "number": 28,
+        "id": null
+      },
+      {
+        "name": "Dominic Calvert-Lewin",
+        "position": "LM",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "Ademola Lookman",
+        "position": "ST",
+        "number": 20,
+        "id": null
+      }
     ]
   },
   {
@@ -2956,17 +3341,72 @@
     },
     "notes": "Eli Junior Kroupi (17') and Alex Scott (74') won it. Győkeres replied from the spot for Arsenal (35'). Impressive away win for Bournemouth.",
     "lineup": [
-      { "name": "Dušan Petrović", "position": "GK", "number": 1, "id": null },
-      { "name": "Ángel Jiménez", "position": "RB", "number": 20, "id": null },
-      { "name": "Julian Hill", "position": "CB", "number": 23, "id": null },
-      { "name": "Marcos Senesi", "position": "CB", "number": 5, "id": null },
-      { "name": "Arthur Truffert", "position": "LB", "number": 3, "id": null },
-      { "name": "Ryan Christie", "position": "CDM", "number": 10, "id": null },
-      { "name": "Marcus Tavernier", "position": "CDM", "number": 16, "id": null },
-      { "name": "Rayan", "position": "RW", "number": 37, "id": null },
-      { "name": "Alex Scott", "position": "CAM", "number": 8, "id": null },
-      { "name": "Eli Junior Kroupi", "position": "LW", "number": 22, "id": null },
-      { "name": "Evanilson", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Dušan Petrović",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Ángel Jiménez",
+        "position": "RB",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Julian Hill",
+        "position": "CB",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Marcos Senesi",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Arthur Truffert",
+        "position": "LB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Ryan Christie",
+        "position": "CDM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Marcus Tavernier",
+        "position": "CDM",
+        "number": 16,
+        "id": null
+      },
+      {
+        "name": "Rayan",
+        "position": "RW",
+        "number": 37,
+        "id": null
+      },
+      {
+        "name": "Alex Scott",
+        "position": "CAM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Eli Junior Kroupi",
+        "position": "LW",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Evanilson",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -2989,17 +3429,72 @@
     },
     "notes": "Patrick Bamford hat-trick (55', 67', 74'). Leeds' first Premier League season back — Bielsa's side at their relentless best. Bamford with a 9.5 rating.",
     "lineup": [
-      { "name": "Illan Meslier", "position": "GK", "number": 1, "id": null },
-      { "name": "Stuart Dallas", "position": "RB", "number": 15, "id": null },
-      { "name": "Pascal Struijk", "position": "CB", "number": 21, "id": null },
-      { "name": "Robin Koch", "position": "CB", "number": 5, "id": null },
-      { "name": "Ezgjan Alioski", "position": "LB", "number": 10, "id": null },
-      { "name": "Hélder Costa", "position": "RM", "number": 17, "id": null },
-      { "name": "Mateusz Klich", "position": "CM", "number": 43, "id": null },
-      { "name": "Luke Ayling", "position": "CM", "number": 2, "id": null },
-      { "name": "Jack Harrison", "position": "LM", "number": 22, "id": null },
-      { "name": "Rodrigo", "position": "SS", "number": 20, "id": null },
-      { "name": "Patrick Bamford", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Illan Meslier",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Stuart Dallas",
+        "position": "RB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Pascal Struijk",
+        "position": "CB",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Robin Koch",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Ezgjan Alioski",
+        "position": "LB",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Hélder Costa",
+        "position": "RM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Mateusz Klich",
+        "position": "CM",
+        "number": 43,
+        "id": null
+      },
+      {
+        "name": "Luke Ayling",
+        "position": "CM",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Jack Harrison",
+        "position": "LM",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Rodrigo",
+        "position": "SS",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Patrick Bamford",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -3022,17 +3517,72 @@
     },
     "notes": "Wesley Moraes brace (14', 30'), Grealish (49'), Hourihane (61'), Douglas Luiz (83'). Grealish (c) with a dominant away performance.",
     "lineup": [
-      { "name": "Tom Heaton", "position": "GK", "number": 1, "id": null },
-      { "name": "Frédéric Guilbert", "position": "RB", "number": 24, "id": null },
-      { "name": "Björn Engels", "position": "CB", "number": 22, "id": null },
-      { "name": "Tyrone Mings", "position": "CB", "number": 40, "id": null },
-      { "name": "Matt Targett", "position": "LB", "number": 18, "id": null },
-      { "name": "Marvelous Nakamba", "position": "CDM", "number": 11, "id": null },
-      { "name": "John McGinn", "position": "CM", "number": 7, "id": null },
-      { "name": "Conor Hourihane", "position": "CM", "number": 14, "id": null },
-      { "name": "Anwar El Ghazi", "position": "RW", "number": 21, "id": null },
-      { "name": "Wesley Moraes", "position": "ST", "number": 9, "id": null },
-      { "name": "Jack Grealish", "position": "LW", "number": 10, "id": null }
+      {
+        "name": "Tom Heaton",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Frédéric Guilbert",
+        "position": "RB",
+        "number": 24,
+        "id": null
+      },
+      {
+        "name": "Björn Engels",
+        "position": "CB",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Tyrone Mings",
+        "position": "CB",
+        "number": 40,
+        "id": null
+      },
+      {
+        "name": "Matt Targett",
+        "position": "LB",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Marvelous Nakamba",
+        "position": "CDM",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "John McGinn",
+        "position": "CM",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Conor Hourihane",
+        "position": "CM",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Anwar El Ghazi",
+        "position": "RW",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Wesley Moraes",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      },
+      {
+        "name": "Jack Grealish",
+        "position": "LW",
+        "number": 10,
+        "id": null
+      }
     ]
   },
   {
@@ -3055,17 +3605,72 @@
     },
     "notes": "One of the biggest upsets of the 2019-20 season. McLean (18'), Cantwell (28'), Pukki (50') beat the champions. Agüero and Rodri replied but it wasn't enough.",
     "lineup": [
-      { "name": "Tim Krul", "position": "GK", "number": 1, "id": null },
-      { "name": "Jamal Lewis", "position": "RB", "number": 12, "id": null },
-      { "name": "Ben Godfrey", "position": "CB", "number": 4, "id": null },
-      { "name": "Kenny McLean", "position": "CB", "number": 23, "id": null },
-      { "name": "Sam Byram", "position": "LB", "number": 3, "id": null },
-      { "name": "Alexander Tettey", "position": "CDM", "number": 27, "id": null },
-      { "name": "Ibrahim Amadou", "position": "CDM", "number": 24, "id": null },
-      { "name": "Todd Cantwell", "position": "RM", "number": 14, "id": null },
-      { "name": "Marco Stiepermann", "position": "CAM", "number": 18, "id": null },
-      { "name": "Emiliano Buendía", "position": "LM", "number": 17, "id": null },
-      { "name": "Teemu Pukki", "position": "ST", "number": 22, "id": null }
+      {
+        "name": "Tim Krul",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Jamal Lewis",
+        "position": "RB",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Ben Godfrey",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Kenny McLean",
+        "position": "CB",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Sam Byram",
+        "position": "LB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Alexander Tettey",
+        "position": "CDM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Ibrahim Amadou",
+        "position": "CDM",
+        "number": 24,
+        "id": null
+      },
+      {
+        "name": "Todd Cantwell",
+        "position": "RM",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Marco Stiepermann",
+        "position": "CAM",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Emiliano Buendía",
+        "position": "LM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Teemu Pukki",
+        "position": "ST",
+        "number": 22,
+        "id": null
+      }
     ]
   },
   {
@@ -3088,17 +3693,72 @@
     },
     "notes": "One of the most shocking Bundesliga results in recent memory. Paciência (85'), Hinteregger (61'), Abraham (49') and two others dismantled Bayern at home.",
     "lineup": [
-      { "name": "Frederik Rønnow", "position": "GK", "number": 82, "id": null },
-      { "name": "Evan Ndicka", "position": "CB", "number": 2, "id": null },
-      { "name": "Martin Hinteregger", "position": "CB", "number": 13, "id": null },
-      { "name": "David Abraham", "position": "CB", "number": 19, "id": null },
-      { "name": "Sebastian Rode", "position": "CDM", "number": 17, "id": null },
-      { "name": "Filip Kostić", "position": "RM", "number": 10, "id": null },
-      { "name": "Gelson Fernandes", "position": "CM", "number": 5, "id": null },
-      { "name": "Djibril Sow", "position": "CM", "number": 8, "id": null },
-      { "name": "Danny da Costa", "position": "LM", "number": 24, "id": null },
-      { "name": "Gonçalo Paciência", "position": "ST", "number": 39, "id": null },
-      { "name": "Bas Dost", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Frederik Rønnow",
+        "position": "GK",
+        "number": 82,
+        "id": null
+      },
+      {
+        "name": "Evan Ndicka",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Martin Hinteregger",
+        "position": "CB",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "David Abraham",
+        "position": "CB",
+        "number": 19,
+        "id": null
+      },
+      {
+        "name": "Sebastian Rode",
+        "position": "CDM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Filip Kostić",
+        "position": "RM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Gelson Fernandes",
+        "position": "CM",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Djibril Sow",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Danny da Costa",
+        "position": "LM",
+        "number": 24,
+        "id": null
+      },
+      {
+        "name": "Gonçalo Paciência",
+        "position": "ST",
+        "number": 39,
+        "id": null
+      },
+      {
+        "name": "Bas Dost",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -3121,17 +3781,72 @@
     },
     "notes": "UCL Round of 16 first leg. Robben (11'), Lewandowski (53'), Thiago (56', 63'), Müller (88'). Sánchez pulled one back for Arsenal. Boateng received a red card.",
     "lineup": [
-      { "name": "Manuel Neuer", "position": "GK", "number": 1, "id": null },
-      { "name": "Philipp Lahm", "position": "RB", "number": 21, "id": null },
-      { "name": "Mats Hummels", "position": "CB", "number": 5, "id": null },
-      { "name": "Jérôme Boateng", "position": "CB", "number": 17, "id": null },
-      { "name": "David Alaba", "position": "LB", "number": 27, "id": null },
-      { "name": "Javi Martínez", "position": "CDM", "number": 8, "id": null },
-      { "name": "Thiago", "position": "CDM", "number": 6, "id": null },
-      { "name": "Douglas Costa", "position": "RW", "number": 11, "id": null },
-      { "name": "Arturo Vidal", "position": "CAM", "number": 23, "id": null },
-      { "name": "Arjen Robben", "position": "LW", "number": 10, "id": null },
-      { "name": "Robert Lewandowski", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Manuel Neuer",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Philipp Lahm",
+        "position": "RB",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Mats Hummels",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Jérôme Boateng",
+        "position": "CB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "David Alaba",
+        "position": "LB",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Javi Martínez",
+        "position": "CDM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Thiago",
+        "position": "CDM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Douglas Costa",
+        "position": "RW",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Arturo Vidal",
+        "position": "CAM",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Arjen Robben",
+        "position": "LW",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Robert Lewandowski",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -3154,17 +3869,72 @@
     },
     "notes": "Lewandowski brace (37', 85'), Kimmich (82'), Müller (76') plus two others. Lewandowski POTM with a 9.0. Kimmich starting at LB — his final season in that role before the permanent move to CM.",
     "lineup": [
-      { "name": "Manuel Neuer", "position": "GK", "number": 1, "id": null },
-      { "name": "Rafinha", "position": "RB", "number": 13, "id": null },
-      { "name": "Mats Hummels", "position": "CB", "number": 5, "id": null },
-      { "name": "Jérôme Boateng", "position": "CB", "number": 17, "id": null },
-      { "name": "Joshua Kimmich", "position": "LB", "number": 32, "id": null },
-      { "name": "Thiago", "position": "CDM", "number": 6, "id": null },
-      { "name": "Javi Martínez", "position": "CDM", "number": 8, "id": null },
-      { "name": "Serge Gnabry", "position": "RW", "number": 22, "id": null },
-      { "name": "James Rodríguez", "position": "CAM", "number": 11, "id": null },
-      { "name": "Thomas Müller", "position": "LW", "number": 25, "id": null },
-      { "name": "Robert Lewandowski", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Manuel Neuer",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Rafinha",
+        "position": "RB",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Mats Hummels",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Jérôme Boateng",
+        "position": "CB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Joshua Kimmich",
+        "position": "LB",
+        "number": 32,
+        "id": null
+      },
+      {
+        "name": "Thiago",
+        "position": "CDM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Javi Martínez",
+        "position": "CDM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Serge Gnabry",
+        "position": "RW",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "James Rodríguez",
+        "position": "CAM",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Thomas Müller",
+        "position": "LW",
+        "number": 25,
+        "id": null
+      },
+      {
+        "name": "Robert Lewandowski",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -3187,17 +3957,72 @@
     },
     "notes": "Özcan OG (36'), Weghorst (55'), Steffen (60') for Wolfsburg. Bailey replied for Leverkusen (24'). Solid away win for Wolfsburg.",
     "lineup": [
-      { "name": "Pavao Pervan", "position": "GK", "number": 12, "id": null },
-      { "name": "William Furtado", "position": "RB", "number": 2, "id": null },
-      { "name": "Robin Knoche", "position": "CB", "number": 31, "id": null },
-      { "name": "John Brooks", "position": "CB", "number": 25, "id": null },
-      { "name": "Jérôme Roussillon", "position": "LB", "number": 15, "id": null },
-      { "name": "Renato Steffen", "position": "RM", "number": 8, "id": null },
-      { "name": "Maximilian Arnold", "position": "CM", "number": 27, "id": null },
-      { "name": "Ignacio Camacho", "position": "CM", "number": 4, "id": null },
-      { "name": "Yannick Gerhardt", "position": "LM", "number": 13, "id": null },
-      { "name": "Wout Weghorst", "position": "ST", "number": 9, "id": null },
-      { "name": "Josip Brekalo", "position": "LW", "number": 7, "id": null }
+      {
+        "name": "Pavao Pervan",
+        "position": "GK",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "William Furtado",
+        "position": "RB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Robin Knoche",
+        "position": "CB",
+        "number": 31,
+        "id": null
+      },
+      {
+        "name": "John Brooks",
+        "position": "CB",
+        "number": 25,
+        "id": null
+      },
+      {
+        "name": "Jérôme Roussillon",
+        "position": "LB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Renato Steffen",
+        "position": "RM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Maximilian Arnold",
+        "position": "CM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Ignacio Camacho",
+        "position": "CM",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Yannick Gerhardt",
+        "position": "LM",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Wout Weghorst",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      },
+      {
+        "name": "Josip Brekalo",
+        "position": "LW",
+        "number": 7,
+        "id": null
+      }
     ]
   },
   {
@@ -3220,17 +4045,72 @@
     },
     "notes": "Palacios scored twice from the spot (55', 73') — POTM 8.6. Kimmich had opened the scoring (22'). An early signal of what Xabi Alonso's Leverkusen were becoming.",
     "lineup": [
-      { "name": "Lukáš Hrádecký", "position": "GK", "number": 1, "id": null },
-      { "name": "Edmond Tapsoba", "position": "RCB", "number": 12, "id": null },
-      { "name": "Piero Hincapié", "position": "CB", "number": 3, "id": null },
-      { "name": "Odilon Kossounou", "position": "LCB", "number": 6, "id": null },
-      { "name": "Jeremie Frimpong", "position": "RWB", "number": 30, "id": null },
-      { "name": "Robert Andrich", "position": "CM", "number": 8, "id": null },
-      { "name": "Exequiel Palacios", "position": "CM", "number": 25, "id": null },
-      { "name": "Kerem Demirbay", "position": "LWB", "number": 10, "id": null },
-      { "name": "Amine Adlí", "position": "RW", "number": 21, "id": null },
-      { "name": "Florian Wirtz", "position": "CAM", "number": 27, "id": null },
-      { "name": "Moussa Diaby", "position": "LW", "number": 19, "id": null }
+      {
+        "name": "Lukáš Hrádecký",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Edmond Tapsoba",
+        "position": "RCB",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Piero Hincapié",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Odilon Kossounou",
+        "position": "LCB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Jeremie Frimpong",
+        "position": "RWB",
+        "number": 30,
+        "id": null
+      },
+      {
+        "name": "Robert Andrich",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Exequiel Palacios",
+        "position": "CM",
+        "number": 25,
+        "id": null
+      },
+      {
+        "name": "Kerem Demirbay",
+        "position": "LWB",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Amine Adlí",
+        "position": "RW",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Florian Wirtz",
+        "position": "CAM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Moussa Diaby",
+        "position": "LW",
+        "number": 19,
+        "id": null
+      }
     ]
   },
   {
@@ -3253,17 +4133,72 @@
     },
     "notes": "Götze (62'), Guerreiro (67'), Witsel (90'), and two others. Bakalorz replied for Hannover (86'). BVB flying at the top of the table mid-season.",
     "lineup": [
-      { "name": "Roman Bürki", "position": "GK", "number": 1, "id": null },
-      { "name": "Achraf Hakimi", "position": "RB", "number": 5, "id": null },
-      { "name": "Abdou Diallo", "position": "CB", "number": 4, "id": null },
-      { "name": "Łukasz Piszczek", "position": "CB", "number": 26, "id": null },
-      { "name": "Raphaël Guerreiro", "position": "LB", "number": 13, "id": null },
-      { "name": "Axel Witsel", "position": "CDM", "number": 28, "id": null },
-      { "name": "Thomas Delaney", "position": "CDM", "number": 6, "id": null },
-      { "name": "Jadon Sancho", "position": "RW", "number": 7, "id": null },
-      { "name": "Marco Reus", "position": "CAM", "number": 11, "id": null },
-      { "name": "Julian Weigl", "position": "LW", "number": 33, "id": null },
-      { "name": "Mario Götze", "position": "ST", "number": 10, "id": null }
+      {
+        "name": "Roman Bürki",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Achraf Hakimi",
+        "position": "RB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Abdou Diallo",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Łukasz Piszczek",
+        "position": "CB",
+        "number": 26,
+        "id": null
+      },
+      {
+        "name": "Raphaël Guerreiro",
+        "position": "LB",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Axel Witsel",
+        "position": "CDM",
+        "number": 28,
+        "id": null
+      },
+      {
+        "name": "Thomas Delaney",
+        "position": "CDM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Jadon Sancho",
+        "position": "RW",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Marco Reus",
+        "position": "CAM",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Julian Weigl",
+        "position": "LW",
+        "number": 33,
+        "id": null
+      },
+      {
+        "name": "Mario Götze",
+        "position": "ST",
+        "number": 10,
+        "id": null
+      }
     ]
   },
   {
@@ -3286,17 +4221,72 @@
     },
     "notes": "Beier (7'), Nmecha (40'), Brandt (66'), Gittens (77'). Brandt captaining, clean sheet. Comfortable home win.",
     "lineup": [
-      { "name": "Gregor Kobel", "position": "GK", "number": 1, "id": null },
-      { "name": "Julian Ryerson", "position": "RB", "number": 26, "id": null },
-      { "name": "Nico Schlotterbeck", "position": "CB", "number": 4, "id": null },
-      { "name": "Waldemar Anton", "position": "CB", "number": 3, "id": null },
-      { "name": "Ramy Bensebaini", "position": "LB", "number": 5, "id": null },
-      { "name": "Felix Nmecha", "position": "CDM", "number": 8, "id": null },
-      { "name": "Jamie Gittens", "position": "RM", "number": 43, "id": null },
-      { "name": "Julian Brandt", "position": "CM", "number": 10, "id": null },
-      { "name": "Marcel Sabitzer", "position": "CM", "number": 20, "id": null },
-      { "name": "Donyell Malen", "position": "LM", "number": 21, "id": null },
-      { "name": "Maximilian Beier", "position": "ST", "number": 14, "id": null }
+      {
+        "name": "Gregor Kobel",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Julian Ryerson",
+        "position": "RB",
+        "number": 26,
+        "id": null
+      },
+      {
+        "name": "Nico Schlotterbeck",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Waldemar Anton",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Ramy Bensebaini",
+        "position": "LB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Felix Nmecha",
+        "position": "CDM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Jamie Gittens",
+        "position": "RM",
+        "number": 43,
+        "id": null
+      },
+      {
+        "name": "Julian Brandt",
+        "position": "CM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Marcel Sabitzer",
+        "position": "CM",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Donyell Malen",
+        "position": "LM",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Maximilian Beier",
+        "position": "ST",
+        "number": 14,
+        "id": null
+      }
     ]
   },
   {
@@ -3319,17 +4309,72 @@
     },
     "notes": "UCL Group F. Aubameyang (43') and Schürrle (87') for BVB. Ronaldo (17') and Varane (68') for Real Madrid. Schmelzer captaining. A young Dembélé starting on the left.",
     "lineup": [
-      { "name": "Roman Bürki", "position": "GK", "number": 38, "id": null },
-      { "name": "Łukasz Piszczek", "position": "RB", "number": 26, "id": null },
-      { "name": "Matthias Ginter", "position": "CB", "number": 28, "id": null },
-      { "name": "Sokratis Papastathopoulos", "position": "CB", "number": 25, "id": null },
-      { "name": "Marcel Schmelzer", "position": "LB", "number": 29, "id": null },
-      { "name": "Julian Weigl", "position": "CDM", "number": 33, "id": null },
-      { "name": "Raphaël Guerreiro", "position": "RM", "number": 13, "id": null },
-      { "name": "Gonzalo Castro", "position": "CM", "number": 27, "id": null },
-      { "name": "Mario Götze", "position": "CM", "number": 10, "id": null },
-      { "name": "Ousmane Dembélé", "position": "LM", "number": 7, "id": null },
-      { "name": "Pierre-Emerick Aubameyang", "position": "ST", "number": 17, "id": null }
+      {
+        "name": "Roman Bürki",
+        "position": "GK",
+        "number": 38,
+        "id": null
+      },
+      {
+        "name": "Łukasz Piszczek",
+        "position": "RB",
+        "number": 26,
+        "id": null
+      },
+      {
+        "name": "Matthias Ginter",
+        "position": "CB",
+        "number": 28,
+        "id": null
+      },
+      {
+        "name": "Sokratis Papastathopoulos",
+        "position": "CB",
+        "number": 25,
+        "id": null
+      },
+      {
+        "name": "Marcel Schmelzer",
+        "position": "LB",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "Julian Weigl",
+        "position": "CDM",
+        "number": 33,
+        "id": null
+      },
+      {
+        "name": "Raphaël Guerreiro",
+        "position": "RM",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Gonzalo Castro",
+        "position": "CM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Mario Götze",
+        "position": "CM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "position": "LM",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Pierre-Emerick Aubameyang",
+        "position": "ST",
+        "number": 17,
+        "id": null
+      }
     ]
   },
   {
@@ -3352,17 +4397,72 @@
     },
     "notes": "UCL QF in the Lisbon bubble tournament. Dani Olmo (50') and Tyler Adams (88') won it. João Félix pen (71') for Atlético. Leipzig's run to the UCL semis — Upamecano and Angeliño shining.",
     "lineup": [
-      { "name": "Péter Gulácsi", "position": "GK", "number": 1, "id": null },
-      { "name": "Lukas Klostermann", "position": "RB", "number": 16, "id": null },
-      { "name": "Marcel Halstenberg", "position": "CB", "number": 23, "id": null },
-      { "name": "Dayot Upamecano", "position": "CB", "number": 5, "id": null },
-      { "name": "Angeliño", "position": "LB", "number": 3, "id": null },
-      { "name": "Kevin Kampl", "position": "CDM", "number": 44, "id": null },
-      { "name": "Konrad Laimer", "position": "CDM", "number": 27, "id": null },
-      { "name": "Christopher Nkunku", "position": "RW", "number": 18, "id": null },
-      { "name": "Dani Olmo", "position": "CAM", "number": 25, "id": null },
-      { "name": "Marcel Sabitzer", "position": "LW", "number": 7, "id": null },
-      { "name": "Yussuf Poulsen", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Péter Gulácsi",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Lukas Klostermann",
+        "position": "RB",
+        "number": 16,
+        "id": null
+      },
+      {
+        "name": "Marcel Halstenberg",
+        "position": "CB",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Dayot Upamecano",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Angeliño",
+        "position": "LB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Kevin Kampl",
+        "position": "CDM",
+        "number": 44,
+        "id": null
+      },
+      {
+        "name": "Konrad Laimer",
+        "position": "CDM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Christopher Nkunku",
+        "position": "RW",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Dani Olmo",
+        "position": "CAM",
+        "number": 25,
+        "id": null
+      },
+      {
+        "name": "Marcel Sabitzer",
+        "position": "LW",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Yussuf Poulsen",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -3385,17 +4485,72 @@
     },
     "notes": "Orbán (55'), Werner brace (48', 71'), Bruma (80'). Niederlechner replied for Freiburg (23'). Leipzig's second Bundesliga season — Keïta and Werner already the standouts.",
     "lineup": [
-      { "name": "Péter Gulácsi", "position": "GK", "number": 1, "id": null },
-      { "name": "Lukas Klostermann", "position": "RB", "number": 16, "id": null },
-      { "name": "Dayot Upamecano", "position": "CB", "number": 5, "id": null },
-      { "name": "Willi Orbán", "position": "CB", "number": 4, "id": null },
-      { "name": "Marcel Halstenberg", "position": "LB", "number": 23, "id": null },
-      { "name": "Naby Keïta", "position": "CDM", "number": 8, "id": null },
-      { "name": "Diego Demme", "position": "CDM", "number": 31, "id": null },
-      { "name": "Emil Forsberg", "position": "RAM", "number": 10, "id": null },
-      { "name": "Marcel Sabitzer", "position": "LAM", "number": 7, "id": null },
-      { "name": "Timo Werner", "position": "ST", "number": 11, "id": null },
-      { "name": "Jean-Kevin Augustin", "position": "ST", "number": 29, "id": null }
+      {
+        "name": "Péter Gulácsi",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Lukas Klostermann",
+        "position": "RB",
+        "number": 16,
+        "id": null
+      },
+      {
+        "name": "Dayot Upamecano",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Willi Orbán",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Marcel Halstenberg",
+        "position": "LB",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Naby Keïta",
+        "position": "CDM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Diego Demme",
+        "position": "CDM",
+        "number": 31,
+        "id": null
+      },
+      {
+        "name": "Emil Forsberg",
+        "position": "RAM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Marcel Sabitzer",
+        "position": "LAM",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Timo Werner",
+        "position": "ST",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Jean-Kevin Augustin",
+        "position": "ST",
+        "number": 29,
+        "id": null
+      }
     ]
   },
   {
@@ -3418,17 +4573,72 @@
     },
     "notes": "Zaïre-Emery (37'), Doué (67'), Barcola (88'), Ramos (90'+2 pen). Cup tie against amateur side Espaly. Rotated squad with Tenas in goal and youth players Tape and Zague starting.",
     "lineup": [
-      { "name": "Arnau Tenas", "position": "GK", "number": 1, "id": null },
-      { "name": "Yoram Zague", "position": "RB", "number": 2, "id": null },
-      { "name": "Ayman Tape", "position": "CB", "number": 5, "id": null },
-      { "name": "Lucas Hernández", "position": "CB", "number": 4, "id": null },
-      { "name": "João Neves", "position": "LB", "number": 3, "id": null },
-      { "name": "Warren Zaïre-Emery", "position": "CM", "number": 6, "id": null },
-      { "name": "Fabián Ruiz", "position": "CM", "number": 8, "id": null },
-      { "name": "Senny Mayulu", "position": "CM", "number": 7, "id": null },
-      { "name": "Désiré Doué", "position": "RW", "number": 11, "id": null },
-      { "name": "Gonçalo Ramos", "position": "ST", "number": 9, "id": null },
-      { "name": "Bradley Barcola", "position": "LW", "number": 10, "id": null }
+      {
+        "name": "Arnau Tenas",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Yoram Zague",
+        "position": "RB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Ayman Tape",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Lucas Hernández",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "João Neves",
+        "position": "LB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Warren Zaïre-Emery",
+        "position": "CM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Fabián Ruiz",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Senny Mayulu",
+        "position": "CM",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Désiré Doué",
+        "position": "RW",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Gonçalo Ramos",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      },
+      {
+        "name": "Bradley Barcola",
+        "position": "LW",
+        "number": 10,
+        "id": null
+      }
     ]
   },
   {
@@ -3451,17 +4661,72 @@
     },
     "notes": "La Remontada. PSG led 4-0 from the first leg and lost 6-1 in the second. Cavani replied (62') but Suárez, Messi, Neymar (x2), and Sergi Roberto completed one of the most dramatic UCL collapses ever.",
     "lineup": [
-      { "name": "Kevin Trapp", "position": "GK", "number": 1, "id": null },
-      { "name": "Thomas Meunier", "position": "RB", "number": 12, "id": null },
-      { "name": "Marquinhos", "position": "CB", "number": 5, "id": null },
-      { "name": "Thiago Silva", "position": "CB", "number": 2, "id": null },
-      { "name": "Layvin Kurzawa", "position": "LB", "number": 20, "id": null },
-      { "name": "Lucas Moura", "position": "RM", "number": 7, "id": null },
-      { "name": "Marco Verratti", "position": "CM", "number": 6, "id": null },
-      { "name": "Adrien Rabiot", "position": "CM", "number": 25, "id": null },
-      { "name": "Julian Draxler", "position": "LM", "number": 23, "id": null },
-      { "name": "Blaise Matuidi", "position": "SS", "number": 14, "id": null },
-      { "name": "Edinson Cavani", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Kevin Trapp",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Thomas Meunier",
+        "position": "RB",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Marquinhos",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Thiago Silva",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Layvin Kurzawa",
+        "position": "LB",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Lucas Moura",
+        "position": "RM",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Marco Verratti",
+        "position": "CM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Adrien Rabiot",
+        "position": "CM",
+        "number": 25,
+        "id": null
+      },
+      {
+        "name": "Julian Draxler",
+        "position": "LM",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Blaise Matuidi",
+        "position": "SS",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Edinson Cavani",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -3484,17 +4749,72 @@
     },
     "notes": "Kingsley Coman headed in the only goal (59') to give Bayern their sixth European Cup. PSG's first and only UCL final. Thiago Silva's last match for the club. Marquinhos deployed as CDM rather than CB.",
     "lineup": [
-      { "name": "Keylor Navas", "position": "GK", "number": 1, "id": null },
-      { "name": "Thilo Kehrer", "position": "RB", "number": 4, "id": null },
-      { "name": "Thiago Silva", "position": "CB", "number": 2, "id": null },
-      { "name": "Presnel Kimpembe", "position": "CB", "number": 3, "id": null },
-      { "name": "Juan Bernat", "position": "LB", "number": 14, "id": null },
-      { "name": "Marquinhos", "position": "CDM", "number": 5, "id": null },
-      { "name": "Leandro Paredes", "position": "CM", "number": 8, "id": null },
-      { "name": "Ander Herrera", "position": "CM", "number": 21, "id": null },
-      { "name": "Ángel Di María", "position": "RW", "number": 11, "id": null },
-      { "name": "Kylian Mbappé", "position": "ST", "number": 7, "id": null },
-      { "name": "Neymar", "position": "LW", "number": 10, "id": null }
+      {
+        "name": "Keylor Navas",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Thilo Kehrer",
+        "position": "RB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Thiago Silva",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Presnel Kimpembe",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Juan Bernat",
+        "position": "LB",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Marquinhos",
+        "position": "CDM",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Leandro Paredes",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Ander Herrera",
+        "position": "CM",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Ángel Di María",
+        "position": "RW",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Kylian Mbappé",
+        "position": "ST",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Neymar",
+        "position": "LW",
+        "number": 10,
+        "id": null
+      }
     ]
   },
   {
@@ -3517,17 +4837,72 @@
     },
     "notes": "Final day of the season — Lille's first Ligue 1 title in ten years, pipping PSG by one point. David (10') and Yılmaz pen (45'+1) sealed it. Maignan, Botman, Sanches all departed the following summer to major clubs.",
     "lineup": [
-      { "name": "Mike Maignan", "position": "GK", "number": 16, "id": null },
-      { "name": "Zeki Çelik", "position": "RB", "number": 2, "id": null },
-      { "name": "Tiago Djaló", "position": "CB", "number": 3, "id": null },
-      { "name": "Sven Botman", "position": "CB", "number": 5, "id": null },
-      { "name": "Reinildo Mandava", "position": "LB", "number": 28, "id": null },
-      { "name": "Renato Sanches", "position": "RM", "number": 18, "id": null },
-      { "name": "Benjamin André", "position": "CM", "number": 21, "id": null },
-      { "name": "Boubakary Soumaré", "position": "CM", "number": 24, "id": null },
-      { "name": "Yusuf Yazıcı", "position": "LM", "number": 12, "id": null },
-      { "name": "Jonathan David", "position": "ST", "number": 9, "id": null },
-      { "name": "Burak Yılmaz", "position": "ST", "number": 17, "id": null }
+      {
+        "name": "Mike Maignan",
+        "position": "GK",
+        "number": 16,
+        "id": null
+      },
+      {
+        "name": "Zeki Çelik",
+        "position": "RB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Tiago Djaló",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Sven Botman",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Reinildo Mandava",
+        "position": "LB",
+        "number": 28,
+        "id": null
+      },
+      {
+        "name": "Renato Sanches",
+        "position": "RM",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Benjamin André",
+        "position": "CM",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Boubakary Soumaré",
+        "position": "CM",
+        "number": 24,
+        "id": null
+      },
+      {
+        "name": "Yusuf Yazıcı",
+        "position": "LM",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Jonathan David",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      },
+      {
+        "name": "Burak Yılmaz",
+        "position": "ST",
+        "number": 17,
+        "id": null
+      }
     ]
   },
   {
@@ -3550,17 +4925,72 @@
     },
     "notes": "Hernández OG (20') and Lemaréchal (45'+3) for Strasbourg; Barcola replied (46'). Georgio Doué — younger brother of PSG's Désiré — started at ST against his brother's club.",
     "lineup": [
-      { "name": "Dušan Petrović", "position": "GK", "number": 1, "id": null },
-      { "name": "Ismaël Doukoure", "position": "RCB", "number": 29, "id": null },
-      { "name": "Diego Moreira", "position": "CB", "number": 7, "id": null },
-      { "name": "Mamadou Sarr", "position": "LCB", "number": 23, "id": null },
-      { "name": "Félix Lemaréchal", "position": "RWB", "number": 6, "id": null },
-      { "name": "Vicky Barco", "position": "CM", "number": 32, "id": null },
-      { "name": "Abakar Santos", "position": "CM", "number": 8, "id": null },
-      { "name": "Dilane Bakwa", "position": "LWB", "number": 26, "id": null },
-      { "name": "Habib Diarra", "position": "RAM", "number": 19, "id": null },
-      { "name": "Emanuel Emegha", "position": "LAM", "number": 10, "id": null },
-      { "name": "Georgio Doué", "position": "ST", "number": 22, "id": null }
+      {
+        "name": "Dušan Petrović",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Ismaël Doukoure",
+        "position": "RCB",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "Diego Moreira",
+        "position": "CB",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Mamadou Sarr",
+        "position": "LCB",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Félix Lemaréchal",
+        "position": "RWB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Vicky Barco",
+        "position": "CM",
+        "number": 32,
+        "id": null
+      },
+      {
+        "name": "Abakar Santos",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Dilane Bakwa",
+        "position": "LWB",
+        "number": 26,
+        "id": null
+      },
+      {
+        "name": "Habib Diarra",
+        "position": "RAM",
+        "number": 19,
+        "id": null
+      },
+      {
+        "name": "Emanuel Emegha",
+        "position": "LAM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Georgio Doué",
+        "position": "ST",
+        "number": 22,
+        "id": null
+      }
     ]
   },
   {
@@ -3583,17 +5013,72 @@
     },
     "notes": "UCL Round of 16 second leg. David Luiz (66') and Thiago Silva (114') for PSG; Cahill (61') and Hazard pen (96') for Chelsea. PSG went out on away goals in devastating fashion.",
     "lineup": [
-      { "name": "Salvatore Sirigu", "position": "GK", "number": 30, "id": null },
-      { "name": "Marquinhos", "position": "RB", "number": 5, "id": null },
-      { "name": "Thiago Silva", "position": "CB", "number": 2, "id": null },
-      { "name": "David Luiz", "position": "CB", "number": 32, "id": null },
-      { "name": "Maxwell", "position": "LB", "number": 17, "id": null },
-      { "name": "Javier Pastore", "position": "CM", "number": 27, "id": null },
-      { "name": "Marco Verratti", "position": "CM", "number": 24, "id": null },
-      { "name": "Thiago Motta", "position": "CM", "number": 8, "id": null },
-      { "name": "Blaise Matuidi", "position": "LM", "number": 14, "id": null },
-      { "name": "Zlatan Ibrahimović", "position": "SS", "number": 10, "id": null },
-      { "name": "Edinson Cavani", "position": "ST", "number": 9, "id": null }
+      {
+        "name": "Salvatore Sirigu",
+        "position": "GK",
+        "number": 30,
+        "id": null
+      },
+      {
+        "name": "Marquinhos",
+        "position": "RB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Thiago Silva",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "David Luiz",
+        "position": "CB",
+        "number": 32,
+        "id": null
+      },
+      {
+        "name": "Maxwell",
+        "position": "LB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Javier Pastore",
+        "position": "CM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Marco Verratti",
+        "position": "CM",
+        "number": 24,
+        "id": null
+      },
+      {
+        "name": "Thiago Motta",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Blaise Matuidi",
+        "position": "LM",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Zlatan Ibrahimović",
+        "position": "SS",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Edinson Cavani",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   },
   {
@@ -3616,17 +5101,72 @@
     },
     "notes": "Fekir brace from the spot (36', 57'), Tolisso (42', 70'), Cornet (75'). Morgan Sanson pulled one back (4'). Tolisso and Fekir were the standouts in a dominant home display.",
     "lineup": [
-      { "name": "Anthony Lopes", "position": "GK", "number": 1, "id": null },
-      { "name": "Maciej Rybus", "position": "RWB", "number": 31, "id": null },
-      { "name": "Jérémy Morel", "position": "RCB", "number": 15, "id": null },
-      { "name": "Nicolas N'Koulou", "position": "CB", "number": 3, "id": null },
-      { "name": "Emanuel Mammana", "position": "LCB", "number": 4, "id": null },
-      { "name": "Clément Tolisso", "position": "CM", "number": 8, "id": null },
-      { "name": "Lucas Tousart", "position": "CM", "number": 29, "id": null },
-      { "name": "Sergi Darder", "position": "CM", "number": 14, "id": null },
-      { "name": "Rafael", "position": "LWB", "number": 20, "id": null },
-      { "name": "Nabil Fekir", "position": "SS", "number": 18, "id": null },
-      { "name": "Maxwel Cornet", "position": "ST", "number": 27, "id": null }
+      {
+        "name": "Anthony Lopes",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Maciej Rybus",
+        "position": "RWB",
+        "number": 31,
+        "id": null
+      },
+      {
+        "name": "Jérémy Morel",
+        "position": "RCB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Nicolas N'Koulou",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Emanuel Mammana",
+        "position": "LCB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Clément Tolisso",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Lucas Tousart",
+        "position": "CM",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "Sergi Darder",
+        "position": "CM",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Rafael",
+        "position": "LWB",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Nabil Fekir",
+        "position": "SS",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Maxwel Cornet",
+        "position": "ST",
+        "number": 27,
+        "id": null
+      }
     ]
   },
   {
@@ -3649,17 +5189,72 @@
     },
     "notes": "Final day of Monaco's title-winning 2016-17 season — they finished 8 points clear of PSG. Heavy rotation with backup GK Sidy Sy starting. Fabinho (42'), Jemerson (47'), Jorge (78') scored. Mbappé (#29) started aged 18.",
     "lineup": [
-      { "name": "Sidy Sy", "position": "GK", "number": 30, "id": null },
-      { "name": "Andrea Raggi", "position": "RB", "number": 24, "id": null },
-      { "name": "Jemerson", "position": "CB", "number": 5, "id": null },
-      { "name": "Abdou Diallo", "position": "CB", "number": 34, "id": null },
-      { "name": "Jorge", "position": "LB", "number": 6, "id": null },
-      { "name": "Fabinho", "position": "CDM", "number": 2, "id": null },
-      { "name": "Tiémoué Bakayoko", "position": "CM", "number": 14, "id": null },
-      { "name": "Thomas Lemar", "position": "CM", "number": 27, "id": null },
-      { "name": "Kylian Mbappé", "position": "RW", "number": 29, "id": null },
-      { "name": "Valère Germain", "position": "ST", "number": 18, "id": null },
-      { "name": "K. N'Doram", "position": "LW", "number": 35, "id": null }
+      {
+        "name": "Sidy Sy",
+        "position": "GK",
+        "number": 30,
+        "id": null
+      },
+      {
+        "name": "Andrea Raggi",
+        "position": "RB",
+        "number": 24,
+        "id": null
+      },
+      {
+        "name": "Jemerson",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Abdou Diallo",
+        "position": "CB",
+        "number": 34,
+        "id": null
+      },
+      {
+        "name": "Jorge",
+        "position": "LB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Fabinho",
+        "position": "CDM",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Tiémoué Bakayoko",
+        "position": "CM",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Thomas Lemar",
+        "position": "CM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Kylian Mbappé",
+        "position": "RW",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "Valère Germain",
+        "position": "ST",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "K. N'Doram",
+        "position": "LW",
+        "number": 35,
+        "id": null
+      }
     ]
   },
   {
@@ -3682,17 +5277,72 @@
     },
     "notes": "Volland brace (52', 65') and Fàbregas pen (64', off the bench) won it. Mbappé had scored twice for PSG (25', 37' pen). Tchouaméni and Fofana anchoring a formidable midfield.",
     "lineup": [
-      { "name": "Vito Mannone", "position": "GK", "number": 30, "id": null },
-      { "name": "Chrislain Matsima", "position": "RB", "number": 34, "id": null },
-      { "name": "Axel Disasi", "position": "CB", "number": 20, "id": null },
-      { "name": "Benoît Badiashile", "position": "CB", "number": 32, "id": null },
-      { "name": "Fodé Ballo-Touré", "position": "LB", "number": 2, "id": null },
-      { "name": "Sofiane Diop", "position": "RM", "number": 37, "id": null },
-      { "name": "Aurélien Tchouaméni", "position": "CM", "number": 8, "id": null },
-      { "name": "Youssouf Fofana", "position": "CM", "number": 22, "id": null },
-      { "name": "Gelson Martins", "position": "LM", "number": 11, "id": null },
-      { "name": "Willem Geubbels", "position": "SS", "number": 13, "id": null },
-      { "name": "Kevin Volland", "position": "ST", "number": 31, "id": null }
+      {
+        "name": "Vito Mannone",
+        "position": "GK",
+        "number": 30,
+        "id": null
+      },
+      {
+        "name": "Chrislain Matsima",
+        "position": "RB",
+        "number": 34,
+        "id": null
+      },
+      {
+        "name": "Axel Disasi",
+        "position": "CB",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Benoît Badiashile",
+        "position": "CB",
+        "number": 32,
+        "id": null
+      },
+      {
+        "name": "Fodé Ballo-Touré",
+        "position": "LB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Sofiane Diop",
+        "position": "RM",
+        "number": 37,
+        "id": null
+      },
+      {
+        "name": "Aurélien Tchouaméni",
+        "position": "CM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Youssouf Fofana",
+        "position": "CM",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Gelson Martins",
+        "position": "LM",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Willem Geubbels",
+        "position": "SS",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Kevin Volland",
+        "position": "ST",
+        "number": 31,
+        "id": null
+      }
     ]
   },
   {
@@ -3715,17 +5365,952 @@
     },
     "notes": "Bodiger pen (48') and Durmaz (79') ended PSG's unbeaten start to the season. A teenage Alban Lafont (16) started in goal. One of the big upsets of the 2016-17 Ligue 1 season.",
     "lineup": [
-      { "name": "Alban Lafont", "position": "GK", "number": 40, "id": null },
-      { "name": "Issiaga Sylla", "position": "RB", "number": 12, "id": null },
-      { "name": "Christopher Jullien", "position": "CB", "number": 6, "id": null },
-      { "name": "Lamine Diop", "position": "CB", "number": 5, "id": null },
-      { "name": "François Moubandjé", "position": "LB", "number": 29, "id": null },
-      { "name": "Yann Bodiger", "position": "RM", "number": 23, "id": null },
-      { "name": "Andy Blin", "position": "CM", "number": 27, "id": null },
-      { "name": "Stefan Yago", "position": "CM", "number": 20, "id": null },
-      { "name": "Christophe Michelin", "position": "LM", "number": 34, "id": null },
-      { "name": "Ola Toivonen", "position": "SS", "number": 11, "id": null },
-      { "name": "O. Édouard", "position": "ST", "number": 18, "id": null }
+      {
+        "name": "Alban Lafont",
+        "position": "GK",
+        "number": 40,
+        "id": null
+      },
+      {
+        "name": "Issiaga Sylla",
+        "position": "RB",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Christopher Jullien",
+        "position": "CB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Lamine Diop",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "François Moubandjé",
+        "position": "LB",
+        "number": 29,
+        "id": null
+      },
+      {
+        "name": "Yann Bodiger",
+        "position": "RM",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Andy Blin",
+        "position": "CM",
+        "number": 27,
+        "id": null
+      },
+      {
+        "name": "Stefan Yago",
+        "position": "CM",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Christophe Michelin",
+        "position": "LM",
+        "number": 34,
+        "id": null
+      },
+      {
+        "name": "Ola Toivonen",
+        "position": "SS",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "O. Édouard",
+        "position": "ST",
+        "number": 18,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-italy-costa-rica",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Italy",
+    "team_short": "ITA",
+    "season": "2014",
+    "formation": "4-1-4-1",
+    "accent": "#0F4C92",
+    "verified": false,
+    "match": {
+      "date": "2014-06-20",
+      "competition": "FIFA World Cup",
+      "opponent": "Costa Rica",
+      "opponent_short": "CRC",
+      "venue": "Arena de Pernambuco, Recife",
+      "result": "L 0-1"
+    },
+    "notes": "Group D. Costa Rica's shock win, Bryan Ruiz heading the only goal (44'). One of the great World Cup group-stage upsets, part of Costa Rica's run to the quarterfinals.",
+    "lineup": [
+      {
+        "name": "Gianluigi Buffon",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Ignazio Abate",
+        "position": "RB",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Andrea Barzagli",
+        "position": "CB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Giorgio Chiellini",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Matteo Darmian",
+        "position": "LB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Andrea Pirlo",
+        "position": "CDM",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Antonio Candreva",
+        "position": "RM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Daniele De Rossi",
+        "position": "CM",
+        "number": 16,
+        "id": null
+      },
+      {
+        "name": "Thiago Motta",
+        "position": "CM",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Claudio Marchisio",
+        "position": "LM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Mario Balotelli",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-nigeria-bosnia",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Nigeria",
+    "team_short": "NGA",
+    "season": "2014",
+    "formation": "4-2-3-1",
+    "accent": "#00A651",
+    "verified": false,
+    "match": {
+      "date": "2014-06-21",
+      "competition": "FIFA World Cup",
+      "opponent": "Bosnia and Herzegovina",
+      "opponent_short": "BIH",
+      "venue": "Arena Pantanal, Cuiabá",
+      "result": "W 1-0"
+    },
+    "notes": "Group F. Peter Odemwingie's 29th-minute goal won it. Nigeria's first win of that tournament en route to the Round of 16.",
+    "lineup": [
+      {
+        "name": "Vincent Enyeama",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Juwon Oshaniwa",
+        "position": "RB",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Joseph Yobo",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Kenneth Omeruo",
+        "position": "CB",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Efe Ambrose",
+        "position": "LB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Ogenyi Onazi",
+        "position": "CDM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "John Obi Mikel",
+        "position": "CDM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Ahmed Musa",
+        "position": "RW",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Michael Babatunde",
+        "position": "CAM",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Peter Odemwingie",
+        "position": "LW",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Emmanuel Emenike",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-cote-divoire-greece",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Côte d'Ivoire",
+    "team_short": "CIV",
+    "season": "2014",
+    "formation": "4-2-3-1",
+    "accent": "#F77F00",
+    "verified": false,
+    "match": {
+      "date": "2014-06-24",
+      "competition": "FIFA World Cup",
+      "opponent": "Greece",
+      "opponent_short": "GRE",
+      "venue": "Estádio Castelão, Fortaleza",
+      "result": "L 1-2"
+    },
+    "notes": "Group C decider. Bony's goal (74') looked enough to send Côte d'Ivoire through, but Samaras converted a 90'+3 penalty to eliminate them and send Greece to the knockouts instead.",
+    "lineup": [
+      {
+        "name": "Boubacar Barry",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Serge Aurier",
+        "position": "RB",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Sol Bamba",
+        "position": "CB",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Kolo Touré",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Arthur Boka",
+        "position": "LB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Cheick Tioté",
+        "position": "CDM",
+        "number": 9,
+        "id": null
+      },
+      {
+        "name": "Serey Dié",
+        "position": "CDM",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Salomon Kalou",
+        "position": "RW",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Yaya Touré",
+        "position": "CAM",
+        "number": 19,
+        "id": null
+      },
+      {
+        "name": "Gervinho",
+        "position": "LW",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Didier Drogba",
+        "position": "ST",
+        "number": 11,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-usa-belgium",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "United States",
+    "team_short": "USA",
+    "season": "2014",
+    "formation": "4-2-3-1",
+    "accent": "#002868",
+    "verified": false,
+    "match": {
+      "date": "2014-07-01",
+      "competition": "FIFA World Cup",
+      "opponent": "Belgium",
+      "opponent_short": "BEL",
+      "venue": "Arena Fonte Nova, Salvador",
+      "result": "L 1-2 (AET)"
+    },
+    "notes": "Round of 16. Tim Howard made a then-record 16 saves. De Bruyne (93') and Lukaku (105') won it for Belgium in extra time; substitute Julian Green pulled one back (107'). Note: position assignments for Johnson/Cameron/Dempsey are best-effort — Klinsmann made some unorthodox positional tweaks this match, worth double-checking.",
+    "lineup": [
+      {
+        "name": "Tim Howard",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Geoff Cameron",
+        "position": "RB",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Matt Besler",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Omar Gonzalez",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "DaMarcus Beasley",
+        "position": "LB",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Jermaine Jones",
+        "position": "CDM",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Michael Bradley",
+        "position": "CDM",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Graham Zusi",
+        "position": "RW",
+        "number": 19,
+        "id": null
+      },
+      {
+        "name": "Alejandro Bedoya",
+        "position": "CAM",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Fabian Johnson",
+        "position": "LW",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Clint Dempsey",
+        "position": "ST",
+        "number": 8,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-netherlands-mexico",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Netherlands",
+    "team_short": "NED",
+    "season": "2014",
+    "formation": "3-4-1-2",
+    "accent": "#FF6600",
+    "verified": false,
+    "match": {
+      "date": "2014-06-29",
+      "competition": "FIFA World Cup",
+      "opponent": "Mexico",
+      "opponent_short": "MEX",
+      "venue": "Estádio Castelão, Fortaleza",
+      "result": "W 2-1"
+    },
+    "notes": "Round of 16. Mexico led through Giovani dos Santos (48') until Sneijder's stunning equaliser (88') and a controversial 90'+4 Huntelaar penalty completed the comeback. Robben's dive to win the pen remains debated to this day.",
+    "lineup": [
+      {
+        "name": "Jasper Cillessen",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Ron Vlaar",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Stefan de Vrij",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Daley Blind",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Dirk Kuyt",
+        "position": "RWB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Nigel de Jong",
+        "position": "CM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Georginio Wijnaldum",
+        "position": "CM",
+        "number": 20,
+        "id": null
+      },
+      {
+        "name": "Paul Verhaegh",
+        "position": "LWB",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Wesley Sneijder",
+        "position": "CAM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Arjen Robben",
+        "position": "ST",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Robin van Persie",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-mexico-cameroon",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Mexico",
+    "team_short": "MEX",
+    "season": "2014",
+    "formation": "5-3-2",
+    "accent": "#006847",
+    "verified": false,
+    "match": {
+      "date": "2014-06-13",
+      "competition": "FIFA World Cup",
+      "opponent": "Cameroon",
+      "opponent_short": "CMR",
+      "venue": "Estádio das Dunas, Natal",
+      "result": "W 1-0"
+    },
+    "notes": "Group A opener. Oribe Peralta's 61st-minute goal won it after Mexico had two earlier goals controversially disallowed for offside.",
+    "lineup": [
+      {
+        "name": "Guillermo Ochoa",
+        "position": "GK",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Paul Aguilar",
+        "position": "RWB",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Rafael Márquez",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Héctor Moreno",
+        "position": "CB",
+        "number": 15,
+        "id": null
+      },
+      {
+        "name": "Francisco Rodríguez",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Miguel Layún",
+        "position": "LWB",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Héctor Herrera",
+        "position": "CM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Juan Carlos Medina",
+        "position": "CM",
+        "number": 23,
+        "id": null
+      },
+      {
+        "name": "Andrés Guardado",
+        "position": "CM",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Giovani dos Santos",
+        "position": "ST",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Oribe Peralta",
+        "position": "ST",
+        "number": 19,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-france-germany",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "France",
+    "team_short": "FRA",
+    "season": "2014",
+    "formation": "4-3-3",
+    "accent": "#0055A4",
+    "verified": false,
+    "match": {
+      "date": "2014-07-04",
+      "competition": "FIFA World Cup",
+      "opponent": "Germany",
+      "opponent_short": "GER",
+      "venue": "Estádio do Maracanã, Rio de Janeiro",
+      "result": "L 0-1"
+    },
+    "notes": "Quarterfinal. Mats Hummels headed the only goal (12') from a corner. Germany went on to win the whole tournament.",
+    "lineup": [
+      {
+        "name": "Hugo Lloris",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Mathieu Debuchy",
+        "position": "RB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Mamadou Sakho",
+        "position": "CB",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Raphaël Varane",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Patrice Evra",
+        "position": "LB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Yohan Cabaye",
+        "position": "CM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Paul Pogba",
+        "position": "CM",
+        "number": 19,
+        "id": null
+      },
+      {
+        "name": "Blaise Matuidi",
+        "position": "CM",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Antoine Griezmann",
+        "position": "RW",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Karim Benzema",
+        "position": "ST",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Mathieu Valbuena",
+        "position": "LW",
+        "number": 8,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-brazil-chile",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Brazil",
+    "team_short": "BRA",
+    "season": "2014",
+    "formation": "4-2-3-1",
+    "accent": "#FFCC00",
+    "verified": false,
+    "match": {
+      "date": "2014-06-28",
+      "competition": "FIFA World Cup",
+      "opponent": "Chile",
+      "opponent_short": "CHI",
+      "venue": "Estádio Mineirão, Belo Horizonte",
+      "result": "D 1-1 (W 3-2 pens)"
+    },
+    "notes": "Round of 16. David Luiz (18') and Alexis Sánchez (32') traded goals; Pinilla's shot famously struck the crossbar in the dying seconds of extra time. Brazil survived on penalties to advance.",
+    "lineup": [
+      {
+        "name": "Júlio César",
+        "position": "GK",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Dani Alves",
+        "position": "RB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Thiago Silva",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "David Luiz",
+        "position": "CB",
+        "number": 4,
+        "id": null
+      },
+      {
+        "name": "Marcelo",
+        "position": "LB",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Fernandinho",
+        "position": "CDM",
+        "number": 5,
+        "id": null
+      },
+      {
+        "name": "Luiz Gustavo",
+        "position": "CDM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Hulk",
+        "position": "RW",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Oscar",
+        "position": "CAM",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "Neymar",
+        "position": "LW",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Fred",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-cameroon-brazil",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Cameroon",
+    "team_short": "CMR",
+    "season": "2014",
+    "formation": "4-5-1",
+    "accent": "#007A3D",
+    "verified": false,
+    "match": {
+      "date": "2014-06-23",
+      "competition": "FIFA World Cup",
+      "opponent": "Brazil",
+      "opponent_short": "BRA",
+      "venue": "Estádio Nacional Mané Garrincha, Brasília",
+      "result": "L 1-4"
+    },
+    "notes": "Group A finale. Cameroon's Joel Matip ironically scored against the team that would loan him to Schalke; Neymar (x2), Fred, and Fernandinho responded. A largely chaotic and ill-disciplined Cameroon campaign came to an end.",
+    "lineup": [
+      {
+        "name": "Charles Itanjé",
+        "position": "GK",
+        "number": 16,
+        "id": null
+      },
+      {
+        "name": "Allan Nyom",
+        "position": "RB",
+        "number": 22,
+        "id": null
+      },
+      {
+        "name": "Joël Matip",
+        "position": "CB",
+        "number": 21,
+        "id": null
+      },
+      {
+        "name": "Nicolas N'Koulou",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Henri Bedimo",
+        "position": "LB",
+        "number": 12,
+        "id": null
+      },
+      {
+        "name": "Stéphane Mbia",
+        "position": "CM",
+        "number": 17,
+        "id": null
+      },
+      {
+        "name": "Landry N'Guémo",
+        "position": "CM",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Eyong Enoh",
+        "position": "RM",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Eric Maxim Choupo-Moting",
+        "position": "LM",
+        "number": 13,
+        "id": null
+      },
+      {
+        "name": "Benjamin Moukandjo",
+        "position": "CAM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Vincent Aboubakar",
+        "position": "ST",
+        "number": 10,
+        "id": null
+      }
+    ]
+  },
+  {
+    "id": "2014-world-cup-colombia-greece",
+    "sport": "soccer",
+    "league": "world_cup",
+    "team": "Colombia",
+    "team_short": "COL",
+    "season": "2014",
+    "formation": "4-2-3-1",
+    "accent": "#FCD116",
+    "verified": false,
+    "match": {
+      "date": "2014-06-14",
+      "competition": "FIFA World Cup",
+      "opponent": "Greece",
+      "opponent_short": "GRE",
+      "venue": "Estádio Mineirão, Belo Horizonte",
+      "result": "W 3-0"
+    },
+    "notes": "Group C opener, played without injured captain Falcao. James Rodríguez announced himself with an assist and dominant display — the start of his Golden Boot-winning tournament.",
+    "lineup": [
+      {
+        "name": "David Ospina",
+        "position": "GK",
+        "number": 1,
+        "id": null
+      },
+      {
+        "name": "Camilo Zúñiga",
+        "position": "RB",
+        "number": 18,
+        "id": null
+      },
+      {
+        "name": "Mario Yepes",
+        "position": "CB",
+        "number": 3,
+        "id": null
+      },
+      {
+        "name": "Cristián Zapata",
+        "position": "CB",
+        "number": 2,
+        "id": null
+      },
+      {
+        "name": "Pablo Armero",
+        "position": "LB",
+        "number": 7,
+        "id": null
+      },
+      {
+        "name": "Abel Aguilar",
+        "position": "CDM",
+        "number": 8,
+        "id": null
+      },
+      {
+        "name": "Carlos Sánchez",
+        "position": "CDM",
+        "number": 6,
+        "id": null
+      },
+      {
+        "name": "Juan Cuadrado",
+        "position": "RW",
+        "number": 11,
+        "id": null
+      },
+      {
+        "name": "James Rodríguez",
+        "position": "CAM",
+        "number": 10,
+        "id": null
+      },
+      {
+        "name": "Víctor Ibarbo",
+        "position": "LW",
+        "number": 14,
+        "id": null
+      },
+      {
+        "name": "Teófilo Gutiérrez",
+        "position": "ST",
+        "number": 9,
+        "id": null
+      }
     ]
   }
 ]
